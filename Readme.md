@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Maria M](https://up.htmlacademy.ru/htmlcss/28/user/1050403).
-* Наставник: `Неизвестно`.
+* Студент: [Maria](https://up.htmlacademy.ru/htmlcss/28/user/1050403).
+* Наставник: Александр Уразаев.
 
 ---
 
