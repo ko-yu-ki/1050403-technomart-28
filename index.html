@@ -8,7 +8,6 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <!-- надо ли отнести лого техномарта к навигации... -->
         <a class="header-logo" href="#" ><img src="https://via.placeholder.com/108x18" alt="Техномарт" width="108" height="18"></a>
         <!-- 
         <form class="search-form">
@@ -16,15 +15,11 @@
         </form> 
         -->
         <div class="favourites">
-          <div class="favourites-icon" >
-            <!-- width="15" height="15" -->
-          </div>
+          <!-- Убрала пустой див под иконку width="15" height="15" -->
           <a class="favourites" href="#">Закладки: 0</a>
         </div>
         <div class="cart">
-          <div class="cart-icon">
-              <!-- width="15" height="15" -->
-          </div>
+          <!-- Убрала пустой див под иконку width="15" height="15" -->
           <a class="cart" href="#">Корзина: 0</a>
         </div>
         <a class="checkout-button button" href="" >Оформить заказ</a>
@@ -37,24 +32,22 @@
           и инструментов для ремонта
         </p>
   
-        <div class="content-contacts">
-          <div class="contact-phone">
-            <div class="phone-icon"></div>
-            <a class="phone-number" href="tel:88125550555">+7 (812) 555-05-55</a>
-          </div>
+        <div class="contacts">
+          <a class="phone-number" href="tel:88125550555">+7 (812) 555-05-55</a>
           <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
       
-      <!-- блок авторизации, не авторизован-->
-      <div class="authorization-block not-authorized">
-        <a class="login-button button" href="">Войти</a>
-        <a class="registration-button button" href="">Регистрация</a>
-      </div>
-      <!--  конец блока авторизации -->
+        <!-- блок авторизации, не авторизован-->
+        <div class="authorization-block not-authorized">
+          <a class="login-button button" href="">Войти</a>
+          <a class="registration-button button" href="">Регистрация</a>
+        </div>
+        <!--  конец блока авторизации -->
 
       </div>
   
       <div class="header-navigation">
+        <!-- нужен ли див вокруг списка -->
         <nav class="navigation">
           <ul class="navigaion-list">  
             <li class="navigation-item"><a class="navigation-link" href="" >Главная</a></li>
@@ -85,15 +78,12 @@
           </p>
           <ul class="list-items">
             <li class="list-item">
-              <div class="item-bullet"></div> 
               <p class="item-text">Деловые линии</p>
             </li>
             <li class="list-item">
-              <div class="item-bullet"></div> 
               <p class="item-text">Автотрейдинг</p>
             </li>
             <li class="list-item">
-              <div class="item-bullet"></div> 
               <p class="item-text">ЖелДорЭкспедиция</p>
             </li>
           </ul>
@@ -117,6 +107,7 @@
       <div class="footer-content">
         <a class="footer-logo" href=""><img src="https://via.placeholder.com/137x22" alt="Техномарт" width="137" height="22"></a>
         <div class="footer-navigation">
+        <!-- появились сомнения насчет необходимости дива вокруг списка -->
           <ul class="navigation">
             <li class="navigation-item">
               <a class="navigation-link" href="" >Компания</a>
@@ -139,7 +130,9 @@
           <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone-number" href="tel:88125550555">+7 (812) 555-05-55</a>
         </div>
+
         <div class="footer-products">
+                  <!-- появились сомнения насчет необходимости дива вокруг списка -->
           <ul class="footer-products-list">
             <li class="footer-products-item">
               <a class="item-link" href="" >Материалы</a>
@@ -158,6 +151,7 @@
       </div>
       <div class="footer-bottom">
         <p class="copyright">© 2010–2019 Компания «Техномарт»  Все права защищены</p>
+        <!-- появились сомнения насчет необходимости дива вокруг списка -->
         <div class="socials">
           <ul class="socials-list">
             <li class="social-item">
@@ -171,6 +165,7 @@
             </li>
           </ul>
         </div>
+        <!-- сомнения по поводу необходимости дивов ниже -->
         <div class="feedback">
           <p class="feedback-text">Обратная связь: </p>
           <a class="feedback-link" href="mailto: mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
@@ -181,6 +176,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
