@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header class="header">
       <div class="header-top">
+        <!-- надо ли отнести лого техномарта к навигации... -->
         <a class="header-logo" href="#" ><img src="https://via.placeholder.com/108x18" alt="Техномарт" width="108" height="18"></a>
         <!-- 
         <form class="search-form">
@@ -47,32 +47,30 @@
           <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
       
-        <!-- блок авторизации, не авторизован ?!-->
+        <!-- блок авторизации, не авторизован-->
         <div class="authorization-block not-authorized">
           <a class="login-button button" href="" >
             <div class="login-icon"></div>
             <p class="login-text">Войти</p>
           </a>
-
+  
           <a class="registration-button button" href="" >
             <div class="registration-icon"></div>
             <p class="registration-text">Регистрация</p>
           </a>
         </div>
         <!--  конец блока авторизации -->
-        <!-- блок авторизации, авторизован ?!-->
+        <!-- блок авторизации, авторизован -->
         <div class="authorization-block authorized">
-          <div class="user-group">
-            <div class="user-logo"></div>
-            <div class="user-name"></div>
-            <div class="user-logout"></div>
-          </div>
-          <a class="user-orders" href="">Мои заказы</a>
-          <div class="divider"></div>
-          <a class="user-account" href="">Личный кабинет</a>
+          <div class="user-logo"></div>
+          <div class="user-name"></div>
+          <div class="user-logout"></div>
         </div>
+        <a class="user-orders" href="">Мои заказы</a>
+        <div class="divider"></div>
+        <a class="user-account" href="">Личный кабинет</a>
+        
         <!-- конец блока авторизации -->
-
       </div>
   
       <div class="header-navigation">
@@ -89,7 +87,7 @@
         </nav>
       </div>
   
-    </header>
+    </header>  
     <!-- начало основного содержания -->
     <main>
       <!-- спрятать заголовок -->
@@ -127,75 +125,75 @@
      </div>
     </main>
     <!-- конец основного содержания -->
-  <footer class="footer">
-    <div class="footer-content">
-      <a class="footer-logo" href=""><img src="https://via.placeholder.com/108x18" alt="Техномарт" width="137" height="22"></a>
-      <div class="footer-navigation">
-        <ul class="navigation">
-          <li class="nafigation-item">
-            <a class="navigation-link" href="" >Компания</a>
-          </li>
-          <li class="nafigation-item">
-            <a class="navigation-link" href="" >Новости</a>
-          </li>
-          <li class="nafigation-item">
-            <a class="navigation-link" href="catalog.html" >Каталог</a>
-          </li>
-          <li class="nafigation-item">
-            <a class="navigation-link" href="" >Доставка</a>
-          </li>
-          <li class="nafigation-item">
-            <a class="navigation-link" href="" >Контакты</a>
-          </li>
-        </ul>
+    <footer class="footer">
+      <div class="footer-content">
+        <a class="footer-logo" href=""><img src="https://via.placeholder.com/108x18" alt="Техномарт" width="137" height="22"></a>
+        <div class="footer-navigation">
+          <ul class="navigation">
+            <li class="nafigation-item">
+              <a class="navigation-link" href="" >Компания</a>
+            </li>
+            <li class="nafigation-item">
+              <a class="navigation-link" href="" >Новости</a>
+            </li>
+            <li class="nafigation-item">
+              <a class="navigation-link" href="catalog.html" >Каталог</a>
+            </li>
+            <li class="nafigation-item">
+              <a class="navigation-link" href="" >Доставка</a>
+            </li>
+            <li class="nafigation-item">
+              <a class="navigation-link" href="" >Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="footer-phone"> +7 (812) 555-05-55</p>
+        </div>
+        <div class="footer-products">
+          <ul class="footer-products-list">
+            <li class="footer-products-item">
+              <a class="item-link" href="" >Материалы</a>
+            </li>
+            <li class="footer-products-item">
+              <a class="item-link" href="" >Техника</a>
+            </li>
+            <li class="footer-products-item">
+              <a class="item-link" href="" >Инструмент</a>
+            </li>
+            <li class="footer-products-item">
+              <a class="item-link" href="" >Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-contacts">
-        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="footer-phone"> +7 (812) 555-05-55</p>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
+        </div>
+        <div class="socials">
+          <ul class="socials-list">
+            <li class="social-item">
+              <a href="" class="social-link socisl-vk"></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link socisl-fb"></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link socisl-insta"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback">
+          <p>Обратная связь:<br> mail@htmlacademy.ru</p>
+        </div>
+        <div class="designedBy">
+          <p class="designedBy-text">Разработано — <br></p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="designedBy-link">htmlacademy.ru</a>
+        </div>
       </div>
-      <div class="footer-products">
-        <ul class="footer-products-list">
-          <li class="footer-products-item">
-            <a class="item-link" href="" >Материалы</a>
-          </li>
-          <li class="footer-products-item">
-            <a class="item-link" href="" >Техника</a>
-          </li>
-          <li class="footer-products-item">
-            <a class="item-link" href="" >Инструмент</a>
-          </li>
-          <li class="footer-products-item">
-            <a class="item-link" href="" >Спецпредложения</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="copyright">
-        <p>© 2010–2019 Компания «Техномарт»<br> Все права защищены</p>
-      </div>
-      <div class="socials">
-        <ul class="socials-list">
-          <li class="social-item">
-            <a href="" class="social-link socisl-vk"></a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social-link socisl-fb"></a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social-link socisl-insta"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="feedback">
-        <p>Обратная связь:<br> mail@htmlacademy.ru</p>
-      </div>
-      <div class="designedBy">
-        <p class="designedBy-text">Разработано — <br></p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="designedBy-link">htmlacademy.ru</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   </body>
 </html>
