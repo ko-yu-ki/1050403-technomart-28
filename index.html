@@ -8,7 +8,9 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <a class="header-logo" href="#" ><img src="https://via.placeholder.com/108x18" alt="Техномарт" width="108" height="18"></a>
+        <a class="header-top__logo-link" href="#" >
+          <img class="header-top__logo-img" src="https://via.placeholder.com/108x18" alt="Техномарт" width="108" height="18">
+        </a>
         <!-- 
         <form class="search-form">
           здесь будет форма поиска
@@ -16,25 +18,25 @@
         -->
         <div class="favourites">
           <!-- Убрала пустой див под иконку width="15" height="15" -->
-          <a class="favourites" href="#">Закладки: 0</a>
+          <a class="favourites__link" href="#">Закладки: 0</a>
         </div>
         <div class="cart">
           <!-- Убрала пустой див под иконку width="15" height="15" -->
-          <a class="cart" href="#">Корзина: 0</a>
+          <a class="cart__link" href="#">Корзина: 0</a>
         </div>
-        <a class="checkout-button button" href="" >Оформить заказ</a>
+        <a class="header-top__checkout button" href="" >Оформить заказ</a>
       </div>
   
       <div class="header-content">
-        <p class="content-text">
+        <p class="header-content__text">
           Интернет-магазин  
           строительных материалов
           и инструментов для ремонта
         </p>
   
         <div class="contacts">
-          <a class="phone-number" href="tel:88125550555">+7 (812) 555-05-55</a>
-          <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts__phone" href="tel:88125550555">+7 (812) 555-05-55</a>
+          <p class="contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
       
         <!-- блок авторизации, не авторизован-->
@@ -47,16 +49,15 @@
       </div>
   
       <div class="header-navigation">
-        <!-- нужен ли див вокруг списка -->
-        <nav class="navigation">
-          <ul class="navigaion-list">  
-            <li class="navigation-item"><a class="navigation-link" href="" >Главная</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Компания</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Каталог</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Новости</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Спецпредложения</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Доставка</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="" >Контакты</a></li>
+        <nav class="header-navigation navigation">
+          <ul class="navigation__list">  
+            <li class="navigation__item"><a class="navigation__link" href="" >Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Компания</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Каталог</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Спецпредложения</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Доставка</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="" >Контакты</a></li>
           </ul>  
         </nav>
       </div>
@@ -67,112 +68,114 @@
       <!-- спрятать заголовок -->
       <h1>Интернет-магазин строй материалов и инструментов для ремонта - "Техномарт".</h1> 
       <div class="about-block">
-        <section class="about">
-          <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
-          <p>
+        <section class="about-block about">
+          <h2 class="about__title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+          <p class="about__text">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p>
+          <p class="about__text">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul class="list-items">
-            <li class="list-item">
-              <p class="item-text">Деловые линии</p>
+          <ul class="about__list about-list">
+            <li class="about-list__item">
+              <p class="about-list__text">Деловые линии</p>
             </li>
-            <li class="list-item">
-              <p class="item-text">Автотрейдинг</p>
+            <li class="about-list__item">
+              <p class="about-list__text">Автотрейдинг</p>
             </li>
-            <li class="list-item">
-              <p class="item-text">ЖелДорЭкспедиция</p>
+            <li class="about-list__item">
+              <p class="about-list__text">ЖелДорЭкспедиция</p>
             </li>
           </ul>
-          <a class="about-button button" href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
+          <a class="about__button button" href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
         </section>
-        <section class="contacts">
-          <h2>КОНТАКТЫ</h2>
-          <p>
+        <section class="about-block contacts">
+          <h2 class="contacts__title">КОНТАКТЫ</h2>
+          <p class="contacts__text">
             Вы можете забрать товар сами, 
             заехав в наш офис:
           </p>
-          <a class="map" href="https://www.google.ru/maps">
-            <img src="https://via.placeholder.com/300x158" alt="карта" width="300" height="158">
+          <a class="contants__link map" href="https://www.google.ru/maps">
+            <img class="map__img" src="https://via.placeholder.com/300x158" alt="карта" width="300" height="158">
           </a>
-          <a class="mail-us-button button" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          <a class="contacts__mail-us button" href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
      </div>
     </main>
     <!-- конец основного содержания -->
     <footer class="footer">
       <div class="footer-content">
-        <a class="footer-logo" href=""><img src="https://via.placeholder.com/137x22" alt="Техномарт" width="137" height="22"></a>
-        <div class="footer-navigation">
-        <!-- появились сомнения насчет необходимости дива вокруг списка -->
-          <ul class="navigation">
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Компания</a>
+        <a class="footer-content__logo-link" href="">
+          <img class="footer-content__logo-img" src="https://via.placeholder.com/137x22" alt="Техномарт" width="137" height="22">
+        </a>
+
+        <div class="footer-navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="" >Компания</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Новости</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="" >Новости</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html" >Каталог</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html" >Каталог</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Доставка</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="" >Доставка</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Контакты</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="" >Контакты</a>
             </li>
           </ul>
         </div>
+
         <div class="footer-contacts">
-          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="footer-phone-number" href="tel:88125550555">+7 (812) 555-05-55</a>
+          <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="footer-contacts__phone" href="tel:88125550555">+7 (812) 555-05-55</a>
         </div>
 
         <div class="footer-products">
-                  <!-- появились сомнения насчет необходимости дива вокруг списка -->
-          <ul class="footer-products-list">
-            <li class="footer-products-item">
-              <a class="item-link" href="" >Материалы</a>
+          <ul class="footer-products__list">
+            <li class="footer-products__item">
+              <a class="footer-products__link" href="" >Материалы</a>
             </li>
-            <li class="footer-products-item">
-              <a class="item-link" href="" >Техника</a>
+            <li class="footer-products__item">
+              <a class="footer-products__link" href="" >Техника</a>
             </li>
-            <li class="footer-products-item">
-              <a class="item-link" href="" >Инструмент</a>
+            <li class="footer-products__item">
+              <a class="footer-products__link" href="" >Инструмент</a>
             </li>
-            <li class="footer-products-item">
-              <a class="item-link" href="" >Спецпредложения</a>
+            <li class="footer-products__item">
+              <a class="footer-products__link" href="" >Спецпредложения</a>
             </li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p class="copyright">© 2010–2019 Компания «Техномарт»  Все права защищены</p>
         <!-- появились сомнения насчет необходимости дива вокруг списка -->
         <div class="socials">
-          <ul class="socials-list">
-            <li class="social-item">
-              <a href="" class="social-link social-vk"></a>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link social-vk" href=""></a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link social-fb"></a>
+            <li class="socials__item">
+              <a class="socials__link social-fb" href=""></a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link social-insta"></a>
+            <li class="socials__item">
+              <a class="socials__link social-insta" href=""></a>
             </li>
           </ul>
         </div>
-        <!-- сомнения по поводу необходимости дивов ниже -->
         <div class="feedback">
-          <p class="feedback-text">Обратная связь: </p>
-          <a class="feedback-link" href="mailto: mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
+          <p class="feedback__text">Обратная связь: </p>
+          <a class="feedback__link" href="mailto: mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
         </div>
         <div class="designed-by">
-          <p class="designed-by-text">Разработано —  </p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="designed-by-link">htmlacademy.ru</a>
+          <p class="designed-by__text">Разработано —  </p>
+          <a class="designed-by__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
