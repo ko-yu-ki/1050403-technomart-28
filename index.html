@@ -65,8 +65,220 @@
     </header>  
     <!-- начало основного содержания -->
     <main>
-      <!-- спрятать заголовок -->
-      <h1>Интернет-магазин строй материалов и инструментов для ремонта - "Техномарт".</h1> 
+      <h1 class="visually-hidden">Интернет-магазин строй материалов и инструментов для ремонта - "Техномарт".</h1> 
+      <!-- дополнительное задание начало -->
+      <section class="promo">
+        <h2 class="visually-hidden">Промо</h2>
+        <ul class="">
+          <li>
+            <h3>Материалы</h3>
+            <!-- или все иконки бекграундами и убрать img -->
+            <img class="" src="https://via.placeholder.com/44x65" alt="иконка">
+            <a href="">НА ЛЮБОЙ ВКУС</a>
+          </li>
+          <li>
+            <h3>Инструмент</h3>
+            <img class="" src="https://via.placeholder.com/75x61" alt="иконка">
+            <a href="">НА ВСЕ СЛУЧАИ</a>
+          </li>
+          <li>
+            <h3>Техника</h3>
+            <img class="" src="https://via.placeholder.com/78x62" alt="иконка">
+            <a href="">ДЛЯ СТРОЙКИ</a>
+          </li>
+          <li>
+            <h3>Скидки 50%</h3>
+            <img class="" src="https://via.placeholder.com/59x72" alt="иконка">
+            <a href="">НА 350 ТОВАРОВ</a>
+          </li>
+          <li>
+            <h3>Доставка</h3>
+            <img class="" src="https://via.placeholder.com/78x63" alt="иконка">
+            <a href="">БЕСПЛАТНО</a>
+          </li>
+        </ul>
+        <!-- =_= -->
+        <ul class="slider">
+          <li class="slider__slide">
+            <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
+            <h3>ПЕРФОРАТОРЫ</h3>
+            <p>Настоящие мужские игрушки</p>
+            <div class="slider__controls">
+              <button>
+                <img src="https://via.placeholder.com/22x40" alt="button-left">
+              </button>
+              <button>
+                <img src="https://via.placeholder.com/22x40" alt="button-right">
+              </button>
+            </div>
+            <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <div class="slider__second-controls">
+              <!-- скорее всего они вообще не картинки-->
+              <button>
+                <img src="https://via.placeholder.com/10x10" alt="circle-first">
+              </button>
+              <button>
+                <img src="https://via.placeholder.com/10x10" alt="circle-second">
+              </button>
+            </div> 
+          </li>
+          <li class="slider__slide">
+            <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
+            <h3>ДРЕЛИ</h3>
+            <p>Соседям на радость!</p>
+            <div class="slider__controls">
+              <button>
+                <img src="https://via.placeholder.com/22x40" alt="button-left">
+              </button>
+              <button>
+                <img src="https://via.placeholder.com/22x40" alt="button-right">
+              </button>
+            </div>
+            <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <div class="slider__second-controls">
+              <!-- скорее всего они вообще не картинки-->
+              <button>
+                <img src="https://via.placeholder.com/10x10" alt="circle-first"> 
+              </button>
+              <button>
+                <img src="https://via.placeholder.com/10x10" alt="circle-second">
+              </button>
+            </div> 
+          </li>
+        </ul>
+      </section>
+      
+      <section class="products">
+      <div class="section-header">
+        <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+        <a class="all-pop-products-button button" href="" >ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      </div>
+      <div class="section-content">
+        <section class="cards">
+          <ul class="cards__list">
+            <li class="cards__item card">
+              <a href="" class="card__link">
+                <img class="card__image" src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+                <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
+                <p class="card__old-price">32500 Р.</p>
+                <p class="card__price">25500 Р.</p>
+              </a>
+            </li>
+            <li class="cards__item card">
+              <a href="" class="card__link">
+                <img class="card__image" src="https://via.placeholder.com/127x112" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+                <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
+                <p class="card__old-price">22500 Р.</p>
+                <p class="card__price">15500 Р.</p>
+              </a>
+            </li>
+            <li class="cards__item card">
+              <a href="" class="card__link">
+                <img class="card__image" src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+                <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
+                <p class="card__old-price">30500 Р.</p>
+                <p class="card__price">25500 Р.</p>
+              </a>
+            </li>
+            <li class="cards__item card">
+              <a href="" class="card__link">
+                <img class="card__image" src="https://via.placeholder.com/127x112" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+                <h3 class="card__title">Перфоратор BOSCH BFG 2000</h3>
+                <p class="card__old-price"></p>
+                <p class="card__price">12500 Р.</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      </section>
+
+      <section class="producers">
+        <div class="section-header">
+          <h2 class="section-header__title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2> 
+          <a class="all-pop-producers-button button" href="" >ВСЕ ПРОИЗВОДИТЕЛИ</a> 
+        </div>
+        <div class="section-content">
+          <ul class="producers-cards">
+            <!-- карточки необходимо оформить ссылками, у картинок проставить размеры -->
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/126x37" alt="Bosch" width="126" height="37">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/123x40" alt="Makita" width="123" height="40">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/146x44" alt="DeWALT" width="146" height="44">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/200x88" alt="Интерскол" width="200" height="88">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/169x31" alt="HITACHI" width="169" height="31">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/121x73" alt="LG" width="121" height="73">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/151x96" alt="AEG - Power Solutions" width="151" height="96">
+              </a>
+            </li>
+            <li class="producers__card">
+              <a class="producers__link">
+                <img class="producers__logo" src="https://via.placeholder.com/204x69" alt="metabo - work. don't play." width="204" height="69">
+              </a>
+            </li>
+            <!-- карточки закончились -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="services__title">СЕРВИСЫ</h2>
+        <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <!-- тут надо поселить слайдер с Доставкой-Гарантией-Кредитом. Что там за картинка-бекграунд? а еще подумать над классами и альтами у картинок-->
+        <div class="services slider">
+          <div class="slide__delivery">
+            <div class="slide__content">
+              <h3 class="slide__title">ДОСТАВКА</h3>
+              <div class="slide__text"></div>
+            </div>
+            <!-- или эту картинку и ниже вставлять бекграундом скорее -->
+            <img class="slide__img" src="https://via.placeholder.com/108x18" alt="доставка">
+          </div>
+          <div class="slide warranty">
+            <div class="slide__content">
+              <h3 class="slide__title">ГАРАНТИЯ</h3>
+              <div class="slide__text"></div>
+            </div>
+            <img class="slide__img" src="https://via.placeholder.com/108x18" alt="гарантия">
+          </div>
+          <div class="slide credit">
+            <div class="slide__content">
+              <h3 class="slide__title">КРЕДИТ</h3>
+              <div class="slide__text"></div>
+            </div>
+            <img class="slide__img" src="https://via.placeholder.com/108x18" alt="кредит">
+          </div>
+        </div>
+        <!-- конец слайдера -->
+      </section>
+
+     <!-- дополнительное задание конец -->
       <div class="about-block">
         <section class="about-block about">
           <h2 class="about__title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>

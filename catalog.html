@@ -62,7 +62,7 @@
 <!-- начало основного контента -->
 <main>
   <!-- спрятать заголовок h1-->
-  <h1>Каталог</h1> 
+  <h1 class="visually-hidden">Каталог</h1> 
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="index.html"></a>
@@ -157,8 +157,16 @@
         </li>
       </ul>
     </section>
-    <!-- надо будет сделать переключение страниц -->
   </section>
+
+  <div class="paginator">
+    <!-- по идее, если придерживаться макета .previous пока должна быть скрыта-->
+    <a class="paginator__item previous" href="">Предыдущая</a>
+    <a class="paginator__item" href="">1</a>
+    <a class="paginator__item" href="">2</a>
+    <a class="paginator__item" href="">3</a>
+    <a class="paginator__item next" href="">Следующая</a>
+  </div>
 
   <section class="product-about">
     <h2 class="product-about__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
