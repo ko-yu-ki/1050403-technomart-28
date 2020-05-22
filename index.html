@@ -12,11 +12,10 @@
                     <!-- убрать аттрибут стайл, как только появится CSS -->
           <img class="header-top__logo-img" src="img/logo-technomart.svg" style="background-color:red;" alt="Интернет-магазин  строительных материалов и инструментов для ремонта" width="108" height="18">
         </a>
-        <!-- 
-        <form class="search-form">
-          здесь будет форма поиска
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="id__search-text">Поиск:</label>
+          <input id="id__search-text" name="search" type="text">
         </form> 
-        -->
         <div class="favourites">
           <a class="favourites__link" href="">Закладки: 0</a>
         </div>
@@ -109,12 +108,12 @@
         </ul>
         <!-- управление слайдами -->
         <div class="arrow-control">
-          <button></button>
-          <button></button>
+          <button aria-label="на предыдущий слайд"></button>
+          <button aria-label="на следующий слайд"></button>
         </div>
         <div class="dots-control">
-          <button></button>
-          <button></button>
+          <button aria-label="на предыдущий слайд"></button>
+          <button aria-label="на следующий слайд"></button>
         </div> 
         <!-- управление слайдами - конец -  -->
       </section>
@@ -194,42 +193,42 @@
         <div class="section-content">
           <ul class="producers-cards">
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-1.png" alt="Bosch" width="126" height="37">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-2.png" alt="Makita" width="123" height="40">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-3.png" alt="DeWALT" width="146" height="44">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-4.png" alt="Интерскол" width="200" height="88">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-5.png" alt="HITACHI" width="169" height="31">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-6.png" alt="LG" width="121" height="73">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-7.png" alt="AEG - Power Solutions" width="151" height="96">
               </a>
             </li>
             <li class="producers__card">
-              <a class="producers__link">
+              <a class="producers__link" href="">
                 <img class="producers__logo" src="img/producer-8.png" alt="metabo - work. don't play." width="204" height="69">
               </a>
             </li>
@@ -390,5 +389,38 @@
         </div>
       </div>
     </footer>
+
+    <!-- попап "написать нам" -->
+    <section class="write-us-modal">
+      <h2 class="write-us-modal__title visually-hidden">Напишите нам</h2> 
+      <button class="write-us-modal__close" type="button" aria-label="Закрыть">x</button>  
+      <form class="write-us-modal__form" action="https://echo.htmlacademy.ru/" method="post"> 
+        <label for="id__user-name">Ваше имя:</label>
+        <input type="text" id="id__user-name" name="user-name" placeholder="Имя Фамилия">
+        <label for="id__user-email">Ваш e-mail:</label>
+        <input type="email" id="id__user-email" name="user-email" placeholder="email@example.com">
+        <label for="id__user-message">Текст письма:</label>
+        <textarea id="id__user-message" rows="3" name="user-message">В свободной форме</textarea>
+        <div class="write-us-modal__footer">
+          <input type="submit" value="Отправить">
+        </div>
+      </form>
+    </section>
+<!-- закончился попап "написать нам" -->
+
+<!-- попап карта -->
+    <section class="map-modal">
+      <h2 class="map-modal__title visually-hidden">
+        Карта, на которой отмечен магазин "Техномарт", находящийся по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </h2> 
+      <button class="map-modal__close" type="button" aria-label="Закрыть">x</button> 
+      <!-- сама карта -->
+      <iframe width="600" height="450" frameborder="0" style="border:0;"
+        src="https://www.google.com/maps/embed/v1/place?q=Санкт-Петербург,+ул.+Б.+Конюшенная,+д.+19/8&key=AIzaSyDJ0Ufm4NOdNFenhbf8PX2uQleTem3f3fo" allowfullscreen>
+       </iframe> 
+      <!-- "конец" карты -->
+    </section>
+<!-- закончился попап карты -->
+
   </body>
 </html>

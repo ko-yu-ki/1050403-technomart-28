@@ -12,11 +12,10 @@
       <!-- убрать аттрибут стайл, как только появится CSS -->
         <img class="header-top__logo-img" src="img/logo-technomart.svg" style="background-color:red;" alt="Интернет-магазин  'Техномарт' - переход на главную страницу" width="108" height="18">
       </a>
-      <!-- 
-      <form class="search-form">
-        здесь будет форма поиска
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label for="id__search-text">Поиск:</label>
+        <input id="id__search-text" name="search" type="text">
       </form> 
-      -->
       <div class="favourites"> 
         <a class="favourites__link" href="">Закладки: 0</a>
       </div>
@@ -67,7 +66,7 @@
   <h1 class="visually-hidden">Каталог</h1> 
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="index.html"></a>
+      <a class="breadcrumbs__link" href="index.html" aria-label="На главную"></a>
     </li>
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
@@ -204,7 +203,7 @@
   </section>
 
   <div class="paginator">
-    <a class="paginator__item">1</a>
+    <a class="paginator__item" tabindex="0">1</a>
     <a class="paginator__item" href="">2</a>
     <a class="paginator__item" href="">3</a>
     <a class="paginator__item next" href="">Следующая</a>
@@ -293,5 +292,19 @@
     </div>
   </div>
 </footer>
+
+
+<!-- попап "о добавлении в корзину" -->
+<section class="to-cart-modal">
+  <button class="to-cart-modal__close" type="button" aria-label="Закрыть">x</button>
+  <p class="to-cart-modal__text">Товар добавлен в корзину!</p>
+  <section class="to-cart-modal__footer">
+    <a href="" class="to-cart-modal__footer-checkout">Оформить заказ</a>
+    <button class="to-cart-modal__close" type="button">Продолжить покупки</button> 
+    <!-- просто закрытие происходит окна по кнопке Продолжить покупки? -->
+  </section>
+</section>
+<!-- закончился попап "о добавлении в корзину" -->
+
 </body>
 </html>
