@@ -63,7 +63,7 @@
   </header>    
 <!-- начало основного контента -->
 <main>
-  <h1 class="visually-hidden">Каталог</h1> 
+  <h1 class="visually-hidden">Каталог продукции</h1> 
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="index.html" aria-label="На главную"></a>
@@ -81,7 +81,111 @@
 
   <section class="catalog">
     <h2 class="catalog__title">Перфораторы</h2>
-    <!-- надо будет сделать фильтр и сортировку -->
+
+    <!-- сортировка -->
+    <section class="catalog__sorting sorting">
+      <h3 class="sorting__title">Сортировка:</h3>
+       
+      <form class="sorting__form" action="https://echo.htmlacademy.ru/" method="get">
+        <p>        
+          <label class="sorting__byprice-label" for="sorting-byprice-id" tabindex="0">По цене</label>
+          <input class="sorting__byprice visually-hidden" id="sorting-byprice-id" type="radio" name="sorting" value="byprice">
+        </p>
+        <p>   
+          <label class="sorting__bytype-label" for="sorting-bytype-id" tabindex="0">По типу</label>
+          <input class="sorting__bytype visually-hidden" id="sorting-bytype-id" type="radio" name="sorting" value="bytype">
+        </p>
+        <p>
+          <label class="sorting__byfunction-label" for="sorting-byfunction-id" tabindex="0">По функционалу</label>
+          <input class="sorting__byfunction visually-hidden" id="sorting-byfunction-id" type="radio" name="sorting" value="byfunction">
+        </p>
+
+        <!-- первый вариант кнопок -->
+        <p>
+          <label class="sorting__ascending-label visually-hidden" for="sorting-ascending-id" tabindex="0">отсортировать по возрастанию</label>
+          <input class="sorting__ascending" type="submit" name="direction" value="ascending" id="sorting-ascending-id">
+        </p>
+        <p>
+          <label class="sorting__descending-label visually-hidden" for="sorting-descending-id" tabindex="0">отсортировать по убыванию</label>
+          <input class="sorting__descending" type="submit" name="direction" value="descending" id="sorting-descending-id">  
+        </p>
+        
+        <!-- второй вариант кнопок -->
+        <p>
+          <button class="sorting__button-asc" area-label="отсортировать по возрастанию" name="direction" value="ascending"></button>
+          <button class="sorting__button-desc" area-label="отсортировать по убыванию" name="direction" value="descending"></button>
+        </p>
+        </form>
+
+    </section>
+    <!-- конец секции сортировки -->
+
+    <!-- фильтрация -->
+    <section class="catalog__filter filter">
+      <h3 class="filter__title">Фильтр:</h3>
+      <form class="filter__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Цена:</legend>
+          <!-- двойной ползунок -->
+          <div>
+            <div>полоса ползунка</div>
+            <span>кружочек раз</span>
+            <span>кружочек два</span>
+          </div>
+          <!-- конец двойного ползунка -->
+          <div>
+            <input type="number" placeholder="0">
+            <p>-</p>
+            <input type="number" placeholder="30000">
+          </div>
+        </fieldset>
+        <!-- проставлен checked у  Бош и Макиты + Аккумуляторные-->
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Производители:</legend>       
+                              <!-- не будет ли лишним список или надо каждую пару просто обернуть в тег P, хотя в Барбершопе в демке сделано так  -->
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <input class="filter-form__checkbox" id="prod-bosch-id" type="checkbox" name="Bosch" checked>
+              <label class="filter-form__label" for="prod-bosch-id" tabindex="0">Bosch</label>
+            </li>
+            <li class="filter-form__item">
+              <input class="filter-form__checkbox" id="prod-interskol-id" type="checkbox" name="Интерскол">
+              <label class="filter-form__label" for="prod-interskol-id" tabindex="0">Интерскол</label> 
+            </li>
+            <li class="filter-form__item">
+              <input class="filter-form__checkbox" id="prod-makita-id" type="checkbox" name="Makita" checked>
+              <label class="filter-form__label" for="prod-makita-id" tabindex="0">Makita</label>
+            </li>
+            <li class="filter-form__item">
+              <input class="filter-form__checkbox" id="prod-dewalt-id" type="checkbox" name="DeWalt">
+              <label class="filter-form__label" for="prod-dewalt-id" tabindex="0">DeWalt</label>
+            </li>
+            <li class="filter-form__item">
+              <input class="filter-form__checkbox" id="prod-hitachi-id" type="checkbox" name="Hitachi">
+              <label class="filter-form__label" for="prod-hitachi-id" tabindex="0">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Питание:</legend>
+                    <!-- не будет ли лишним список или надо каждую пару просто обернуть в тег P  -->
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <input class="filter-form__radio" id="power-battery-id" type="radio" name="poweredby" value="battery" checked>
+              <label class="filter-form__label" for="power-battery-id" tabindex="0">Аккумуляторные</label>
+            </li>
+            <li class="filter-form__item">
+              <input class="filter-form__radio" id="power-acdc-id" type="radio" name="poweredby" value="ac-dc">
+              <label class="filter-form__label" for="power-acdc-id" tabindex="0">Сетевые</label>
+            </li>
+          </ul>  
+        </fieldset>
+        <button class="filter-form__submit-button">Показать</button>
+      </form>
+
+    </section>
+    <!-- конец секции фильтрации -->
+
     <section class="catalog__cards card">
       <ul class="card__list">
         <li class="card__item">
@@ -209,7 +313,9 @@
     <a class="paginator__item next" href="">Следующая</a>
   </div>
 
-  <!-- а может это статья? то бишь article - вполне может быть, как по мне -->
+  <!-- а может это статья? то бишь article - вполне может быть, как по мне
+  смущает только про фраза "ассортиментный ряд", которая вроде как уже ограничивает нас,
+не у всех в ассортименте есть перфораторы. -->
   <section class="product-about">
     <h2 class="product-about__title">Пара слов о перфораторах</h2>
     <p class="product-about__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -296,13 +402,13 @@
 
 <!-- попап "о добавлении в корзину" -->
 <section class="to-cart-modal">
-  <button class="to-cart-modal__close" type="button" aria-label="Закрыть">x</button>
+  <button class="to-cart-modal__close" type="button" aria-label="Закрыть сообщение">x</button>
   <p class="to-cart-modal__text">Товар добавлен в корзину!</p>
-  <section class="to-cart-modal__footer">
+  <div class="to-cart-modal__footer">
     <a href="" class="to-cart-modal__footer-checkout">Оформить заказ</a>
     <button class="to-cart-modal__close" type="button">Продолжить покупки</button> 
     <!-- просто закрытие происходит окна по кнопке Продолжить покупки? -->
-  </section>
+  </div>
 </section>
 <!-- закончился попап "о добавлении в корзину" -->
 
