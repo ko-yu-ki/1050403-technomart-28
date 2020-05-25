@@ -96,24 +96,24 @@
             <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
             <h3 class="slider__title">Перфораторы</h3>
             <p class="slider__text">Настоящие мужские игрушки</p>
-            <a class="slider__button" href="catalog.html">Открыть каталог</a>
+            <a class="slider__button button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider__slide">
             <img class="slider__img" src="img/slider-2.jpg" alt="Мужчина пытается 'задрелить' кирпичную стену xD" width="620" height="266">
             <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
             <h3 class="slider__title">Дрели</h3>
             <p class="slider__text">Соседям на радость!</p>
-            <a class="slider__button" href="catalog.html">Открыть каталог</a>
+            <a class="slider__button button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
         <!-- управление слайдами -->
         <div class="arrow-control">
-          <button aria-label="на предыдущий слайд"></button>
-          <button aria-label="на следующий слайд"></button>
+          <button class="arrow-control__button button" type="button" aria-label="на предыдущий слайд"></button>
+          <button class="arrow-control__button button" type="button" aria-label="на следующий слайд"></button>
         </div>
         <div class="dots-control">
-          <button aria-label="на предыдущий слайд"></button>
-          <button aria-label="на следующий слайд"></button>
+          <button class="dots-control__button button" type="button" aria-label="на предыдущий слайд"></button>
+          <button class="dots-control__button button" type="button" aria-label="на следующий слайд"></button>
         </div> 
         <!-- управление слайдами - конец -  -->
       </section>
@@ -244,9 +244,9 @@
         <!-- слайдер с Доставкой-Гарантией-Кредитом -->
         <div class="services__slider services-slider">
           <div class="services-slider__controls">
-            <button class="services-slider__button">Доставка</button>
-            <button class="services-slider__button">Гарантия</button>
-            <button class="services-slider__button">Кредит</button>
+            <button class="services-slider__button button" type="button">Доставка</button>
+            <button class="services-slider__button button" type="button">Гарантия</button>
+            <button class="services-slider__button button" type="button">Кредит</button>
           </div>
           <div class="services-slider__delivery">
             <h3 class="services-slider__title">Доставка</h3>
@@ -307,7 +307,7 @@
           <a class="contacts__link" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/">
             <img class="contacts__img" src="img/map-1.png" alt="Карта с отмеченным на ней расположением магазина Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
           </a>
-          <a class="contacts__mail-us button" href="">Заблудились? Напишите нам!</a>
+          <a class="contacts__mail-us-button button" href="">Заблудились? Напишите нам!</a>
         </section>
      </div>
     </main>
@@ -413,7 +413,7 @@
         </p>
         <div class="write-us-modal__footer">
           <!-- что лучше использовать инпут с типом сабмит или кнопка с типом сабмит -->
-          <input class="write-us-modal__button" type="submit" value="Отправить">
+          <button class="write-us-modal__button button" type="submit">Отправить</button>
         </div>
       </form>
     </section>
