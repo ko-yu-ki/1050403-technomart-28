@@ -86,37 +86,27 @@
     <section class="catalog__sorting sorting">
       <h3 class="sorting__title">Сортировка:</h3>
        
-      <form class="sorting__form" action="https://echo.htmlacademy.ru/" method="get">
-        <p>        
-          <label class="sorting__byprice-label" for="sorting-byprice-id" tabindex="0">По цене</label>
-          <input class="sorting__byprice visually-hidden" id="sorting-byprice-id" type="radio" name="sorting" value="byprice">
-        </p>
-        <p>   
-          <label class="sorting__bytype-label" for="sorting-bytype-id" tabindex="0">По типу</label>
-          <input class="sorting__bytype visually-hidden" id="sorting-bytype-id" type="radio" name="sorting" value="bytype">
-        </p>
-        <p>
-          <label class="sorting__byfunction-label" for="sorting-byfunction-id" tabindex="0">По функционалу</label>
-          <input class="sorting__byfunction visually-hidden" id="sorting-byfunction-id" type="radio" name="sorting" value="byfunction">
-        </p>
-
-        <!-- первый вариант кнопок -->
-        <p>
-          <label class="sorting__ascending-label visually-hidden" for="sorting-ascending-id" tabindex="0">Отсортировать по возрастанию.</label>
-          <input class="sorting__ascending" type="submit" name="direction" value="ascending" id="sorting-ascending-id">
-        </p>
-        <p>
-          <label class="sorting__descending-label visually-hidden" for="sorting-descending-id" tabindex="0">Отсортировать по убыванию.</label>
-          <input class="sorting__descending" type="submit" name="direction" value="descending" id="sorting-descending-id">  
-        </p>
-        
-        <!-- второй вариант кнопок -->
-        <p>
-          <button class="sorting__button-asc" area-label="Отсортировать по возрастанию." name="direction" value="ascending"></button>
-          <button class="sorting__button-desc" area-label="Отсортировать по убыванию." name="direction" value="descending"></button>
-        </p>
-        </form>
-
+      <ul class="sorting__list">
+        <li class="sorting__item">
+          <a class="sorting__link" href="">По цене</a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="">По типу</a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="">По функционалу</a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="">
+            <span class="visually-hidden">Отсортировать по возрастанию.</span>
+          </a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="">
+            <span class="visually-hidden">Отсортировать по убыванию.</span>
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- конец секции сортировки -->
 
