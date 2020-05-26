@@ -133,7 +133,6 @@
         <!-- проставлен checked у  Бош и Макиты + Аккумуляторные-->
         <fieldset class="filter-form__fieldset">
           <legend class="filter-form__legend">Производители:</legend>       
-                              <!-- не будет ли лишним список или надо каждую пару просто обернуть в тег P, хотя в Барбершопе в демке сделано так  -->
           <ul class="filter-form__list">
             <li class="filter-form__item">
               <input class="filter-form__checkbox" id="prod-bosch-id" type="checkbox" name="Bosch" checked>
@@ -405,7 +404,7 @@
   <p class="to-cart-modal__text">Товар добавлен в корзину!</p>
   <div class="to-cart-modal__footer">
     <a href="" class="to-cart-modal__footer-checkout">Оформить заказ</a>
-    <button class="to-cart-modal__close" type="button">Продолжить покупки</button> 
+    <a class="to-cart-modal__close-button button">Продолжить покупки</a> 
     <!-- просто закрытие происходит окна по кнопке Продолжить покупки? -->
   </div>
 </section>
