@@ -2,20 +2,22 @@
   --basic-black: #000000;
   --basic-red:#EE3643;
   --basic-green:#63A63E;
-  --basic-grey:#3D546F;
-  --basic-lightgrey:#C5C5C5;
+  --basic-grey:#32425C;
   --basic-background:#F1F5F7;
-  --basic-white:#FFFFFF;
-  --special-yellow:#FFBF47;
-  --special-blue:#3BBCE3;
-  --special-lilac:#DC91D8;
-  --special-lightgreen:#8ED78F;
-  --special-lightyellow:#FFD180;
-  --success:#5FBB2D;
-  --warning:#FFBF47;
-  --fail:#BA2732;
-  --special-lightgrey:#C4C4C4;
-  --special-shadow:#3BBCE3;;
+  --basic-white:#FFFFFF; 
+  --special-darkgrey:#293449; /* ховер в навигации, в сервисах*/
+  --special-yellow:#FFBF47; /* промо материалы */
+  --special-lighteryellow: #FFC047; /* промо доставка */
+  --special-blue:#3BBCE3; /* промо инструмент */
+  --special-lilac:#DC91D8; /* промо техника */
+  --special-lightgreen:#8ED78F;  /* промо скидки */
+  --special-lightyellow:#FFD180; /*меню в футере*/
+  --special-lightgrey:#C5C5C5; /* клик по регистраци, войти, по всем элементамм, когда пользователь зарегистрирован */
+  --special-green:#5FBB2D; /* hover по оформить заказ, hover по кнопке купить*/
+  --special-darkred:#BA2732;   /* клик техномарт, клик открыть каталог, */
+  --special-darkgrey: #161D29; /* клик по закладкам, коринке, навигации */
+  --special-darkgreen: #518534; /* клик по кнопке купить */
+  --socials-bgc: #212A3A; 
 }
 
 body { 
@@ -44,5 +46,13 @@ a {
 .map-modal,
 .to-cart-modal {
  display: none;
+}
+
+.header{
+  padding: 0 10px;
+}
+
+.header-top {
+  background-color: #fff;
 }
 
