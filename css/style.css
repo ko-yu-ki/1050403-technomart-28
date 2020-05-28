@@ -17,7 +17,8 @@
   --special-darkred:#BA2732;   /* клик техномарт, клик открыть каталог, */
   --special-darkgrey: #161D29; /* клик по закладкам, коринке, навигации */
   --special-darkgreen: #518534; /* клик по кнопке купить */
-  --socials-bgc: #212A3A; 
+  --socials-bgc: #212A3A;
+  --special-white:rgba(255, 255, 255, 0.5);    /* оформить заказ текст цвета при клике  */
 }
 
 body { 
@@ -48,11 +49,155 @@ a {
  display: none;
 }
 
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
 .header{
-  padding: 0 10px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .header-top {
-  background-color: #fff;
+  color: var(--basic-white);
+  background-color: var(--special-darkgrey);
 }
+
+.header-top__logo-link {
+  padding: 12px 57px 17px 55px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-top__logo-link:active {
+  padding: 12px 57px 17px 55px;
+  background-color: var(--special-darkred);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.search-form__input {
+background-color: var(--special-darkgrey);
+border: none;
+}
+
+.favourites__link,
+.cart__link,
+.header-top__checkout{
+  color: var(--basic-white);
+}
+
+.search-form__label,
+.favourites__link:hover,
+.cart__link:hover {
+/* надо изменять цвет иконок на белый */
+}
+
+.search-form__label:active {
+/* иконка красная */
+}
+
+.header-top__checkout {
+  padding: 9px 16px 9px 19px;
+  background-color: var(--basic-green);
+}
+
+.header-top__checkout:hover {
+  background-color: var(--special-green);
+}
+
+.favourites__link:active,
+.cart__link:active,
+.header-top__checkout:active {
+  color: var(--special-white);
+}
+
+.header-content {
+  background-color: var(--basic-background);
+}
+
+.header-content__text {
+  margin: 0;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-contacts__phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  padding: 7px 45px 8px 74px;
+  border: 3px solid var(--basic-white);
+}
+
+.header-contacts__address {
+  margin: 0;
+  color: var(--basic-grey);
+}
+
+.login-button,
+.registration-button {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.login-button:hover,
+.registration-button:hover {
+  color: var(--basic-red);
+}
+
+.login-button:active,
+.registration-button:active {
+  color: var( --special-lightgrey);
+}
+
+.user__bcg-white {
+  background-color: var(--basic-white);
+}
+
+.user__profile-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.user__logout-link {
+  /* цвет иконки --special-lightgrey*/
+}
+
+.user__profile-link:hover,
+.user__logout-link:hover {
+  /* меняется цвет иконки на --basic-grey */
+}
+  
+.user__orders-link,
+.user__account-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey);
+} 
+
+.user__orders-link:hover,
+.user__account-link:hover {
+  color: var(--basic-red);
+} 
+
+.user__profile-link:active,
+.user__logout-link:active,
+.user__orders-link:active,
+.user__account-link:active {
+  color: var(--special-lightgrey);
+  /* + меняется цвет иконки на --special-lightgrey */
+}
+
+/* навигация */
+
 
