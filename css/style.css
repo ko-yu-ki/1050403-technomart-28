@@ -236,3 +236,35 @@ border: none;
   max-width: 940px;
   margin: 0 auto;
 }
+
+.about__title {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  /* шрифт ивсе остальное по шрифту наследуюется от боди */
+}
+
+.about-list{
+  list-style: none;
+} 
+
+.about-list__item{
+  display: inline-block;
+}
+
+.about-list__item::before {
+  content:"-";
+  color: var(--basic-red);
+  text-align: center;
+}
+
+.about-list__text{
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+}
+
