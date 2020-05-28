@@ -12,11 +12,12 @@
   --special-lilac:#DC91D8; /* промо техника */
   --special-lightgreen:#8ED78F;  /* промо скидки */
   --special-lightyellow:#FFD180; /*меню в футере*/
-  --special-lightgrey:#C5C5C5; /* клик по регистраци, войти, по всем элементамм, когда пользователь зарегистрирован */
+  --special-lightgrey:#C5C5C5; /* клик по регистраци, войти, по всем элементам в меню пользователя, когда пользователь зарегистрирован */
   --special-green:#5FBB2D; /* hover по оформить заказ, hover по кнопке купить*/
   --special-darkred:#BA2732;   /* клик техномарт, клик открыть каталог, */
   --special-darkgrey: #161D29; /* клик по закладкам, коринке, навигации */
   --special-darkgreen: #518534; /* клик по кнопке купить */
+  --special-darkestgrey: #1D2739; /* тень в навигации*/
   --socials-bgc: #212A3A;
   --special-white:rgba(255, 255, 255, 0.5);    /* оформить заказ текст цвета при клике  */
 }
@@ -54,6 +55,7 @@ a {
   margin: 0 auto;
 }
 
+/* начало хедера */
 
 .header{
   font-family: 'Cuprum', Arial, sans-serif;
@@ -61,6 +63,7 @@ a {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--basic-background);
 }
 
 .header-top {
@@ -75,9 +78,7 @@ a {
 }
 
 .header-top__logo-link:active {
-  padding: 12px 57px 17px 55px;
   background-color: var(--special-darkred);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .search-form__input {
@@ -117,7 +118,8 @@ border: none;
 }
 
 .header-content {
-  background-color: var(--basic-background);
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .header-content__text {
@@ -200,4 +202,37 @@ border: none;
 
 /* навигация */
 
+.header-navigation{
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: var(--basic-grey);
+  box-shadow: inset 0px -5px 0px var(--special-darkgrey);
+}
 
+.header-navigation__list{
+  list-style: none;
+}
+
+.header-navigation__link{
+  padding-top: 16px;
+  padding-bottom: 20px;
+  color: var(--basic-white);
+}
+
+.header-navigation__link:hover {
+  background-color:  var(--special-darkgrey);
+}
+
+.header-navigation__link:active {
+  background-color: var(--special-darkestgrey);
+  color: var(--special-white);
+}
+
+/* начало мейна */
+
+/* секция about */
+
+.about-block{
+  max-width: 940px;
+  margin: 0 auto;
+}
