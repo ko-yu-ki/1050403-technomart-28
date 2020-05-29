@@ -29,6 +29,7 @@
   --logo-shadow: rgba(0, 0, 0, 0.24);
   --basic-grey-opacity: rgba(50, 66, 92, 0.5);
 }
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body { 
@@ -51,6 +52,17 @@ img {
 
 a { 
  text-decoration: none; 
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .write-us-modal,
