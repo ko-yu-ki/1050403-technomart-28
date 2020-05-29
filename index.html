@@ -125,11 +125,13 @@
         <a class="all-pop-products-button button" href="">Все популярные товары</a>
       </div>
       <div class="section-content">
-        <section class="cards">
-          <ul class="cards__list">
-            <li class="cards__item card">
+        <section class="card">
+          <ul class="card__list">
+            <li class="card__item">
               <a href="" class="card__link">
-                <img class="card__image" src="img/9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+                <div class="card__hover--hide">
+                  <img class="card__image" src="img/9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+                </div>
                 <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
                 <p class="card__old-price">32500 Р.</p>
                 <p class="card__price">25500 Р.</p>
@@ -139,7 +141,7 @@
           его можно было бы вынести ниже в единственном экземпляре, 
           но я не знаю, как его потом добавлять в карточку с помощью css
           я  уверена, что это хорошо делается на JS-->
-              <div class="card__hover">
+              <div class="card__hover--show">
                 <a class="card__tocart-button button">Купить</a>
                 <a class="card__tofavs-button button">В закладки</a>
               </div>
@@ -299,6 +301,7 @@
           </ul>
           <a class="about__button button" href="">Подробнее о компании</a>
         </section>
+
         <section class="about-block contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__text">
@@ -313,6 +316,7 @@
      </div>
     </main>
     <!-- конец основного содержания -->
+
     <footer class="footer"> 
       <div class="footer-content">
         <a class="footer-content__logo-link">
@@ -363,34 +367,36 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="copyright">© 2010–2019 Компания «Техномарт»  Все права защищены</p>
-        <!-- появились сомнения насчет необходимости дива вокруг списка -->
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link social-vk" href="">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link social-fb" href="">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link social-insta" href="">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="feedback">
-          <p class="feedback__text">Обратная связь: </p>
-          <a class="feedback__link" href="mailto: mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
-        </div>
-        <div class="designed-by">
-          <p class="designed-by__text">Разработано —  </p>
-          <a class="designed-by__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <div class="wrapper">
+          <p class="copyright">© 2010–2019 Компания «Техномарт»  Все права защищены</p>
+          <!-- появились сомнения насчет необходимости дива вокруг списка -->
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link social-vk" href="">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link social-fb" href="">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link social-insta" href="">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback">
+            <p class="feedback__text">Обратная связь: </p>
+            <a class="feedback__link" href="mailto: mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
+          </div>
+          <div class="designed-by">
+            <p class="designed-by__text">Разработано —  </p>
+            <a class="designed-by__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </div> 
         </div>
       </div>
     </footer>

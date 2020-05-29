@@ -4,6 +4,7 @@
   --basic-green:#63A63E;
   --basic-grey:#32425C;
   --basic-background:#F1F5F7;
+  --basic-background-2: #F2F6F8; /* в каталоге под надписью ПЕРФОРАТОРЫ*/
   --basic-white:#FFFFFF; 
   --special-darkgrey:#293449; /* ховер в навигации, в сервисах*/
   --special-yellow:#FFBF47; /* промо материалы */
@@ -20,7 +21,14 @@
   --special-darkestgrey: #1D2739; /* тень в навигации*/
   --socials-bgc: #212A3A;
   --special-white:rgba(255, 255, 255, 0.5);    /* оформить заказ текст цвета при клике  */
+  --special-footer-nav-click: rgba(241, 245, 247, 0.5);
+  --special-lightyellow-click: rgb(100%, 82%, 50%, 0.5);
+  --basic-old-price: #A9A9A9;
+  --basic-buy-button-shadow : #367315;
+  --card-border: #EAEAEA;
+  --logo-shadow: rgba(0, 0, 0, 0.24);
 }
+*, *::before, *::after { box-sizing: border-box; }
 
 body { 
   min-width:960;
@@ -72,9 +80,8 @@ a {
 }
 
 .header-top__logo-link {
-  padding: 12px 57px 17px 55px;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
 .header-top__logo-link:active {
@@ -92,18 +99,17 @@ border: none;
   color: var(--basic-white);
 }
 
-.search-form__label,
+/* .search-form__label,
 .favourites__link:hover,
 .cart__link:hover {
-/* надо изменять цвет иконок на белый */
-}
+ надо изменять цвет иконок на белый 
+} */
 
-.search-form__label:active {
-/* иконка красная */
-}
+/* .search-form__label:active {
+ иконка красная 
+} */
 
 .header-top__checkout {
-  padding: 9px 16px 9px 19px;
   background-color: var(--basic-green);
 }
 
@@ -135,7 +141,6 @@ border: none;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
-  padding: 7px 45px 8px 74px;
   border: 3px solid var(--basic-white);
 }
 
@@ -171,15 +176,15 @@ border: none;
   color: var(--basic-black);
 }
 
-.user__logout-link {
-  /* цвет иконки --special-lightgrey*/
-}
+/* .user__logout-link {
+  цвет иконки --special-lightgrey
+} */
 
-.user__profile-link:hover,
+/* .user__profile-link:hover,
 .user__logout-link:hover {
-  /* меняется цвет иконки на --basic-grey */
-}
-  
+  меняется цвет иконки на --basic-grey
+} */
+
 .user__orders-link,
 .user__account-link {
   font-size: 16px;
@@ -214,8 +219,6 @@ border: none;
 }
 
 .header-navigation__link{
-  padding-top: 16px;
-  padding-bottom: 20px;
   color: var(--basic-white);
 }
 
@@ -230,7 +233,11 @@ border: none;
 
 /* начало мейна */
 
-/* секция about */
+/* индекс */
+
+/* предыдущие секции */
+
+/* секция блок about */
 
 .about-block{
   max-width: 940px;
@@ -238,33 +245,361 @@ border: none;
 }
 
 .about__title {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .about__text {
-  /* шрифт ивсе остальное по шрифту наследуюется от боди */
+  /* шрифт и все остальное по шрифту наследуется от боди */
+  margin: 0;
+  padding: 0;
 }
 
 .about-list{
   list-style: none;
+  margin: 0;
+  padding: 0;
 } 
 
-.about-list__item{
-  display: inline-block;
-}
-
-.about-list__item::before {
-  content:"-";
-  color: var(--basic-red);
-  text-align: center;
-}
+/* .about-list__item{
+} */
 
 .about-list__text{
-  font-family: Cuprum;
+  margin: 0;
+  padding: 0;
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
 
+.about-list__text:before{
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 12px;
+  width: 25px;
+  border: 1px solid var(--basic-red);
+  content:"";
+}
+
+.about__button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+/* .about__button:hover {
+} */
+
+.about__button:active {
+  background-color: var(--special-darkred);
+}
+
+.contacts__title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  /* шрифт и все остальное по шрифту наследуется от боди */
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__mail-us-button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+/* .contacts__mail-us-button:hover {
+} */
+
+.contacts__mail-us-button:active {
+  background-color: var(--special-darkred);
+}
+
+/* мейн каталога */
+/* хлебные крошки */
+.breadcrumbs {
+  list-style: none;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.breadcrumbs__link {
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-grey);
+  background-color: var(--basic-background-2);
+}
+
+/* ptsans size13 lheight24 на body  */
+
+/* сортировка */
+/* фильтр */
+
+
+/* карточки */
+
+.card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card__item {
+  font-weight: bold;
+  border: 1px solid var(--card-border);
+  margin-bottom: 20px;
+}
+
+/* для блока с купить и в закладки */
+.card__hover--show {
+  display: none;
+}
+
+.card__item:hover {
+  box-shadow: 0 0 5px 5px var(--basic-background); 
+}
+
+/* для блока с купить и в закладки */
+.card__item:hover .card__hover--show{ 
+  display: block;
+}
+
+/* для картинки в карточке */
+.card__item:hover .card__hover--hide {
+  display: none;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.card__old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: var(--basic-old-price);
+}
+
+.card__price {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.card__tocart-button {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--basic-buy-button-shadow);
+  border-radius: 2px;
+}
+
+.card__tocart-button:hover {
+  background-color: var(--special-green);
+}
+
+.card__tocart-button:active {
+  background-color: var(--special-darkgreen);
+}
+
+.card__tofavs-button{
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-grey);
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+}
+
+.card__tofavs-button:hover{
+  color: var(--basic-grey);
+  border: 3px solid var(--basic-grey);
+}
+
+.card__tofavs-button:active{
+  color: var(--basic-grey);
+  border: 3px solid var(--basic-grey);
+  /* странно в макете цвет светло-серый, а указан 
+  этот и нет прозрачности и ничего другого */
+}
+
+/* пагинация */
+/* о перфораторах */
+
+/*  конец мейна */
+
+
+/* футер */
+
+.footer {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-grey);
+  color: var(--basic-background);
+}
+
+.footer-content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.footer-content__logo-link {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+}
+
+.footer-content__logo-img:active {
+  background-color: var(--special-darkred);
+}
+
+/* .footer-navigation {
+} */
+
+.footer-navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation__link {
+  color: var(--basic-background);
+} 
+
+.footer-navigation__link:hover {
+  border-bottom: 1px solid var(--basic-background);
+}
+
+.footer-navigation__link:active {
+  color: var(--special-footer-nav-click);
+  border-bottom: none;
+}
+
+.footer-contacts__address {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contacts__phone {
+  color: var(--basic-background);
+}
+
+/* .footer-products {
+} */
+
+.footer-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-products__link {
+  color: var(--special-lightyellow);
+}
+
+.footer-products__link:hover {
+  border-bottom: 1px solid var(--special-lightyellow);
+}
+
+.footer-products__link:active {
+  color: var(--special-lightyellow-click);
+  border-bottom: none;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--special-darkgrey);
+  color: var(--basic-white);
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+/* .socials{
+} */
+
+.socials__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .feedback {
+} */
+
+.feedback__text {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__link {
+  color: var(--special-lightyellow);
+}
+
+.feedback__link:hover {
+  border-bottom: 1px solid var(--special-lightyellow);
+}
+
+.feedback__link:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+/* .designed-by {
+} */
+
+.designed-by__text {
+  margin: 0;
+  padding: 0;
+}
+
+.designed-by__link {
+  color: var(--special-lightyellow);
+}
+
+.designed-by__link:hover {
+  border-bottom: 1px solid var(--special-lightyellow);
+}
+
+.designed-by__link:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
