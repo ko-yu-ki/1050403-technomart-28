@@ -27,6 +27,7 @@
   --basic-buy-button-shadow : #367315;
   --card-border: #EAEAEA;
   --logo-shadow: rgba(0, 0, 0, 0.24);
+  --basic-grey-opacity: rgba(50, 66, 92, 0.5);
 }
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -450,10 +451,8 @@ border: none;
 }
 
 .card__tofavs-button:active{
-  color: var(--basic-grey);
-  border: 3px solid var(--basic-grey);
-  /* странно в макете цвет светло-серый, а указан 
-  этот и нет прозрачности и ничего другого */
+  color: var(--basic-grey-opacity);
+  border: 3px solid var(--basic-grey-opacity);
 }
 
 /* пагинация */
