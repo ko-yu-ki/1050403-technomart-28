@@ -94,7 +94,7 @@
           
           <ul class="sorting__list">
             <li class="sorting__item">
-              <a class="sorting__link" href="">По цене</a>
+              <a class="sorting__link sorting__active" href="">По цене</a>
             </li>
             <li class="sorting__item">
               <a class="sorting__link" href="">По типу</a>
@@ -103,12 +103,12 @@
               <a class="sorting__link" href="">По функционалу</a>
             </li>
             <li class="sorting__item">
-              <a class="sorting__link" href="">
+              <a class="sorting__direction direction__active" href="">
                 <span class="visually-hidden">Отсортировать по возрастанию.</span>
               </a>
             </li>
             <li class="sorting__item">
-              <a class="sorting__link" href="">
+              <a class="sorting__direction" href="">
                 <span class="visually-hidden">Отсортировать по убыванию.</span>
               </a>
             </li>
@@ -123,16 +123,17 @@
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Цена:</legend>
               <!-- двойной ползунок -->
-              <div>
-                <div>полоса ползунка</div>
+              <div class="filter-form__slider">
+                <div class="filter-form__scale">полоса ползунка</div>
+                <div class="filter-form__scale-progress">прогресс</div>
                 <span>кружочек раз</span>
                 <span>кружочек два</span>
               </div>
               <!-- конец двойного ползунка -->
               <div>
-                <input type="number" placeholder="0">
-                <p>-</p>
-                <input type="number" placeholder="30000">
+                <input class="filter-form__input" type="number" placeholder="0">
+                <p class="filter-form__dash">—</p>
+                <input class="filter-form__input" type="number" placeholder="30000">
               </div>
             </fieldset>
 
@@ -141,23 +142,23 @@
               <legend class="filter-form__legend">Производители:</legend>       
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox" id="prod-bosch-id" type="checkbox" name="Bosch" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="prod-bosch-id" type="checkbox" name="Bosch" checked>
                   <label class="filter-form__label" for="prod-bosch-id" tabindex="0">Bosch</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox" id="prod-interskol-id" type="checkbox" name="Интерскол">
+                  <input class="filter-form__checkbox visually-hidden" id="prod-interskol-id" type="checkbox" name="Интерскол">
                   <label class="filter-form__label" for="prod-interskol-id" tabindex="0">Интерскол</label> 
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox" id="prod-makita-id" type="checkbox" name="Makita" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="prod-makita-id" type="checkbox" name="Makita" checked>
                   <label class="filter-form__label" for="prod-makita-id" tabindex="0">Makita</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox" id="prod-dewalt-id" type="checkbox" name="DeWalt">
+                  <input class="filter-form__checkbox visually-hidden" id="prod-dewalt-id" type="checkbox" name="DeWalt">
                   <label class="filter-form__label" for="prod-dewalt-id" tabindex="0">DeWalt</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox" id="prod-hitachi-id" type="checkbox" name="Hitachi">
+                  <input class="filter-form__checkbox visually-hidden" id="prod-hitachi-id" type="checkbox" name="Hitachi">
                   <label class="filter-form__label" for="prod-hitachi-id" tabindex="0">Hitachi</label>
                 </li>
               </ul>
@@ -168,11 +169,11 @@
                         <!-- не будет ли лишним список или надо каждую пару просто обернуть в тег P  -->
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <input class="filter-form__radio" id="power-battery-id" type="radio" name="poweredby" value="battery" checked>
+                  <input class="filter-form__radio visually-hidden" id="power-battery-id" type="radio" name="poweredby" value="battery" checked>
                   <label class="filter-form__label" for="power-battery-id" tabindex="0">Аккумуляторные</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__radio" id="power-acdc-id" type="radio" name="poweredby" value="ac-dc">
+                  <input class="filter-form__radio visually-hidden" id="power-acdc-id" type="radio" name="poweredby" value="ac-dc">
                   <label class="filter-form__label" for="power-acdc-id" tabindex="0">Сетевые</label>
                 </li>
               </ul>  
@@ -306,18 +307,21 @@
       </section>
 
       <div class="paginator">
-        <a class="paginator__item" tabindex="0">1</a>
+        <a class="paginator__item paginator__current-page" tabindex="0">1</a>
         <a class="paginator__item" href="">2</a>
         <a class="paginator__item" href="">3</a>
-        <a class="paginator__item next" href="">Следующая</a>
+        <a class="paginator__item paginator__next" href="">Следующая</a>
       </div>
 
+      
       <article class="product-about">
-        <h2 class="product-about__title">Пара слов о перфораторах</h2>
-        <p class="product-about__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+        <div class="wrapper">
+          <h2 class="product-about__title">Пара слов о перфораторах</h2>
+          <p class="product-about__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+      </div>
       </article>
     </main>
   <!-- конец основного контента -->

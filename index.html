@@ -66,44 +66,48 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин строй материалов и инструментов для ремонта - "Техномарт".</h1> 
       <!-- дополнительное задание начало -->
-      <section class="promo">
+      <section class="promo wrapper">
         <h2 class="visually-hidden">Промо</h2>
-        <ul class="">
-          <li>
-            <h3>Материалы</h3>
-            <a href="">На любой вкус</a>
+        <ul class="promo__list">
+          <li class="promo__item materials">
+            <h3 class="promo__title">Материалы</h3>
+            <a class="promo__button button" href="">На любой вкус</a>
           </li>
-          <li>
-            <h3>Инструмент</h3>
-            <a href="">На все случаи</a>
+          <li class="promo__item tools">
+            <h3 class="promo__title">Инструмент</h3>
+            <a class="promo__button button" href="">На все случаи</a>
           </li>
-          <li>
-            <h3>Техника</h3>
-            <a href="">Для стройки</a>
+          <li class="promo__item machinery">
+            <h3 class="promo__title">Техника</h3>
+            <a class="promo__button button" href="">Для стройки</a>
           </li>
-          <li>
-            <h3>Скидки 50%</h3>
-            <a href="">На 350 товаров</a>
+          <li class="promo__item discount">
+            <h3 class="promo__title">Скидки 50%</h3>
+            <a class="promo__button button" href="">На 350 товаров</a>
           </li>
-          <li>
-            <h3>Доставка</h3>
-            <a href="">Бесплатно</a>
+          <li class="promo__item delivery">
+            <h3 class="promo__title">Доставка</h3>
+            <a class="promo__button button" href="">Бесплатно</a>
           </li>
         </ul>
         <!-- =_= придумать нормальный текст мужикам с дрелями -->
         <ul class="slider">
           <li class="slider__slide">
             <img class="slider__img" src="img/slider-1.jpg" alt="Мужчина пытается 'проперфорировать' бетонную стену хD" width="620" height="266">
-            <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
-            <h3 class="slider__title">Перфораторы</h3>
-            <p class="slider__text">Настоящие мужские игрушки</p>
+<!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
+            <div class="slider__header">
+              <h3 class="slider__title">Перфораторы</h3>
+              <p class="slider__text">Настоящие мужские игрушки</p>
+            </div>
             <a class="slider__button button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider__slide">
             <img class="slider__img" src="img/slider-2.jpg" alt="Мужчина пытается 'задрелить' кирпичную стену xD" width="620" height="266">
-            <!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
-            <h3 class="slider__title">Дрели</h3>
-            <p class="slider__text">Соседям на радость!</p>
+<!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
+            <div class="slider__header">
+              <h3 class="slider__title">Дрели</h3>
+              <p class="slider__text">Соседям на радость!</p>
+            </div>
             <a class="slider__button button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
@@ -121,7 +125,7 @@
       
       <section class="products">
       <div class="section-header">
-        <h2>Популярные товары:</h2>
+        <h2 class="section-header__title">Популярные товары:</h2>
         <a class="all-pop-products-button button" href="">Все популярные товары</a>
       </div>
       <div class="section-content">
@@ -241,40 +245,42 @@
       </section>
 
       <section class="services">
-        <h2 class="services__title">Сервисы</h2>
-        <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <!-- слайдер с Доставкой-Гарантией-Кредитом -->
-        <div class="services__slider services-slider">
-          <div class="services-slider__controls">
-            <button class="services-slider__button button" type="button">Доставка</button>
-            <button class="services-slider__button button" type="button">Гарантия</button>
-            <button class="services-slider__button button" type="button">Кредит</button>
-          </div>
-          <div class="services-slider__delivery">
-            <h3 class="services-slider__title">Доставка</h3>
-            <div class="services-slider__text">
-              Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, 
-              поднимая его на ваш этаж!
+        <div class="wrapper">
+          <h2 class="services__title">Сервисы</h2>
+          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <!-- слайдер с Доставкой-Гарантией-Кредитом -->
+          <div class="services__slider services-slider">
+            <div class="services-slider__controls">
+              <button class="services-slider__button services-slider__active button" type="button">Доставка</button>
+              <button class="services-slider__button button" type="button">Гарантия</button>
+              <button class="services-slider__button button" type="button">Кредит</button>
+            </div>
+            <div class="services-slider__delivery">
+              <h3 class="services-slider__title">Доставка</h3>
+              <div class="services-slider__text">
+                Мы с удовольствием доставим ваш товар прямо 
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, 
+                поднимая его на ваш этаж!
+              </div>
+            </div>
+            <div class="services-slider__warranty">
+              <h3 class="services-slider__title">Гарантия</h3>
+              <div class="services-slider__text">
+                Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
+              </div>
+            </div>
+            <div class="services-slider__credit">
+              <h3 class="services-slider__title">Кредит</h3>
+              <div class="services-slider__text">
+                Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.
+              </div>
+              <a class="services-credit__button button" href="">Отправить заявку</a>
             </div>
           </div>
-          <div class="services-slider__warranty">
-            <h3 class="services-slider__title">Гарантия</h3>
-            <div class="services-slider__text">
-              Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
-            </div>
-          </div>
-          <div class="services-slider__credit">
-            <h3 class="services-slider__title">Кредит</h3>
-            <div class="services-slider__text">
-              Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.
-            </div>
-            <a class="services-slider__button button" href="">Отправить заявку</a>
-          </div>
-        </div>
-        <!-- конец слайдера -->
+          <!-- конец слайдера -->
+       </div>
       </section>
 
      <!-- дополнительное задание конец -->
