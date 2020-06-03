@@ -554,6 +554,7 @@ background-color: var(--special-promo-materials);
 }
 
 .services-credit__button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -610,6 +611,7 @@ background-color: var(--special-promo-materials);
 }
 
 .about__button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
