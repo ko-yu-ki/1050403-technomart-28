@@ -129,7 +129,7 @@ a {
 .header-top__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 
   position: relative; 
@@ -175,20 +175,26 @@ border: none;
 }
 
 .favourites__link {
+  width: 164px;
   padding: 9px 24px 9px 43px;
 }
 
 .cart__link {
-  padding: 9px 26px 9px 49px;
+  width: 136px;
+  padding: 9px 21px 9px 35px;
 }
 
 .favourites__link,
-.cart__link,
-.header-top__checkout{
-  width: 150px;
+.cart__link {
+  display: block;
   color: var(--basic-white);
 }
 
+.header-top__checkout{
+  display: block;
+  width: 150px;
+  color: var(--basic-white);
+}
 /* .search-form__label,
 .favourites__link:hover,
 .cart__link:hover {
@@ -200,7 +206,6 @@ border: none;
 } */
 
 .not-empty {
-  padding: 9px 21px 9px 35px;
   background-color: var(--basic-red);
 }
 
@@ -826,16 +831,20 @@ background-color: var(--special-promo-materials);
 /* мейн каталога */
 /* хлебные крошки */
 .breadcrumbs {
+  display: flex;
+  justify-content: start;
   list-style: none;
   max-width: 940px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 21px;
 }
 
 .breadcrumbs__link {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-right: 40px;
 }
 
 .catalog {
@@ -989,7 +998,6 @@ background-color: var(--special-promo-materials);
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border-paginator);
 }
-
 
 
 /* карточки */
@@ -1178,8 +1186,6 @@ background-color: var(--special-promo-materials);
 }
 
 .product-about__text:last-of-type {
-  margin: 0;
-  padding: 0;
   margin-bottom: 67px;
 }
 
