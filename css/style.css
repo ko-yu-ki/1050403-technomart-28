@@ -169,7 +169,7 @@ border: none;
 
 /*                                                    перестилизовать инпут */
 .search-form__input:focus,
-.search-form__input:focus ~.search-form__label {
+{
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -379,10 +379,8 @@ border: none;
 
 .header-navigation__link {
   display: block;
-  padding-top: 19px;
-  padding-right: 24px;
+  padding-top: 16px;
   padding-bottom: 20px;
-  padding-left: 24px;
   color: var(--basic-white);
 }
 
@@ -855,10 +853,11 @@ background-color: var(--special-promo-materials);
 }
 
 .catalog__title {
+  margin: 0;
   padding-top: 29px;
   padding-bottom: 29px;
   padding-left: 29px;
-  
+
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
