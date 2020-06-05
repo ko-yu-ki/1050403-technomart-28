@@ -238,7 +238,7 @@ border: none;
 
 .header-content__text {
   margin: 0;
-  margin-right: 43px;
+  margin-right: 93px;
   padding: 0;
   padding-left: 30px;
   max-width: 227px;
@@ -250,12 +250,13 @@ border: none;
 
 .header-contacts {
   padding-top: 4px;
+  flex-grow: 1;
 }
 
 .header-contacts__phone {
   width: 270px;
-  display: inline-block;
-  padding-top: 6px;
+  display: block;
+  padding-top: 4px;
   padding-bottom: 5px;
   padding-left: 71px;
   padding-right: 42px;
