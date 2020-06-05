@@ -168,7 +168,7 @@ border: none;
 }
 
 /*                                                    перестилизовать инпут */
-.search-form__input:focus,
+.search-form__input:focus
 {
   color: var(--basic-black);
   background-color: var(--basic-white);
