@@ -1136,7 +1136,7 @@ background-color: var(--special-promo-materials);
 /*  конец мейна */
 
 
-/* футер */
+/* футер --------------  футер -------------  футер  */
 
 .footer {
   font-family: "Cuprum", Arial, sans-serif;
@@ -1145,15 +1145,22 @@ background-color: var(--special-promo-materials);
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-grey);
-
 }
 
 .footer-content {
-  max-width: 940px;
-  margin: 0 auto;
+  margin-bottom: 54px;
+  position: relative;
+  padding-top: 37px;
 }
 
 .footer-content__logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 68px;
+  text-align: center;
+  padding-top: 19px;;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
@@ -1162,13 +1169,13 @@ background-color: var(--special-promo-materials);
   background-color: var(--special-darkred);
 }
 
-/* .footer-navigation {
-} */
-
-.footer-navigation__list {
+.footer-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 393px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-navigation__link {
@@ -1185,8 +1192,12 @@ background-color: var(--special-promo-materials);
   border-bottom: none;
 }
 
-/* .footer-contacts {
-} */
+.footer-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 29px;
+}
 
 .footer-contacts__address {
   margin: 0;
@@ -1198,16 +1209,18 @@ background-color: var(--special-promo-materials);
   color: var(--footer-contacts);
 }
 
-/* .footer-products {
-} */
-
-.footer-products__list {
+ .footer-products {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .footer-products__link {
+  margin-left: 60px;
   color: var(--special-lightyellow);
 }
 
@@ -1224,26 +1237,38 @@ background-color: var(--special-promo-materials);
 .footer-bottom {
   font-size: 16px;
   line-height: 18px;
-  background-color: var(--special-darkgrey);
+  background-color: var(--special-darkgrey-hover);
   color: var(--basic-white);
 }
 
+.footer-bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 .copyright {
+  margin-right: 161px;
+}
+
+.copyright__text {
   margin: 0;
   padding: 0;
 }
 
-/* .socials{
-} */
-
-.socials__list{
+.socials{
   list-style: none;
   margin: 0;
+  margin-right: 118px;
   padding: 0;
 }
+/* здесь будут иконки соц-сетей и их стилизация */
 
-/* .feedback {
-} */
+.feedback {
+  margin-right: 51px;
+}
 
 .feedback__text {
   margin: 0;
