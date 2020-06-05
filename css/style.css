@@ -112,6 +112,9 @@ a {
 /* начало хедера */
 
 .header{
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start; 
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -155,7 +158,6 @@ a {
 background-color: var(--special-darkgrey-hover);
 border: none;
 }
-
 
 .search-form {
   margin-left: 220px;
@@ -230,10 +232,10 @@ border: none;
 }
 /* ----------------------------хедер-контент------------------------- */
 .header-content {
+  min-height: 77px; /* костыль для грида в хедере */
   display: flex;
-  align-items: start;
   justify-content: space-between;
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 }
 
 .header-content__text {
