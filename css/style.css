@@ -1156,11 +1156,15 @@ background-color: var(--special-promo-materials);
 /* о перфораторах */
 
 .product-about {
+  display: flex;
   background-color: var(--prefooter-background);
-
+  padding-top: 64px;
 }
 
 .product-about__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -1171,6 +1175,12 @@ background-color: var(--special-promo-materials);
 .product-about__text {
   margin: 0;
   padding: 0;
+}
+
+.product-about__text:last-of-type {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 67px;
 }
 
 /*  конец мейна */
