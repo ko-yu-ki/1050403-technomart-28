@@ -853,6 +853,7 @@ background-color: var(--special-promo-materials);
 .catalog {
   max-width: 940px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .catalog__title {
@@ -1115,6 +1116,7 @@ background-color: var(--special-promo-materials);
 .paginator {
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 59px;
 }
 
 .paginator__item {
