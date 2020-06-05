@@ -17,7 +17,7 @@
   --special-lightgrey:#C5C5C5; /* клик по регистраци, войти, по всем элементам в меню пользователя, когда пользователь зарегистрирован */
   --special-green:#5FBB2D; /* hover по оформить заказ, hover по кнопке купить*/
   --special-darkred:#BA2732;   /* клик техномарт, клик открыть каталог, */
-  --special-darkgrey: #161D29; /* клик по закладкам, коринке, навигации */
+  --special-darkgrey: #161D29; /* клик по закладкам, корзинке, навигации */
   --special-darkgreen: #518534; /* клик по кнопке купить */
   --special-darkestgrey: #1D2739; /* тень в навигации*/
   --socials-bgc: #212A3A;
@@ -40,9 +40,18 @@
   --sorting-link-text: rgba(0, 0, 0, 0.3);
   --card-shadow: rgba(0, 0, 0, 0.15);
   --footer-contacts: #F3F7F9;
+  --social-icon-bgc: #212A3A;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
 
 body { 
   min-width: 960px;
@@ -56,6 +65,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 
 img {
   max-width: 100%; 
@@ -83,10 +93,21 @@ a {
  display: none;
 }
 
-.wrapper {
-  max-width: 940px;
-  margin: 0 auto;
+ /*---------------------- Grid ------------------------*/
+
+.page {
+  height: 100%;
 }
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;   /* хедер-мейн-футер */
+  align-content: start;
+}
+
+/* ---------------------конец гридам----------------------  */
+
 
 /* начало хедера */
 
@@ -100,11 +121,28 @@ a {
 }
 
 .header-top {
+  margin-bottom: 46px;
   color: var(--basic-white);
-  background-color: var(--special-darkgrey);
+  background-color: var(--special-darkgrey-hover);
+}
+
+.header-top__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative; 
 }
 
 .header-top__logo-link {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 47px;
+  padding-top: 13px;
+  text-align: center;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
@@ -114,13 +152,40 @@ a {
 }
 
 .search-form__input {
-background-color: var(--special-darkgrey);
+background-color: var(--special-darkgrey-hover);
 border: none;
+}
+
+
+.search-form {
+  margin-left: 220px;
+}
+
+.search-form__label {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 42px;
+}
+
+/*                                                    перестилизовать инпут */
+.search-form__input:focus,
+.search-form__input:focus ~.search-form__label {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.favourites__link {
+  padding: 9px 24px 9px 43px;
+}
+
+.cart__link {
+  padding: 9px 26px 9px 49px;
 }
 
 .favourites__link,
 .cart__link,
 .header-top__checkout{
+  width: 150px;
   color: var(--basic-white);
 }
 
@@ -134,8 +199,16 @@ border: none;
  иконка красная 
 } */
 
+.not-empty {
+  padding: 9px 21px 9px 35px;
+  background-color: var(--basic-red);
+}
+
 .header-top__checkout {
+  padding-top: 9px;
+  padding-bottom: 9px;
   background-color: var(--basic-green);
+  text-align: center;
 }
 
 .header-top__checkout:hover,
@@ -144,26 +217,45 @@ border: none;
 }
 
 .favourites__link:active,
-.cart__link:active,
+.cart__link:active {
+  color: var(--special-white);
+  background-color: var(--special-darkgrey);
+}
+
 .header-top__checkout:active {
   color: var(--special-white);
 }
 
 .header-content {
-  max-width: 940px;
-  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  margin-bottom: 42px;
 }
 
 .header-content__text {
   margin: 0;
+  margin-right: 93px;
+  padding: 0;
+  max-width: 197px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+
+}
+
+.header-contacts {
+  margin-right: 69px;
 }
 
 .header-contacts__phone {
-  padding: 7px 45px 8px 74px;
+  width: 270px;
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 72px;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -172,16 +264,33 @@ border: none;
 }
 
 .header-contacts__address {
+  width: 270px;
   margin: 0;
+  padding: 0;
   font-size: 14px;
+  text-align: center;
   color: var(--basic-grey);
 }
 
 .login-button,
 .registration-button {
+  display: inline-block;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.login-button {
+  width: 121px;
+  margin-right: 10px;
+  padding: 12px 27px 12px 45px;
+}
+
+.registration-button {
+  margin: 0;
+  width: 150px;
+  padding: 12px 24px;
 }
 
 .login-button:hover,
@@ -198,6 +307,7 @@ border: none;
 
 .user-authorized {
   width: 299px;
+  text-align: center;
 }
 
 .user__bcg-white {
@@ -244,18 +354,30 @@ border: none;
 
 /* навигация */
 
-.header-navigation{
-  max-width: 940px;
-  margin: 0 auto;
+.header-navigation {
+  margin-bottom: 60px;
+  padding-right: 47px;
+  padding-left: 52px;
   background-color: var(--basic-grey);
-  box-shadow: inset 0px -5px 0px var(--special-darkgrey);
+  box-shadow: inset 0px -5px 0px var(--special-darkgrey-hover);
 }
 
-.header-navigation__list{
+.header-navigation__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.header-navigation__link{
+.header-navigation__link {
+  display: block;
+  padding-top: 19px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   color: var(--basic-white);
 }
 
@@ -267,7 +389,9 @@ border: none;
 .header-navigation__link:active {
   background-color: var(--special-darkestgrey);
   color: var(--special-white);
+  box-shadow: inset 0px -5px 0px var(--special-darkgrey-hover);
 }
+
 
 /* начало мейна */
 /* индекс */
@@ -399,9 +523,6 @@ background-color: var(--special-promo-materials);
 }
 
 .all-pop-products-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 192px;
   margin-top: 25px;
   margin-right: 14px;
@@ -410,6 +531,7 @@ background-color: var(--special-promo-materials);
   padding-bottom: 9px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
@@ -436,17 +558,15 @@ background-color: var(--special-promo-materials);
 }
 
 .all-pop-producers-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 192px;
   margin-top: 25px;
-  margin-right: 14px;
+  margin-right: 19px;
   margin-bottom: 26px;
   padding-top: 11px;
   padding-bottom: 9px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
