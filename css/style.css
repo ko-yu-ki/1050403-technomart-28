@@ -441,15 +441,25 @@ a {
 }
 
 
-/* начало мейна */
+/* -------------------------------------начало мейна-------------------------- */
 /* индекс */
 
 /* промо секция */
 .promo {
+  /* display: grid;
+  grid-template-areas: "materials tools machinery"
+                       "slider slider discount"
+                       "slider slider delivery";
+  grid-gap: 20px; */
   padding-top: 41px;
 }
 
 .promo__list {
+  display: grid;
+  grid-template-areas: "materials tools machinery"
+                       "slider slider discount"
+                       "slider slider delivery";
+  grid-gap: 20px;            
   list-style: none;
 
   margin: 0;
@@ -470,22 +480,27 @@ a {
 }
 
 .materials {
+  grid-area: materials;
   background-color: var(--special-promo-materials);
 }
 
 .tools {
+  grid-area: tools;
   background-color: var(--special-promo-tools);
 }
 
 .machinery {
+  grid-area: machinery;
   background-color: var(--special-promo-machinery);
 }
 
 .discount {
+  grid-area: discount;
   background-color: var(--special-promo-discount);
 }
 
 .delivery {
+  grid-area: delivery;
   background-color: var(--special-promo-delivery);
 }
 
@@ -508,6 +523,7 @@ a {
 }
 
 .slider {
+  grid-area: slider;
   list-style: none;
 
   margin: 0;
@@ -558,8 +574,7 @@ a {
 
 /* товары  */
 .products {
-  width: 940px;
-  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .section-header {
@@ -619,8 +634,7 @@ a {
 /* производители */
 
 .producers {
-  width: 940px;
-  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .all-pop-producers-button {
@@ -1110,9 +1124,9 @@ a {
 }
 
 
-/* карточки */
+/* -----------------------карточки--------------------- */
 
-.card__list {
+.card {
   list-style: none;
 
   margin: 0;
@@ -1120,6 +1134,7 @@ a {
 }
 
 .card__item {
+  max-width: 318px;
   margin-bottom: 20px;
 
   font-weight: bold;
