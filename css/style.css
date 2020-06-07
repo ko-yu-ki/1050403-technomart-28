@@ -444,18 +444,15 @@ a {
 /* -------------------------------------начало мейна-------------------------- */
 /* индекс */
 
-/* промо секция */
 .promo {
-  /* display: grid;
-  grid-template-areas: "materials tools machinery"
-                       "slider slider discount"
-                       "slider slider delivery";
-  grid-gap: 20px; */
   padding-top: 41px;
+  margin-bottom: 59px;
 }
 
 .promo__list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content;
   grid-template-areas: "materials tools machinery"
                        "slider slider discount"
                        "slider slider delivery";
@@ -467,50 +464,84 @@ a {
 }
 
 .promo__item {
+/* почему-то без задания высоты. последняя карточка получается больше, чем остальные */
+  /* max-height: 123px;    */
+  padding-top: 20px;
+  padding-left: 22px;
+
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
 }
 
 .promo__title {
   margin: 0;
-  padding: 0;
+  margin-bottom: 14px;
 
   font-size: 24px;
   line-height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .materials {
   grid-area: materials;
+  padding-left: 23px;
+
   background-color: var(--special-promo-materials);
 }
 
 .tools {
   grid-area: tools;
+
   background-color: var(--special-promo-tools);
 }
 
 .machinery {
   grid-area: machinery;
+
   background-color: var(--special-promo-machinery);
 }
 
 .discount {
   grid-area: discount;
+  padding-left: 23px;
+
   background-color: var(--special-promo-discount);
+}
+
+.discount__title {
+  margin-bottom: 12px;
 }
 
 .delivery {
   grid-area: delivery;
+
   background-color: var(--special-promo-delivery);
 }
 
+.delivery__title {
+  margin-bottom: 13px;
+}
+
 .promo__button {
+  display: block;
+  width: 135px;
+  margin-bottom: 21px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--basic-white);
 
   background-color: var(--promo-button-bgc);
+}
+
+.discount__button {
+  margin-bottom: 15px;
 }
 
 .promo__button:hover,
@@ -522,8 +553,12 @@ a {
   background-color: var(--promo-button-bgc-active);
 }
 
-.slider {
+/* слайд с картинкой получает какую-то 
+лишнюю прибавку по высоте +7,5 пикселей и рушит карточки */
+.slide {
+  position: relative;
   grid-area: slider;
+
   list-style: none;
 
   margin: 0;
@@ -532,14 +567,29 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
-.slider__header {
+/* спрятанный за первый второй слайд */
+.hidden {  
+  z-index: -1;
+} 
+
+.hide {
+  display: none;
+}
+
+.slide__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   color: var(--basic-white);
   background-color: var(--slider-text-block-bgc);
 }
 
-.slider__title {
+.slide__title {
   margin: 0;
-  padding-top: 23px;
+  padding: 0;
+  padding-top: 22px;
   padding-left: 24px;
 
   font-weight: bold;
@@ -548,17 +598,23 @@ a {
   text-transform: uppercase;
 }
 
-.slider__text {
+.slide__text {
   margin: 0;
   padding: 0;
+  padding-top: 6px;
   padding-left: 24px;
   padding-bottom: 16px;
 
   font-size: 18px;
 }
 
-.slider__button {
-  padding: 11px 46px 9px 46px;
+.slide__button {
+  margin: 0;
+  position: absolute;
+  bottom: 35px;
+  left: 24px;
+
+  padding: 11px 47px 9px 46px;
 
   font-size: 14px;
   line-height: 18px;
@@ -568,9 +624,41 @@ a {
   background-color: var(--basic-red);
 }
 
-.slider__button:active {
+.slide__button:active {
   background-color: var(--special-darkred);
 }
+
+.promo-controls {
+  position:relative;
+  grid-area: slider;
+  z-index: 10;
+
+  margin: 0;
+  padding: 0;
+}
+
+.arrows-control__button:first-of-type {
+  position: absolute;
+  top: 140px;
+  left: 26px;
+  outline: 1px solid green;
+}
+
+.arrows-control__button:nth-of-type(2) {
+  position: absolute;
+  top: 140px;
+  right: 24px;
+  outline: 1px solid red;
+}
+
+.dots-control {
+  position: absolute;
+  outline: 1px solid yellow;
+  top: 209px;
+  left: 288px;
+  /* left: calc(50%) */
+}
+
 
 /* секция товары - заголовок, карточки смотри ниже, где стилизация каталога */
 .products {

@@ -67,56 +67,61 @@
         <h2 class="visually-hidden">Промо</h2>
         <ul class="promo__list">
           <li class="promo__item materials">
-            <h3 class="promo__title">Материалы</h3>
-            <a class="promo__button button" href="">На любой вкус</a>
+            <h3 class="promo__title materials__title">Материалы</h3>
+            <a class="promo__button materials__button" href="">На любой вкус</a>
           </li>
           <li class="promo__item tools">
-            <h3 class="promo__title">Инструмент</h3>
-            <a class="promo__button button" href="">На все случаи</a>
+            <h3 class="promo__title tools__title">Инструмент</h3>
+            <a class="promo__button tools__button" href="">На все случаи</a>
           </li>
           <li class="promo__item machinery">
-            <h3 class="promo__title">Техника</h3>
-            <a class="promo__button button" href="">Для стройки</a>
+            <h3 class="promo__title machinery__title">Техника</h3>
+            <a class="promo__button machinery__button" href="">Для стройки</a>
           </li>
           <li class="promo__item discount">
-            <h3 class="promo__title">Скидки 50%</h3>
-            <a class="promo__button button" href="">На 350 товаров</a>
+            <h3 class="promo__title discount__title">Скидки 50%</h3>
+            <a class="promo__button discount__button" href="">На 350 товаров</a>
           </li>
           <li class="promo__item delivery">
-            <h3 class="promo__title">Доставка</h3>
-            <a class="promo__button button" href="">Бесплатно</a>
+            <h3 class="promo__title delivery__title">Доставка</h3>
+            <a class="promo__button delivery__button" href="">Бесплатно</a>
           </li>
-        </ul>
-        <!-- =_= придумать нормальный текст мужикам с дрелями -->
-        <ul class="slider">
-          <li class="slider__slide">
-            <img class="slider__img" src="img/slider-1.jpg" alt="Мужчина пытается 'проперфорировать' бетонную стену хD" width="620" height="266">
-<!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
-            <div class="slider__header">
-              <h3 class="slider__title">Перфораторы</h3>
-              <p class="slider__text">Настоящие мужские игрушки</p>
+          <li class="promo__item slide">
+            <img class="slide__img" src="img/slider-1.jpg" alt="Мужчина пытается 'проперфорировать' бетонную стену хD" width="620" height="266">
+            <div class="slide__header">
+              <h3 class="slide__title">Перфораторы</h3>
+              <p class="slide__text">Настоящие мужские игрушки</p>
             </div>
-            <a class="slider__button button" href="catalog.html">Открыть каталог</a>
+            <a class="slide__button button" href="catalog.html">Открыть каталог</a>
           </li>
-          <li class="slider__slide">
-            <img class="slider__img" src="img/slider-2.jpg" alt="Мужчина пытается 'задрелить' кирпичную стену xD" width="620" height="266">
-<!-- h3 и p надо тоже объединить - они на темном фоне каком-то в слайдере-->
-            <div class="slider__header">
-              <h3 class="slider__title">Дрели</h3>
-              <p class="slider__text">Соседям на радость!</p>
+          <li class="promo__item slide hidden">
+            <img class="slide__img" src="img/slider-2.jpg" alt="Мужчина пытается 'задрелить' кирпичную стену xD" width="620" height="266">
+            <div class="slide__header">
+              <h3 class="slide__title">Дрели</h3>
+              <p class="slide__text">Соседям на радость!</p>
             </div>
-            <a class="slider__button button" href="catalog.html">Открыть каталог</a>
+            <a class="slide__button button" href="catalog.html">Открыть каталог</a>
+          </li>
+          <li class="promo__item promo-controls hidden">
+            <div class="promo-controls__arrows-control arrows-control">
+              <button class="arrows-control__button button" type="button" aria-label="на предыдущий слайд"></button>
+              <button class="arrows-control__button button" type="button" aria-label="на следующий слайд"></button>
+            </div>
+            <div class="promo-controls__dots-control dots-control">
+              <button class="dots-control__button button" type="button" aria-label="на предыдущий слайд"></button>
+              <button class="dots-control__button button" type="button" aria-label="на следующий слайд"></button>
+            </div>
           </li>
         </ul>
         <!-- управление слайдами -->
-        <div class="arrow-control">
+        <!-- <div class="promo__controls arrow-control">
           <button class="arrow-control__button button" type="button" aria-label="на предыдущий слайд"></button>
           <button class="arrow-control__button button" type="button" aria-label="на следующий слайд"></button>
         </div>
-        <div class="dots-control">
+        <div class="promo__controls dots-control">
           <button class="dots-control__button button" type="button" aria-label="на предыдущий слайд"></button>
           <button class="dots-control__button button" type="button" aria-label="на следующий слайд"></button>
-        </div> 
+        </div>  -->
         <!-- управление слайдами - конец -  -->
       </section>
       
