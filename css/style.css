@@ -966,13 +966,18 @@ a {
 }
 
 .catalog {
-  max-width: 940px;
-  margin: 0 auto;
-
+  display: grid;
   margin-bottom: 48px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:  "title title"
+                        "filter sorting"
+                        "filter cards"
+                        "filter paginator";
+  gap: 20px;  
 }
 
 .catalog__title {
+  grid-area: title;
   margin: 0;
   padding-top: 29px;
   padding-bottom: 29px;
@@ -993,23 +998,39 @@ a {
 
 /* сортировка */
 .catalog__sorting {
+  grid-area: sorting;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+
+  
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--filter-sorting-bgc);
 }
 
 .sorting__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-bottom: 10px;
+
   font-weight: normal; 
 }
 
 .sorting__list {
   list-style: none;
 
+  display: flex;
+  align-items: center;
+
   margin: 0;
   padding: 0;
 }
 
 .sorting__link {
+
   color: var(--sorting-link-text);
   border-bottom: 1px dotted var(--basic-red);
 }
@@ -1039,6 +1060,7 @@ a {
 /* фильтр */
 
 .catalog__filter {
+  grid-area: filter;
   width: 220px;
   margin: 0;
   padding: 0;
@@ -1083,6 +1105,7 @@ a {
 /* ------------------------------------------ползунок сам доделать --------- */
 
 .filter-form__input {
+  width: 95px;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1090,6 +1113,7 @@ a {
 
   background-color: var(--filter-sorting-bgc);
 } 
+
 
 .filter-form__dash {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1294,10 +1318,10 @@ a {
 
 /* пагинация */
 .paginator {
-  width: 940px;
-  margin: 0 auto;
+  grid-area: paginator;
 
   margin-bottom: 59px;
+  padding-top: 48px;
 }
 
 .paginator__item {
