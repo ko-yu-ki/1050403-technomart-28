@@ -572,7 +572,7 @@ a {
   background-color: var(--special-darkred);
 }
 
-/* товары  */
+/* секция товары - заголовок, карточки смотри ниже, где стилизация каталога */
 .products {
   margin-bottom: 70px;
 }
@@ -667,7 +667,11 @@ a {
   background-color: var(--special-darkred);
 }
 
-.producers-cards {
+.producers__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
   list-style: none;
 
   margin: 0;
@@ -675,6 +679,13 @@ a {
 }
  
 .producers__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* иначе карточки сжимаются до высоты самой большой картинки */
+  min-height: 145px;
+  
   border: 1px solid var(--card-border);
 }
 
@@ -1125,6 +1136,18 @@ a {
 
 
 /* -----------------------карточки--------------------- */
+.products__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.catalog__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 
 .card {
   list-style: none;
@@ -1135,7 +1158,6 @@ a {
 
 .card__item {
   max-width: 318px;
-  margin-bottom: 20px;
 
   font-weight: bold;
 
