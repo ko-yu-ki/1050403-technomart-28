@@ -1011,26 +1011,32 @@ a {
 
 .sorting__title {
   margin: 0;
+  margin-right: 140px;
   padding: 0;
   padding-top: 10px;
   padding-left: 18px;
   padding-bottom: 10px;
 
-  font-weight: normal; 
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black); 
 }
 
 .sorting__list {
   list-style: none;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 
   margin: 0;
   padding: 0;
 }
 
 .sorting__link {
-
   color: var(--sorting-link-text);
   border-bottom: 1px dotted var(--basic-red);
 }
