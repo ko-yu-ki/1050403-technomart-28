@@ -1174,6 +1174,7 @@ a {
 
 
 .card {
+
   list-style: none;
  
   margin: 0;
@@ -1181,6 +1182,7 @@ a {
 }
 
 .card__item {
+  width: 220px;
   position: relative;
   padding-top: 175px;
 
