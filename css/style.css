@@ -1323,11 +1323,11 @@ a {
   grid-area: paginator;
 
   margin-bottom: 59px;
-  padding-top: 48px;
+  padding-top: 33px;
 }
 
 .paginator__item {
-  margin-right: 10px;
+  margin-right: 6px;
   padding: 10px 15px 10px 15px;
 
   text-align: center;
