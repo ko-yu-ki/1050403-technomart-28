@@ -789,11 +789,13 @@ a {
 /* секция сервисы */
 
 .services {
+  padding-top: 64px;
   background-color: var(--prefooter-background);
 }
 
 .services__title {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -806,7 +808,20 @@ a {
 
 .services__text {
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
+  width: 396px;
+}
+
+.services__slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.services-slider__controls {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
 }
 
 .services-slider__button {
@@ -853,6 +868,8 @@ a {
 
 .services-slider__title {
   margin: 0;
+  margin-top: -2px;
+  margin-bottom: 30px;
   padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -866,6 +883,7 @@ a {
 .services-slider__text {
   margin: 0;
   padding: 0;
+  width: 313px;
 }
 
 .services-credit__button {
