@@ -163,24 +163,32 @@ a {
   background-color: var(--special-darkred);
 }
 
+/* .search-form {
+}  */
+
 .search-form__input {
+  width: 271px;
+  padding-left: 42px;
   background-color: var(--special-darkgrey-hover);
   border: none;
 }
 
-.search-form {
-  margin-left: 220px;
-}
 
-.search-form__label {
+/* .search-form__label {
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 42px;
+} */
+
+.search-form__input::-moz-placeholder,
+.search-form__input::-webkit-input-placeholder { 
+  color: var(--basic-white); 
+  opacity: 1;
 }
 
 /*                                                    перестилизовать инпут */
-.search-form__input:focus
-{
+.search-form__input:focus, 
+.search-form__input:focus .search-form {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -791,10 +799,10 @@ a {
   opacity: 0.5;
 }
 
-.producers__link,
+/* .producers__link,
 .producers__logo {
-  display: block;
-}
+   display: flex; 
+} */
 
 /* секция сервисы */
 
@@ -836,7 +844,7 @@ a {
 
 .services-slider__button {
   width: 240px;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-bottom: 18px;
   padding-left: 22px;
 
@@ -878,7 +886,6 @@ a {
 
 .services-slider__title {
   margin: 0;
-  margin-top: -2px;
   margin-bottom: 30px;
   padding: 0;
 
@@ -1037,6 +1044,8 @@ a {
   margin: 0;
   margin-bottom: 17px;
   padding: 0;
+
+  color: var(--basic-black);
 }
 
 .contacts__mail-us-button {
