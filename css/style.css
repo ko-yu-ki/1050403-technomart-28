@@ -795,10 +795,42 @@ a {
   opacity: 0.5;
 }
 
-/* .producers__link,
-.producers__logo {
-   display: flex; 
-} */
+.producer1-logo {
+  margin-top: 9px;
+}
+
+.producer2-logo {
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+.producer3-logo {
+  margin-top: 4px;
+}
+
+.producer4-logo {
+  margin-right: 2px;
+  margin-bottom: 6px;
+}
+
+.producer5-logo {
+  margin-top: 11px;
+  margin-left: 4px;
+}
+
+.producer6-logo {
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+.producer7-logo {
+  margin-top: 6px;
+}
+
+.producer8-logo {
+  margin-top: 1px;
+  margin-left: 3px;
+}
 
 /* секция сервисы */
 
@@ -1304,9 +1336,7 @@ a {
   gap: 20px;
 }
 
-
 .card {
-
   list-style: none;
  
   margin: 0;
@@ -1347,9 +1377,13 @@ a {
 
 .card__hover--hide {
   position: absolute;
-  top: 28px;
-  left: 38px;
+  top: 20px;
+  left: 0;
 }
+
+/* .card__image {
+
+} */
 
 .card__item:hover .card__hover--hide,
 .card__item:focus .card__hover--hide {
