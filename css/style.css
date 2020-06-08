@@ -168,6 +168,7 @@ a {
 
 .search-form__input {
   width: 271px;
+  height: 42px;
   padding-left: 42px;
   background-color: var(--special-darkgrey-hover);
   border: none;
