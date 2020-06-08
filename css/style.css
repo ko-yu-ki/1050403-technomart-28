@@ -689,6 +689,7 @@ a {
 
 .section-header__title {
   margin: 0;
+  padding-top: 1px;
 
   font-weight: normal;
   font-size: 30px;
@@ -698,7 +699,7 @@ a {
 
 .all-pop-products-button {
   width: 192px;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: 14px;
   margin-bottom: 26px;
   padding: 11px 24px 9px 24px;
@@ -796,39 +797,38 @@ a {
 }
 
 .producer1-logo {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .producer2-logo {
-  margin-top: 4px;
+  margin-top: 3px;
   margin-right: 2px;
 }
 
 .producer3-logo {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .producer4-logo {
   margin-right: 2px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .producer5-logo {
-  margin-top: 11px;
+  margin-top: 10px;
   margin-left: 4px;
 }
 
 .producer6-logo {
-  margin-top: 8px;
-  margin-right: 4px;
+  margin-top: 6px;
+  margin-right: 3px;
 }
 
 .producer7-logo {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .producer8-logo {
-  margin-top: 1px;
   margin-left: 3px;
 }
 
