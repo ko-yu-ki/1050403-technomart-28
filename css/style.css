@@ -203,6 +203,10 @@ a {
   position: relative;
 }
 
+.favourites__not-empty {
+  background-color: var(--basic-red);
+}
+
 .favourites__link {
   display: block;
   width: 164px;
@@ -226,6 +230,10 @@ a {
 
 .cart {
   position: relative;
+}
+
+.cart__not-empty {
+  background-color: var(--basic-red);
 }
 
 .cart__link {
@@ -284,10 +292,6 @@ a {
   color: var(--basic-white);
 
   background-color: var(--basic-green);
-}
-
-.cart__not-empty {
-  background-color: var(--basic-red);
 }
 
 .header-top__checkout:hover,
@@ -596,6 +600,7 @@ a {
 }
 
 .promo__list {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -617,12 +622,19 @@ a {
   color: var(--basic-white);
 }
 
+ .new {
+  background: url("../img/new.png") no-repeat 100% 0;
+} 
+
 .promo__title {
+  position: relative;
   margin: 0;
   margin-bottom: 14px;
 
   font-size: 24px;
   line-height: 30px;
+
+  /* не работает? */
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -632,25 +644,44 @@ a {
   grid-area: materials;
   padding-left: 23px;
 
+  /* background-image: url("../img/icon-1.svg");
+  background-position: 213px 31px;
+  background-repeat: no-repeat; */
   background-color: var(--special-promo-materials);
+}
+/* 2 варианта расположения картинки на карточке, 2 вариант с афтер не мешает ярлыку New */
+.materials::after {
+  position: absolute;
+  bottom: 306px;
+  right: 683px;
+  content: url("../img/icon-1.svg");
 }
 
 .tools {
   grid-area: tools;
 
+  background-image: url("../img/icon-2.svg");
+  background-position: 194px 34px;
+  background-repeat: no-repeat;
   background-color: var(--special-promo-tools);
 }
 
 .machinery {
   grid-area: machinery;
 
+  background-image: url("../img/icon-3.svg");
+  background-position: 191px 31px;
+  background-repeat: no-repeat;
   background-color: var(--special-promo-machinery);
 }
 
 .discount {
   grid-area: discount;
   padding-left: 23px;
-
+  
+  background-image: url("../img/icon-4.svg");
+  background-position: 196px 26px;
+  background-repeat: no-repeat;
   background-color: var(--special-promo-discount);
 }
 
@@ -661,6 +692,9 @@ a {
 .delivery {
   grid-area: delivery;
 
+  background-image: url("../img/icon-5.svg");
+  background-position: 191px 32px;
+  background-repeat: no-repeat;
   background-color: var(--special-promo-delivery);
 }
 
@@ -712,11 +746,6 @@ a {
 .slide__img {
   display: block;
 }
-
-/* спрятанный за первый второй слайд */
-.hidden {  
-  z-index: -1;
-} 
 
 .hide {
   display: none;
@@ -785,24 +814,57 @@ a {
 
 .arrows-control__button:first-of-type {
   position: absolute;
-  top: 140px;
-  left: 26px;
-  outline: 1px solid green;
+  top: 122px;
+  left: 17px;
+  background: none;
+  outline: none;
+  border: 0;
+  fill: var(--basic-white);
 }
 
 .arrows-control__button:nth-of-type(2) {
   position: absolute;
-  top: 140px;
-  right: 24px;
-  outline: 1px solid red;
+  top: 122px;
+  right: 13px;
+  background: none;
+  outline: none;
+  border: 0;
+  fill: var(--basic-white);
+}
+
+.arrows-control__button:hover {
+  cursor: pointer;
 }
 
 .dots-control {
   position: absolute;
-  outline: 1px solid yellow;
+  /* outline: 1px solid yellow; */
   top: 209px;
   left: 288px;
+
+  width: 10px;
+  height: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
   /* left: calc(50%) */
+}
+/*........................  хрень какая-то с этими кружочками.......... */
+.dots-control__button {
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dots-control__button {
+  margin-right: 10px;
+}
+
+.dots-control__button:hover {
+  cursor: pointer;
 }
 
 
