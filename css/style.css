@@ -622,8 +622,10 @@ a {
   color: var(--basic-white);
 }
 
- .new {
+.new {
+  position: absolute;
   background: url("../img/new.png") no-repeat 100% 0;
+  z-index: 10;
 } 
 
 .promo__title {
@@ -1324,7 +1326,7 @@ a {
 
 .catalog {
   display: grid;
-  margin-bottom: 48px;
+  margin-bottom: 70px;
   grid-template-columns: 1fr 3fr;
   grid-template-areas:  "title title"
                         "filter sorting"
@@ -1336,7 +1338,7 @@ a {
 .catalog__title {
   grid-area: title;
   margin: 0;
-  padding-top: 29px;
+  padding-top: 26px;
   padding-bottom: 29px;
   padding-left: 29px;
 
@@ -1545,7 +1547,7 @@ a {
 .card__item {
   width: 220px;
   position: relative;
-  padding-top: 175px;
+  padding-top: 177px;
 
   font-weight: bold;
 
@@ -1576,8 +1578,9 @@ a {
 
 .card__hover--hide {
   position: absolute;
-  top: 20px;
-  left: 0px;
+  top: 30px;
+  left: 17px;
+  z-index: 5;
 }
 
 /* .card__image {
@@ -1615,7 +1618,7 @@ a {
 .card__price {
   margin: 0;
   margin-bottom: 21px;
-  padding: 10px 32px 10px 32px;
+  padding: 8px 32px 10px 37px;
 
   font-size: 17px;
   line-height: 18px;
@@ -1625,7 +1628,7 @@ a {
 
   background-image: url("../img/red-price.png");
   background-repeat: no-repeat;
-  background-position: 44px;
+  background-position: 45px;
   /* background-color: var(--basic-red); */
   /* border-radius: 2px; */
 }
@@ -1687,8 +1690,7 @@ a {
 .paginator {
   grid-area: paginator;
 
-  margin-bottom: 59px;
-  padding-top: 33px;
+  padding-top: 36px;
 }
 
 .paginator__item {
@@ -1753,7 +1755,7 @@ a {
 }
 
 .product-about__text:last-of-type {
-  margin-bottom: 67px;
+  margin-bottom: 70px;
 }
 
 /*  конец мейна */
