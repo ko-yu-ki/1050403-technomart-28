@@ -43,6 +43,7 @@
   --credit-button-bgc: #FF5357;
   --basic-icon: #69717F;
   --icon-hover: #3D546F;
+  --modal-footer-bgc: #C4C4C4;
 }
 
 *, *::before, *::after { 
@@ -59,7 +60,7 @@ body {
   min-width: 960px;
   margin: 0; 
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -113,7 +114,7 @@ a {
   align-content: start; 
   margin-bottom: 18px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -612,7 +613,7 @@ a {
   padding-top: 20px;
   padding-left: 22px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   color: var(--basic-white);
 }
 
@@ -732,7 +733,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
 }
 
 .slide__img {
@@ -870,7 +871,7 @@ a {
   margin-bottom: 20px;
   padding-left: 28px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 
   background-color: var(--basic-section-header-background);
@@ -1033,7 +1034,7 @@ a {
   margin-bottom: 25px;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1074,7 +1075,7 @@ a {
   min-width: 240px;
   padding: 14px 22px 18px 22px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -1124,7 +1125,7 @@ a {
   margin-bottom: 30px;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1173,7 +1174,7 @@ a {
   width: 195px;
   padding: 11px 45px 10px 44px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1204,7 +1205,7 @@ a {
   margin: 0;
   margin-bottom: 24px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -1245,7 +1246,7 @@ a {
   margin-bottom: 11px;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1264,7 +1265,7 @@ a {
   width: 220px;
   padding: 9px 40px 11px 40px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1289,7 +1290,7 @@ a {
   margin: 0;
   margin-bottom: 24px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1319,7 +1320,7 @@ a {
   display: block;
   padding: 11px 61px 9px 61px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -1394,7 +1395,7 @@ a {
   padding-bottom: 29px;
   padding-left: 29px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1566,7 +1567,7 @@ a {
 
 
 .filter-form__dash {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
@@ -1724,7 +1725,7 @@ a {
   padding: 10px 41px 11px 53px;
   margin-bottom: 10px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1749,7 +1750,7 @@ a {
 .card__tofavs-button{
   width: 135px;
   padding: 8px 30px 7px 30px;
-  font-family: "Cuprum" , Arial, sans-serif;
+  font-family: "Cuprum" , Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1828,7 +1829,7 @@ a {
   margin: 0;
   margin-bottom: 25px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1850,7 +1851,7 @@ a {
 /* футер --------------  футер -------------  футер  */
 
 .footer {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2110,6 +2111,124 @@ a {
 }
 
 /* -------------------модальные окна------------------ */
+
+.write-us-modal {
+  position: relative;
+  width: 620px;
+  margin: 0 auto;
+  padding-top: 46px;
+
+  box-shadow: 0px 4px 20px var(--card-shadow);
+}
+
+.write-us-modal::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 7px;
+  background: var(--basic-red);
+
+  content: "";
+}
+
+.write-us-modal__close {  
+  position: absolute;
+  top: 21px;
+  left: calc(100% - 35px);
+
+  border: 0;
+  background: none;
+}
+
+.write-us-modal__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 0 80px;
+
+  font-family: "Cuprum", Arial, Helvetica, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.write-us-modal__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+}
+
+.write-us-modal__block:first-of-type {
+  margin-right: 20px;
+}
+
+.write-us-modal__label {
+  margin-bottom: 11px;
+}
+
+.write-us-modal__input{
+  width: 220px;
+
+  border: 2px solid var(--special-lightgrey);
+  border-radius: 2px;
+}
+
+.write-us-modal__textarea {
+  width: 460px;
+  resize: none;
+  margin-bottom: 20px;
+  
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--special-lightgrey);
+
+  border: 2px solid var(--special-lightgrey);
+  border-radius: 2px;
+}
+
+.write-us-modal__input::-moz-placeholder,
+.write-us-modal__input::-webkit-input-placeholder { 
+  font-family: "PT Sans", Arial, Helvetica, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--special-lightgrey); 
+  opacity: 1;
+}
+
+.write-us-modal__footer {
+  padding: 37px 80px;
+  background-color: var(--modal-footer-bgc);
+}
+
+.write-us-modal__button {
+  padding: 11px 199px 9px 199px;
+
+  border: 0;
+  background-color: var(--basic-red);
+
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+}
+
+/* карта */
 .map-modal {
   position: relative;
 

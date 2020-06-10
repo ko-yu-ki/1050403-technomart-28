@@ -444,31 +444,34 @@
     </footer>
 
     <!-- попап "написать нам" -->
-    <section class="write-us-modal wrapper">
+    <section class="write-us-modal">
       <h2 class="write-us-modal__title visually-hidden">Напишите нам.</h2> 
-      <button class="write-us-modal__close" type="button" aria-label="Закрыть форму связи.">x</button>  
-      <form class="write-us-modal__form" action="https://echo.htmlacademy.ru/" method="post"> 
-        <p>
+      <button class="write-us-modal__close" type="button" aria-label="Закрыть форму связи.">
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+        </svg>
+      </button>  
+      <form class="write-us-modal__form" id="write-us-form" action="https://echo.htmlacademy.ru/" method="post"> 
+        <p class="write-us-modal__block">
           <label class="write-us-modal__label" for="id__user-name" tabindex="0">Ваше имя:</label>
           <input class="write-us-modal__input" type="text" id="id__user-name" name="user-name" placeholder="Имя Фамилия"></p>
-        <p>
+        <p class="write-us-modal__block">
           <label class="write-us-modal__label" for="id__user-email" tabindex="0">Ваш e-mail:</label>
           <input class="write-us-modal__input" type="email" id="id__user-email" name="user-email" placeholder="email@example.com">
         </p>
-        <p>
+        <p class="write-us-modal__block">
           <label class="write-us-modal__label" for="id__user-message" tabindex="0">Текст письма:</label>
           <textarea class="write-us-modal__textarea" id="id__user-message" rows="3" name="user-message">В свободной форме</textarea>
         </p>
-        <div class="write-us-modal__footer">
-          <!-- что лучше использовать инпут с типом сабмит или кнопка с типом сабмит -->
-          <button class="write-us-modal__button button" type="submit">Отправить</button>
-        </div>
       </form>
+      <div class="write-us-modal__footer">
+        <button class="write-us-modal__button" form="write-us-form" type="submit">Отправить</button>
+      </div>
     </section>
 <!-- закончился попап "написать нам" -->
 
 <!-- попап карта -->
-    <section class="map-modal wrapper">
+    <section class="map-modal wrapper hide">
       <h2 class="map-modal__title visually-hidden">
         Карта, на которой отмечен магазин "Техномарт", находящийся по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8.
       </h2> 
