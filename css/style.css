@@ -2137,7 +2137,7 @@ a {
 .write-us-modal__close {  
   position: absolute;
   top: 21px;
-  left: calc(100% - 35px);
+  left: calc(100% - 40px);
 
   border: 0;
   background: none;
@@ -2203,10 +2203,10 @@ a {
 .write-us-modal__textarea {
   width: 460px;
   resize: none;
-  margin-bottom: 20px;
-  padding: 5px 12px 7px 12px;
+  margin-bottom: 24px;
+  padding: 5px 12px 17px 12px;
   
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
