@@ -89,12 +89,6 @@ a {
   overflow: hidden;
 }
 
-.write-us-modal,
-.map-modal,
-.to-cart-modal {
- display: none;
-}
-
  /*---------------------- Grid ------------------------*/
 
 .page {
@@ -815,7 +809,6 @@ a {
   top: 122px;
   left: 17px;
   background: none;
-  outline: none;
   border: 0;
   fill: var(--basic-white);
 }
@@ -825,7 +818,6 @@ a {
   top: 122px;
   right: 13px;
   background: none;
-  outline: none;
   border: 0;
   fill: var(--basic-white);
 }
@@ -2116,3 +2108,47 @@ a {
   color: var(--basic-red);
   border-bottom: none;
 }
+
+/* -------------------модальные окна------------------ */
+.map-modal {
+  position: relative;
+
+  box-shadow: 0px 4px 20px var(--card-shadow);
+}
+
+.map-modal::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 943px;
+  height: 7px;
+  background: var(--basic-red);
+
+  content: "";
+}
+
+.map-modal::after {
+  position: absolute;
+  bottom: 37px;
+  left: 943px;
+
+  width: 7px;
+  height: 38px;
+  background: var(--basic-red);
+
+  content: "";
+}
+
+.map-modal__close {  
+  position: absolute;
+  top: 17px;
+  left: calc(100% - 31px);
+
+  border: 0;
+  background: none;
+}
+
+
+
+
