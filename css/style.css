@@ -1450,16 +1450,13 @@ a {
   justify-content: space-between;
   align-items: center;
   
-  width: 460px;
+  width: 355px;
   margin: 0;
+  margin-right: 45px;
   padding: 0;
 }
 
-/* .sorting__item {
-} */
-
 .sorting__link {
-  padding-left: 2px;
   color: var(--sorting-link-text);
   border-bottom: 1px dotted var(--basic-red);
 }
@@ -1475,18 +1472,53 @@ a {
   border: none;
 }
 
-.sorting__active {
+/* это уже выбранная на макете сортировка По цене */
+.sorting__active {  
   color: var(--basic-red);
   border: none;
 } 
 
-/* стили для .sorting__direction */
-/* и  */
-/* .direction__active {
-} */
+.sorting__direction-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-direction__item {
+  padding-left: 1px;
+  padding-top: 2px;
+}
+
+.sorting-direction__item:first-of-type {
+  margin-right: 20px;
+}
+
+.sorting-direction__img {
+  fill: var(--special-lightgrey);
+}
+
+.sorting-direction__img:hover, 
+.sorting-direction__img:focus {
+  fill: var(--basic-black);
+}
+
+.sorting-direction__:active {
+  fill: var(--basic-red);
+}
+
+/* для выбранного по макету напарвления сортировки */
+.direction__active {
+  fill: var(--basic-red);
+}
 
 
-/* фильтр */
+/* ------------------------фильтр-------------------------- */
 
 .catalog__filter {
   grid-area: filter;
