@@ -836,29 +836,29 @@ a {
 
 .dots-control {
   position: absolute;
-  /* outline: 1px solid yellow; */
-  top: 209px;
-  left: 288px;
-
-  width: 10px;
-  height: 10px;
+  top: 220px;
+  left: calc(50% - 15px);
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  /* left: calc(50%) */
-}
-/*........................  хрень какая-то с этими кружочками.......... */
-.dots-control__button {
-  border: 0;
-  border-radius: 0;
-  background: #ccc;
-  border-radius: 50%;
 }
 
 .dots-control__button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+
+  border-color: var(--basic-white);
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+.dots-control__button:first-of-type {
   margin-right: 10px;
+}
+
+.dots-control__button--active {
+  background: var(--basic-red);
 }
 
 .dots-control__button:hover {
@@ -1413,15 +1413,12 @@ a {
   background-color: var(--basic-background-2);
 }
 
-/* ptsans size13 lheight24 на body  */
-
 /* сортировка */
 .catalog__sorting {
   grid-area: sorting;
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
-
   
   line-height: 18px;
   text-transform: uppercase;
