@@ -44,6 +44,7 @@
   --basic-icon: #69717F;
   --icon-hover: #3D546F;
   --modal-footer-bgc: #C4C4C4;
+  --basic-transparent: transparent;
 }
 
 *, *::before, *::after { 
@@ -2175,22 +2176,9 @@ a {
 
 .write-us-modal__input{
   width: 220px;
+  height: 38px;
 
-  border: 2px solid var(--special-lightgrey);
-  border-radius: 2px;
-}
-
-.write-us-modal__textarea {
-  width: 460px;
-  resize: none;
-  margin-bottom: 20px;
-  
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--special-lightgrey);
+  padding: 5px 12px 7px 12px;
 
   border: 2px solid var(--special-lightgrey);
   border-radius: 2px;
@@ -2206,6 +2194,30 @@ a {
   color: var(--special-lightgrey); 
   opacity: 1;
 }
+
+.write-us-modal__input:focus::-moz-placeholder,
+.write-us-modal__input:focus::-webkit-input-placeholder { 
+  color: var(--basic-transparent); 
+}
+
+.write-us-modal__textarea {
+  width: 460px;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 5px 12px 7px 12px;
+  
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--special-lightgrey);
+
+  border: 2px solid var(--special-lightgrey);
+  border-radius: 2px;
+}
+
+
 
 .write-us-modal__footer {
   padding: 37px 80px;
