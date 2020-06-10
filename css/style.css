@@ -1066,8 +1066,7 @@ a {
 
   display: flex;
   flex-direction: column;
-
-  width: 240px;
+ 
   margin-right: 80px;
   margin-bottom: 99px;
 }
@@ -1075,12 +1074,12 @@ a {
 .services-slider__controls::after {
   position: absolute;
   top: -49px;
-  left: 230px;
+  left: calc(100% - 10px);
   content: url("../img/services-divider.png");
 }
 
 .services-slider__button {
-  width: 240px;
+  min-width: 240px;
   padding: 14px 22px 18px 22px;
 
   font-family: "Cuprum", Arial, sans-serif;
