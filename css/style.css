@@ -1062,17 +1062,26 @@ a {
 }
 
 .services-slider__controls {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
   width: 240px;
   margin-right: 80px;
   margin-bottom: 99px;
 }
 
+.services-slider__controls::after {
+  position: absolute;
+  top: -49px;
+  left: 230px;
+  content: url("../img/services-divider.png");
+}
+
 .services-slider__button {
-  padding-top: 15px;
-  padding-bottom: 18px;
-  padding-left: 22px;
+  width: 240px;
+  padding: 14px 22px 18px 22px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
@@ -1111,12 +1120,14 @@ a {
 }
 
 .services-slider__slide {
+  position: relative;
   width: 620px;
 }
 
 .services-slider__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-top: -2px;
+  margin-bottom: 30px;
   padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -1129,35 +1140,38 @@ a {
 
 .services-slider__text {
   position: relative;
-
   margin: 0;
   padding: 0;
   width: 380px;
+  z-index: 10;
 }
 
 .credit-text {
   margin-bottom: 34px;
 }
 
-.delivery-text::after {
+.delivery-slide::after {
   position: absolute;
-  top: -40px;
+  top: 20px;
   left: 151px;
   content: url("../img/delivery.png");
-}
+  z-index: 1;
+} 
 
-.warranty-text::after {
+.warranty-slide::after {
   position: absolute;
-  top: -63px;
+  top: -3px;
   left: 239px;
   content: url("../img/warranty.png");  
+  z-index: 1;
 }
 
-.credit-text::after {
+.credit-slide::after {
   position: absolute;
-  top: -59px;
+  top: -2px;
   left: 165px;
   content: url("../img/credit.png");
+  z-index: 1;
 }
 
 .services-credit__button {
