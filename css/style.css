@@ -254,15 +254,6 @@ a {
   margin: 0;
 }
 
-.cart-not-empty__icon {
-  position: absolute;
-  top: 13px;
-  left: 12px;
-
-  fill: var(--special-white);
-}
-
-
 .favourites__link:hover > .favourites__icon,
 .cart__link:hover > .cart__icon {
   fill: var(--basic-white);
