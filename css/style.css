@@ -2118,6 +2118,10 @@ a {
 /* -------------------модальные окна------------------ */
 
 .write-us-modal {
+  /* position: fixed; 
+  top: calc(50% - "половина высоты окна" px);
+  left: calc(50% - 320px);
+  */
   position: relative;
 
   width: 620px;
@@ -2125,6 +2129,7 @@ a {
   padding-top: 46px;
 
   box-shadow: 0px 4px 20px var(--card-shadow);
+  z-index: 100;
 }
 
 .write-us-modal::before {
@@ -2146,6 +2151,7 @@ a {
 
   border: 0;
   background: none;
+  z-index: 105;
 }
 
 .write-us-modal__form {
@@ -2245,11 +2251,16 @@ a {
   background-color: var(--basic-red);
 }
 
-/* карта */
+/* ----------------карта----------------- */
 .map-modal {
+  /*   position: fixed;
+  top: calc(50% - 225px);
+  left: calc(50% - 471px);
+  */
   position: relative;
 
   box-shadow: 0px 4px 20px var(--card-shadow);
+  z-index: 100;
 }
 
 .map-modal::before {
@@ -2283,12 +2294,14 @@ a {
 
   border: 0;
   background: none;
+  z-index: 105;
 }
 
 /* попап про добавление в корзину */
-
 .to-cart-modal {
-  position: relative;
+  position: fixed;
+  top: calc(50% - 160px);
+  left: calc(50% - 320px);
   width: 620px; 
 
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
@@ -2298,7 +2311,11 @@ a {
   line-height: 30px;
   text-align: center;
 
+  background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
+  z-index: 100;
+
+  overflow: auto;
 }
 
 .to-cart-modal::after {
@@ -2320,6 +2337,7 @@ a {
 
   border: 0;
   background: none;
+  z-index: 105;
 }
 
 .to-cart-modal__text {
@@ -2374,4 +2392,9 @@ a {
 
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.to-cart-modal__close-button:hover,
+.to-cart-modal__close-button:focus {
+  cursor: pointer;
 }
