@@ -469,17 +469,21 @@
 
 
     <!-- попап "о добавлении в корзину" -->
-    <section class="to-cart-modal">
-      <h2 class="to-cart-modal__title visually-hidden">Оповещение о добавлении товара в корзину.</h2> 
-      <button class="to-cart-modal__close" type="button" aria-label="Закрыть сообщение">x</button>
-      <p class="to-cart-modal__text">Товар добавлен в корзину!</p>
-      <div class="to-cart-modal__footer">
-        <a href="" class="to-cart-modal__footer-checkout">Оформить заказ</a>
-        <a class="to-cart-modal__close-button button">Продолжить покупки</a> 
-        <!-- просто закрытие происходит окна по кнопке Продолжить покупки? -->
-      </div>
-    </section>
-    <!-- закончился попап "о добавлении в корзину" -->
+  <section class="to-cart-modal hide">
+    <h2 class="to-cart-modal__title visually-hidden">Оповещение о добавлении товара в корзину.</h2> 
+    <button class="to-cart-modal__close" type="button" aria-label="Закрыть сообщение">
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+        <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+      </svg>
+    </button>
+    <p class="to-cart-modal__text">Товар добавлен в корзину!</p>
+    <div class="to-cart-modal__footer">
+      <a class="to-cart-modal__footer-checkout" href="" >Оформить заказ</a>
+      <a class="to-cart-modal__close-button">Продолжить покупки</a> 
+      <!-- просто закрытие происходит окна по кнопке Продолжить покупки? -->
+    </div>
+  </section>
+  <!-- закончился попап "о добавлении в корзину" -->
 
   </body>
 </html>
