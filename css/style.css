@@ -169,8 +169,7 @@ a {
   border: none;
 }
 
-.search-form__input::-moz-placeholder,
-.search-form__input::-webkit-input-placeholder { 
+.search-form__input::placeholder { 
   color: var(--basic-white); 
   opacity: 1;
 }
@@ -1592,16 +1591,49 @@ a {
 }
 /* ------------------------------------------ползунок сам доделать --------- */
 
+.filter-form__number-block {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+
+.filter-form__input::-webkit-inner-spin-button,
+.filter-form__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.filter-form__input{
+  -moz-appearance: textfield;
+}
+
+.filter-form__input::placeholder { 
+  color: var(--basic-black); 
+  opacity: 1;
+}
+
 .filter-form__input {
   width: 95px;
+  height: 38px;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  /* color: var(--basic-black); */
 
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  border: 0;
   background-color: var(--filter-sorting-bgc);
 } 
 
+.filter-form__input:active,
+.filter-form__input:focus {
+  outline: 1px dotted var(--basic-red);
+}
 
 .filter-form__dash {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1657,7 +1689,8 @@ a {
 .catalog__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 19px;     /* в качестве подпорки - работает лучше gap 20px*/
+  /* gap: 20px; */
 }
 
 .card {
