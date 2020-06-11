@@ -825,8 +825,15 @@ a {
   fill: var(--basic-white);
 }
 
-.arrows-control__button:hover {
+.arrows-control__button:hover,
+.arrows-control__button:focus {
   cursor: pointer;
+  outline: 1px dotted var(--special-lightyellow); 
+}
+
+.arrows-control__button:active {
+  cursor: pointer;
+  outline: 1px dotted var(--basic-red); 
 }
 
 .dots-control {
@@ -856,10 +863,16 @@ a {
   background: var(--basic-red);
 }
 
-.dots-control__button:hover {
+.dots-control__button:hover,
+.dots-control__button:focus {
   cursor: pointer;
+  outline: 1px dotted var(--special-lightyellow); 
 }
 
+.dots-control__button:active {
+  cursor: pointer;
+  outline: 1px dotted var(--basic-red);
+}
 
 /* секция товары - заголовок, карточки смотри ниже, где стилизация каталога */
 .products {
@@ -1108,6 +1121,7 @@ a {
   color: var(--basic-white);
 
   border: 0;
+  outline: 1px dotted var(--basic-transparent);
   background-color: var(--basic-grey);
   box-shadow: 0px 1px 0px var(--special-darkgrey-hover), 
               inset 0px 1px 0px  var(--services-button-shadow);
@@ -1116,11 +1130,13 @@ a {
 .services-slider__button:hover,
 .services-slider__button:focus {
   background-color: var(--special-darkgrey-hover);
+  cursor: pointer;
 }
 
 .services-slider__button:active {
   color: var(--basic-grey);
 
+  outline: 1px dotted var(--basic-white);
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), 
               inset 0px 1px 0px  var(--basic-white);
@@ -1772,6 +1788,7 @@ a {
 .card__tocart-button:hover,
 .card__tocart-button:focus {
   background-color: var(--special-green);
+  cursor: pointer;
 }
 
 .card__tocart-button:active {
@@ -1794,9 +1811,10 @@ a {
 }
 
 .card__tofavs-button:hover, 
-.card__tofavs-button:hover {
+.card__tofavs-button:focus {
   color: var(--basic-grey);
   border: 3px solid var(--basic-grey);
+  cursor: pointer;
 }
 
 .card__tofavs-button:active {
@@ -1912,7 +1930,7 @@ a {
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
-.footer-content__logo-img:active {
+.footer-content__logo-link:active {
   background-color: var(--special-darkred);
 }
 
