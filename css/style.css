@@ -998,13 +998,18 @@ a {
  
 .producers__card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
   /* иначе карточки сжимаются до высоты самой большой картинки */
   min-height: 145px;
   
   border: 1px solid var(--card-border);
+}
+
+.producers__link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .producers__card:hover,
