@@ -1021,41 +1021,39 @@ a {
   opacity: 0.5;
 }
 
-.producer1-logo {
-  margin-top: 8px;
-}
 
 .producer2-logo {
-  margin-top: 3px;
+  margin-top: -5px;
   margin-right: 2px;
 }
 
 .producer3-logo {
-  margin-top: 3px;
+  margin-top: -5px;
 }
 
 .producer4-logo {
   margin-right: 2px;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
 }
 
 .producer5-logo {
-  margin-top: 10px;
-  margin-left: 4px;
+  margin-top: 2px;
+  margin-left: 5px;
 }
-
+ 
 .producer6-logo {
-  margin-top: 6px;
+  margin-top: -2px;
   margin-right: 3px;
 }
 
 .producer7-logo {
-  margin-top: 5px;
+  margin-top: -3px;
 }
 
 .producer8-logo {
+  margin-top: -8px;
   margin-left: 3px;
-}
+} 
 
 /* секция сервисы */
 
