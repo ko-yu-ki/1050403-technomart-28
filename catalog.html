@@ -185,42 +185,42 @@
 
             <!-- проставлен checked у  Бош и Макиты + Аккумуляторные-->
             <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Производители:</legend>       
+              <legend class="filter-form__legend producers-legend">Производители:</legend>       
               <ul class="filter-form__list">
                 <li class="filter-form__item">
                   <input class="filter-form__checkbox visually-hidden" id="prod-bosch-id" type="checkbox" name="Bosch" checked>
-                  <label class="filter-form__label" for="prod-bosch-id" tabindex="0">Bosch</label>
+                  <label class="filter-form__label producers-label" for="prod-bosch-id" tabindex="0">Bosch</label>
                 </li>
                 <li class="filter-form__item">
                   <input class="filter-form__checkbox visually-hidden" id="prod-interskol-id" type="checkbox" name="Интерскол">
-                  <label class="filter-form__label" for="prod-interskol-id" tabindex="0">Интерскол</label> 
+                  <label class="filter-form__label producers-label" for="prod-interskol-id" tabindex="0">Интерскол</label> 
                 </li>
                 <li class="filter-form__item">
                   <input class="filter-form__checkbox visually-hidden" id="prod-makita-id" type="checkbox" name="Makita" checked>
-                  <label class="filter-form__label" for="prod-makita-id" tabindex="0">Makita</label>
+                  <label class="filter-form__label producers-label" for="prod-makita-id" tabindex="0">Makita</label>
                 </li>
                 <li class="filter-form__item">
                   <input class="filter-form__checkbox visually-hidden" id="prod-dewalt-id" type="checkbox" name="DeWalt">
-                  <label class="filter-form__label" for="prod-dewalt-id" tabindex="0">DeWalt</label>
+                  <label class="filter-form__label producers-label" for="prod-dewalt-id" tabindex="0">DeWalt</label>
                 </li>
                 <li class="filter-form__item">
                   <input class="filter-form__checkbox visually-hidden" id="prod-hitachi-id" type="checkbox" name="Hitachi">
-                  <label class="filter-form__label" for="prod-hitachi-id" tabindex="0">Hitachi</label>
+                  <label class="filter-form__label producers-label" for="prod-hitachi-id" tabindex="0">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Питание:</legend>
+            <fieldset class="filter-form__fieldset power-fieldset">
+              <legend class="filter-form__legend power-legend">Питание:</legend>
                         <!-- не будет ли лишним список или надо каждую пару просто обернуть в тег P  -->
               <ul class="filter-form__list">
-                <li class="filter-form__item">
+                <li class="filter-form__item power-item">
                   <input class="filter-form__radio visually-hidden" id="power-battery-id" type="radio" name="poweredby" value="battery" checked>
-                  <label class="filter-form__label" for="power-battery-id" tabindex="0">Аккумуляторные</label>
+                  <label class="filter-form__label power-label" for="power-battery-id" tabindex="0">Аккумуляторные</label>
                 </li>
-                <li class="filter-form__item">
+                <li class="filter-form__item power-item">
                   <input class="filter-form__radio visually-hidden" id="power-acdc-id" type="radio" name="poweredby" value="ac-dc">
-                  <label class="filter-form__label" for="power-acdc-id" tabindex="0">Сетевые</label>
+                  <label class="filter-form__label power-label" for="power-acdc-id" tabindex="0">Сетевые</label>
                 </li>
               </ul>  
             </fieldset>
