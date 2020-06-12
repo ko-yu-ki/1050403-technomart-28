@@ -2190,6 +2190,7 @@ a {
 
   width: 134px;
   margin: 0;
+  margin-top: -1px;
   margin-right: 118px;
   padding: 0;
 
@@ -2205,15 +2206,15 @@ a {
   width: 42px;
   height: 42px;
   padding: 11px;
-  margin-right: 2px;
+  margin-right: 3px;
   border-radius: 50%;
   background: linear-gradient(0deg, var(--socials-bgc), var(--socials-bgc));
 }
 
 .social-vk::after {
   position: absolute;
-  top: 12px;
-  left: 8px;
+  top: 13px;
+  left: 9px;
   width: 44px;
   height: 44px;
   background-image: url("../img/icon-vk.svg");
@@ -2223,7 +2224,7 @@ a {
 
 .social-fb::after  {
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 17px;
   width: 44px;
   height: 44px;
@@ -2234,7 +2235,7 @@ a {
 
 .social-insta::after  {
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 12px;
   width: 44px;
   height: 44px;
