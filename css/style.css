@@ -51,6 +51,7 @@
   --filter-scale-progress: #00CA74;
   --pin-hole: #ABABAB;
   --pin-shadow: #e6e6e6; /* #ABABAB + opacity 0.3 */
+  --button-hover: #CA2C37;
 }
 
 *, *::before, *::after { 
@@ -790,6 +791,11 @@ a {
   z-index: 15;
 }
 
+.slide__button:hover, 
+.slide__button:focus {
+background-color: var(--button-hover);
+}
+
 .slide__button:active {
   background-color: var(--special-darkred);
 }
@@ -919,7 +925,7 @@ a {
   line-height: 18px;
   color: var(--basic-white);
 
-  background-color: var(--basic-red);
+  background-color: var(--button-hover);
 }
 
 .all-pop-products-button:active {
@@ -979,7 +985,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
-  background-color: var(--basic-red);
+  background-color: var(--button-hover);
 }
 
 .all-pop-producers-button:active {
@@ -1227,6 +1233,15 @@ a {
   border-radius: 3px;
 }
 
+.services-credit__button:hover, 
+.services-credit__button:focus {
+background-color: var(--button-hover);
+}
+
+.services-credit__button:active {
+background-color: var(--special-darkred);
+}
+
 /* секция блок about */
 
 .about-block{
@@ -1318,8 +1333,10 @@ a {
   background-color: var(--basic-red);
 }
 
-/* .about__button:hover {
-} */
+.about__button:hover, 
+.about__button:focus {
+background-color: var(--button-hover);
+}
 
 .about__button:active {
   background-color: var(--special-darkred);
@@ -1374,8 +1391,10 @@ a {
   background-color: var(--basic-red);
 }
 
-/* .contacts__mail-us-button:hover {
-} */
+.contacts__mail-us-button:hover,
+.contacts__mail-us-button:focus {
+  background-color: var(--button-hover);
+}
 
 .contacts__mail-us-button:active {
   background-color: var(--special-darkred);
@@ -1839,6 +1858,14 @@ a {
   border: 1px solid var(--basic-border-paginator);
 }
 
+.filter-form__submit-button:hover,
+.filter-form__submit-button:focus {
+  border: 1px solid var(--special-lightgrey);
+}
+
+.filter-form__submit-button:active {
+  border: 1px solid var(--basic-red);
+}
 
 /* -----------------------карточки--------------------- */
 .products__cards {
@@ -1949,8 +1976,6 @@ a {
   background-repeat: no-repeat;
   background-position: 44px;
   background-size: 141px 38px;
-
-
 }
 
 .card__tocart-button {
@@ -2363,8 +2388,8 @@ a {
 
 .write-us-modal {
   /* position: fixed; 
-  top: calc(50% - "половина высоты окна" px);
-  left: calc(50% - 320px);
+  top: calc(50vh - "половина высоты окна" px);
+  left: calc(50vh - 320px);
   */
   position: relative;
 
@@ -2396,6 +2421,16 @@ a {
   border: 0;
   background: none;
   z-index: 105;
+}
+
+.write-us-modal__close:hover, 
+.write-us-modal__close:focus {
+  cursor: pointer;
+  outline: 0;
+}
+
+.write-us-modal__close:active {
+  outline: 1px solid var(--special-darkred);
 }
 
 .write-us-modal__form {
@@ -2506,6 +2541,16 @@ a {
   background-color: var(--basic-red);
 }
 
+.write-us-modal__button:hover,
+.write-us-modal__button:focus {
+  background-color: var(--button-hover);
+}
+
+.write-us-modal__button:active {
+  background-color: var(--special-darkred);
+}
+
+
 /* ----------------карта----------------- */
 .map-modal {
   /*   position: fixed;
@@ -2552,9 +2597,19 @@ a {
   z-index: 105;
 }
 
+.map-modal__close:hover, 
+.map-modal__close:focus {
+  cursor: pointer;
+  outline: 0;
+}
+
+.map-modal__close:active {
+  outline: 1px solid var(--special-darkred);
+}
+
 /* попап про добавление в корзину */
 .to-cart-modal {
-  position: fixed;
+  position: relative;
   top: calc(50% - 160px);
   left: calc(50% - 320px);
   width: 620px; 
@@ -2569,8 +2624,6 @@ a {
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
-
-  overflow: auto;
 }
 
 .to-cart-modal::after {
@@ -2594,6 +2647,17 @@ a {
   background: none;
   z-index: 105;
 }
+
+ .to-cart-modal__close:hover,
+ .to-cart-modal__close:focus {
+   cursor: pointer;
+   outline: 0;
+} 
+
+.to-cart-modal__close:active {
+  cursor: pointer;
+  outline: 1px dotted var(--speial-darkred);
+} 
 
 .to-cart-modal__text {
   position: relative;
@@ -2635,6 +2699,16 @@ a {
   background-color: var(--basic-red);
 }
 
+.to-cart-modal__footer-checkout:hover,
+.to-cart-modal__footer-checkout:focus {
+  background-color: var(--button-hover);
+}
+
+.to-cart-modal__footer-checkout:active {
+  background-color: var(--special-darkred);
+}
+
+
 .to-cart-modal__close-button {
   width: 192px;
   padding: 11px 31px 9px 32px;
@@ -2652,4 +2726,9 @@ a {
 .to-cart-modal__close-button:hover,
 .to-cart-modal__close-button:focus {
   cursor: pointer;
+  outline: 1px dotted var(--basic-grey);  
+}
+
+.to-cart-modal__close-button:active {
+  outline: 1px dotted var(--special-darkred);  
 }
