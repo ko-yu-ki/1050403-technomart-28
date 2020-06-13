@@ -1605,7 +1605,7 @@ a {
   position: relative;
   height: 80px;
   margin-bottom: 9px;
-  padding: 39px 20px;
+  padding: 40px 20px 39px 20px;
 
   background-color: var(--filter-sorting-bgc);
   border-radius: 5px;
@@ -1617,7 +1617,7 @@ a {
 }
 
 .filter-form__scale-progress {
-  width: 82%;
+  width: 80%;
   height: 2px;
   background-color: var(--filter-scale-progress);
 }
@@ -1638,12 +1638,12 @@ a {
 }
 
 .pin-min {
-  top: 29px;
+  top: 30px;
   left: 18px;
 }
 
 .pin-max {
-  top: 29px;
+  top: 30px;
   left: 161px;
 }
 
