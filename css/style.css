@@ -1419,6 +1419,10 @@ a {
   left: -26px;
 }
 
+.breadcrumbs__item:last-of-type > .breadcrumbs__link {
+  padding-left: 3px;
+}
+
 /* каталог и его содержимое */
 .catalog {
   display: grid;
