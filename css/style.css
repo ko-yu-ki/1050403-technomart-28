@@ -2518,6 +2518,7 @@ background-color: var(--button-hover);
 .write-us-modal__input:focus,
 .write-us-modal__textarea:focus {
   outline: 1px solid var(--basic-grey);
+  color: var(--basic-black);
 }
 
 .write-us-modal__footer {
