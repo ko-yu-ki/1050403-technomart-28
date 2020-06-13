@@ -47,6 +47,10 @@
   --basic-transparent: transparent;
   --to-cart-modal-bgc: #F1F1F1;
   --filter-buttons: #B5B5B5;
+  --filter-scale: #D7DCDE;
+  --filter-scale-progress: #00CA74;
+  --pin-hole: #ABABAB;
+  --pin-shadow: #e6e6e6; /* #ABABAB + opacity 0.3 */
 }
 
 *, *::before, *::after { 
@@ -1584,7 +1588,8 @@ a {
 }
 
 .filter-form__legend {
-  margin-bottom: 5px;
+  margin-top: -7px;
+  margin-bottom: 12px;
 
   font-weight: bold;
   font-size: 17px;
@@ -1592,15 +1597,51 @@ a {
   text-transform: uppercase;
 }
 
-.filter-form__slider {
+.filter-form__range-block {
+  position: relative;
+  height: 80px;
   margin-bottom: 9px;
+  padding: 39px 20px;
 
   background-color: var(--filter-sorting-bgc);
   border-radius: 5px;
 }
-/* ------------------------------------------ползунок сам доделать --------- */
 
-.filter-form__number-block {
+.filter-form__scale {
+  height: 2px;
+  background-color: var(--filter-scale);
+}
+
+.filter-form__scale-progress {
+  width: 82%;
+  height: 2px;
+  background-color: var(--filter-scale-progress);
+}
+
+.filter-form__pin {
+  position: absolute;
+  padding: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: var(--pin-hole);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 var(--pin-shadow);
+}
+
+.pin-min {
+  top: 29px;
+  left: 18px;
+}
+
+.pin-max {
+  top: 29px;
+  left: 161px;
+}
+
+.filter-form__price-block {
   display: flex;
   justify-content: space-between;  
   align-items: center;
@@ -1621,6 +1662,11 @@ a {
 }
 
 .filter-form__input::placeholder { 
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
   color: var(--basic-black); 
   opacity: 1;
 }
@@ -1662,6 +1708,7 @@ a {
 }
 
 .producers-legend {
+  margin-top: 0;
   margin-bottom: 17px;
 }
 
@@ -1682,7 +1729,6 @@ a {
   margin-bottom: 8px;
   border: none;
 }
-
 
 .filter-form__label {
   position: relative;

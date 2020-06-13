@@ -168,18 +168,25 @@
           <form class="filter__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Цена:</legend>
-              <!-- двойной ползунок -->
-              <div class="filter-form__slider">
-                <div class="filter-form__scale">полоса ползунка</div>
-                <div class="filter-form__scale-progress">прогресс</div>
-                <span>кружочек раз</span>
-                <span>кружочек два</span>
-              </div>
-              <!-- конец двойного ползунка -->
-              <div class="filter-form__number-block">
-                <input class="filter-form__input" type="number" placeholder="0">
-                <p class="filter-form__dash">—</p>
-                <input class="filter-form__input" type="number" placeholder="30000">
+              <div class="range-filter">
+                <!-- двойной ползунок -->
+                <div class="filter-form__range-block">
+                  <div class="filter-form__scale">
+                    <div class="filter-form__scale-progress"></div>
+                  </div>
+                  <div class="filter-form__pin pin-min"></div>
+                  <div class="filter-form__pin pin-max"></div>
+                </div>
+                <!-- конец двойного ползунка -->
+                <div class="filter-form__price-block">
+                  <label class="min-price" aria-label="минимальная цена.">
+                    <input class="filter-form__input" type="number" placeholder="0" min="0">
+                  </label>
+                  <p class="filter-form__dash">—</p>
+                  <label class="max-price" aria-label="максимальная цена.">
+                    <input class="filter-form__input" type="number" placeholder="30000" min="0">
+                  </label>
+                </div>
               </div>
             </fieldset>
 
