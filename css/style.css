@@ -2609,7 +2609,7 @@ background-color: var(--button-hover);
 
 /* попап про добавление в корзину */
 .to-cart-modal {
-  position: relative;
+  position: fixed;
   top: calc(50% - 160px);
   left: calc(50% - 320px);
   width: 620px; 
@@ -2636,6 +2636,7 @@ background-color: var(--button-hover);
   background: var(--basic-red);
 
   content: "";
+  z-index: 101;
 }
 
 .to-cart-modal__close {
