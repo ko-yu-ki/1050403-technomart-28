@@ -1180,15 +1180,12 @@ a {
   margin: 0;
   padding: 0;
   width: 320px;
-}
 
-.warranty-text {
   white-space: pre;
 }
 
 .credit-text {
   margin-bottom: 34px;
-  white-space: pre;
 }
 
 .delivery-slide::after {
