@@ -1435,6 +1435,7 @@ a {
   grid-template-areas:  "title title"
                         "filter sorting"
                         "filter cards"
+                        "filter cards"
                         "filter paginator";
   gap: 20px;  
 
@@ -1466,6 +1467,7 @@ a {
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
+  flex-grow: 0;
   
   line-height: 18px;
   text-transform: uppercase;
@@ -1850,8 +1852,8 @@ a {
 
 .catalog__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 19px;     /* в качестве подпорки - работает лучше gap 20px*/
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 19px;     /* в качестве подпорки - работает лучше, чем gap 20px*/
   /* gap: 20px; */
 }
 
@@ -1865,6 +1867,7 @@ a {
 
 .card__item {
   width: 220px;
+  /* max-height: 318px; */
   position: relative;
   padding-top: 178px;
 
@@ -1920,7 +1923,7 @@ a {
 
 .card__old-price {
   position: absolute;
-  bottom: 72px;
+  top: 226px;
   left: 77px;
 
   margin: 0;
@@ -2027,7 +2030,7 @@ a {
 
 .paginator__item {
   margin-right: 6px;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 9px 14px;
 
   text-align: center;
   color: var(--basic-black);
@@ -2055,7 +2058,7 @@ a {
 .paginator__current-page:hover, 
 .paginator__current-page:focus,
 .paginator__current-page:active {
-  border:none;
+  border: 1px solid var(--basic-red);;
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
@@ -2142,6 +2145,7 @@ a {
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-navigation__link {
@@ -2185,12 +2189,14 @@ a {
   list-style: none;
   
   width: 540px;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-top: 5px;
   padding-left: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-products__link {
