@@ -1572,7 +1572,7 @@ a {
 
 .filter__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   padding-top: 10px;
   padding-left: 18px;
   padding-bottom: 10px;
@@ -1596,7 +1596,7 @@ a {
 }
 
 .filter-form__legend {
-  margin-top: -7px;
+  margin-top: 0px;
   margin-bottom: 12px;
 
   font-weight: bold;
@@ -1723,7 +1723,7 @@ a {
 
 .power-legend {
   margin-top: 2px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .filter-form__item {
@@ -1831,7 +1831,7 @@ a {
 
 .filter-form__submit-button {
   width: 220px;
-  padding: 10px 79px 10px 79px;
+  padding: 9px 79px 9px 79px;
   line-height: 18px;
   text-transform: uppercase;
 
@@ -2022,7 +2022,7 @@ a {
   grid-area: paginator;
 
   margin-left: -1px;
-  padding-top: 34px;
+  padding-top: 14px;
 }
 
 .paginator__item {
