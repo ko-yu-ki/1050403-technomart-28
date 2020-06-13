@@ -1633,6 +1633,8 @@ a {
   border: 8px solid var(--basic-white);
   border-radius: 50%;
   box-shadow: 0 2px 0 0 var(--pin-shadow);
+
+  cursor: pointer;
 }
 
 .pin-min {
@@ -1670,7 +1672,6 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 18px;
   color: var(--basic-black); 
   opacity: 1;
 }
@@ -2015,6 +2016,7 @@ a {
 .paginator {
   grid-area: paginator;
 
+  margin-left: -1px;
   padding-top: 34px;
 }
 
@@ -2065,7 +2067,7 @@ a {
 .product-about__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -2101,7 +2103,7 @@ a {
 .footer-content {
   position: relative;
 
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   padding-top: 37px;
 }
 
