@@ -163,6 +163,11 @@ a {
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
+.header-top__logo-link:hover,
+.header-top__logo-link:focus {
+  cursor: pointer;
+}
+
 .header-top__logo-link:active {
   background-color: var(--special-darkred);
 }
