@@ -444,7 +444,7 @@
     </footer>
 
     <!-- попап "написать нам" -->
-    <section class="write-us-modal">
+    <section class="write-us-modal hide">
       <h2 class="write-us-modal__title visually-hidden">Напишите нам.</h2> 
       <button class="write-us-modal__close" type="button" aria-label="Закрыть форму связи." tabindex="0">
         <svg class="write-us-modal__close-img" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
@@ -471,7 +471,7 @@
 <!-- закончился попап "написать нам" -->
 
 <!-- попап карта -->
-    <section class="map-modal wrapper">
+    <section class="map-modal">
       <h2 class="map-modal__title visually-hidden">
         Карта, на которой отмечен магазин "Техномарт", находящийся по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8.
       </h2> 
@@ -481,7 +481,7 @@
         </svg>
       </button> 
       <!-- сама карта -->
-      <iframe width="943" height="449" frameborder="0" style="border:0;"
+      <iframe class="map-modal__iframe" width="943" height="449" frameborder="0" style="border:0;"
         src="https://www.google.com/maps/embed/v1/place?q=Санкт-Петербург,+ул.+Б.+Конюшенная,+д.+19/8" allowfullscreen 
         title="Карта, на&nbsp;которой отмечен магазин &bdquo;Техномарт&ldquo;, находящийся по&nbsp;адресу: г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8.">
        </iframe> 

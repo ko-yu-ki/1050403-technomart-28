@@ -2418,7 +2418,6 @@ background-color: var(--button-hover);
   top: calc(50vh - 215px);
   left: calc(50vw - 326px);
  
-
   width: 620px;
   margin: 0 auto;
   padding-top: 46px;
@@ -2426,7 +2425,6 @@ background-color: var(--button-hover);
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 200;
-  /* outline: 2px solid rgb(81, 185, 226); */
 }
 
 .write-us-modal::before {
@@ -2451,7 +2449,6 @@ background-color: var(--button-hover);
   border: 0;
   background: none;
   z-index: 205;
-  outline: 2px solid violet;
 }
 
 .write-us-modal__close-img {
@@ -2529,7 +2526,6 @@ background-color: var(--button-hover);
 
 .write-us-modal__textarea {
   width: 460px;
-  /* height: 114px; */
   padding: 5px 12px 9px 12px;
   margin-bottom: 24px;
   
@@ -2592,17 +2588,13 @@ background-color: var(--button-hover);
 
 /* ----------------карта----------------- */
 .map-modal {
-  /*   position: fixed;
-  top: calc(50% - 225px);
-  left: calc(50% - 471px);
-  */
-  position: relative;
-
-  background-image: url("");
+  position: fixed;
+  top: calc(50vh - 225px);
+  left: calc(50vw - 488px);
+  
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
-  outline: 2px solid rgb(81, 185, 226);
 }
 
 .map-modal::before {
@@ -2612,18 +2604,6 @@ background-color: var(--button-hover);
 
   width: 943px;
   height: 7px;
-  background: var(--basic-red);
-
-  content: "";
-}
-
-.map-modal::after {
-  position: absolute;
-  bottom: 37px;
-  left: 943px;
-
-  width: 7px;
-  height: 38px;
   background: var(--basic-red);
 
   content: "";
@@ -2639,10 +2619,13 @@ background-color: var(--button-hover);
   border: 0;
   background: none;
   z-index: 105;
-  outline: 2px solid violet;
 }
 
 .map-modal__close-img {
+  display: block;
+}
+
+.map-modal__iframe {
   display: block;
 }
 
@@ -2656,9 +2639,9 @@ background-color: var(--button-hover);
   outline: 1px solid var(--special-darkred);
 }
 
-/* попап про добавление в корзину */
+/* -----------попап про добавление в корзину ---------------*/
 .to-cart-modal {
-  position: relative;
+  position: fixed;
   top: calc(50% - 160px);
   left: calc(50% - 320px);
   width: 620px; 
