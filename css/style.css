@@ -210,10 +210,6 @@ a {
   position: relative;
 }
 
-.favourites__not-empty {
-  background-color: var(--basic-red);
-}
-
 .favourites__link {
   display: block;
   width: 164px;
@@ -237,10 +233,6 @@ a {
 
 .cart {
   position: relative;
-}
-
-.cart__not-empty {
-  background-color: var(--basic-red);
 }
 
 .cart__link {
@@ -278,6 +270,10 @@ a {
 .favourites__link:active > .favourites__icon,
 .cart__link:active > .cart__icon {
   fill: var(--promo-button-bgc);
+}
+
+.not-empty {
+  background-color: var(--basic-red);
 }
 
 .header-top__checkout{
