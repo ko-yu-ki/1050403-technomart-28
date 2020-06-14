@@ -50,7 +50,7 @@
   --filter-scale: #D7DCDE;
   --filter-scale-progress: #00CA74;
   --pin-hole: #ABABAB;
-  --pin-shadow: #e6e6e6; /* #ABABAB + opacity 0.3 */
+  --pin-shadow: #E6E6E6; /* #ABABAB + opacity 0.3 */
   --button-hover: #CA2C37;
 }
 
@@ -1755,6 +1755,7 @@ background-color: var(--button-hover);
 }
 
 .filter-form__item {
+  position: relative;
   margin-bottom: 15px;
 }
 
@@ -1768,7 +1769,6 @@ background-color: var(--button-hover);
 }
 
 .filter-form__label {
-  position: relative;
   padding-left: 35px;
   font-size: 15px;
   line-height: 19px;
@@ -1778,21 +1778,41 @@ background-color: var(--button-hover);
  .producers-label{
   padding-top: 2px;
   padding-bottom: 2px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23c5c5c5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: 0 0px;
 } 
 
-.filter-form__checkbox:not(:checked) + .producers-label:hover {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23B5B5B5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+.filter-form__checkbox:not(:checked) ~ svg.checkbox__checked{
+  display: none;
 }
 
-.filter-form__checkbox:checked + .producers-label {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23c5c5c5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+.filter-form__checkbox:not(:checked) ~ .checkbox__nonchecked{
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  display: block;
+  fill: var(--special-lightgrey);
 }
 
-.filter-form__checkbox:checked + .producers-label:hover {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23B5B5B5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+.filter-form__checkbox:checked ~ .checkbox__nonchecked{
+  display: none;
+}
+
+.filter-form__checkbox:checked ~ svg.checkbox__checked{
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  display: block;
+  fill: var(--special-lightgrey);
+}
+
+.producers-label:hover ~ .checkbox__nonchecked,
+.producers-label:hover ~ svg.checkbox__checked {
+  fill: var(--filter-buttons);
+}
+
+.filter-form__checkbox:disabled ~ svg.checkbox__checked,
+.filter-form__checkbox:disabled ~ .checkbox__nonchecked, 
+.filter-form__checkbox:disabled + .producers-label {
+  opacity: 0.3;
 }
 
 .power-label::before {
@@ -1831,23 +1851,20 @@ background-color: var(--button-hover);
   cursor: pointer;
 }
 
-.power-label:hover.power-label::before{
+.power-label:hover.power-label::before {
   fill: var(--filter-buttons);
 }
 
-.power-label:hover.power-label::after{
+.power-label:hover.power-label::after {
   border-color:var(--filter-buttons);
   background-color: var(--filter-buttons);
 }
 
-.producers-label:hover.producers-label::before{
+.producers-label:hover.producers-label::before {
   background-color: var(--filter-buttons);
 }
 
-.filter-form__radio:disabled + .power-label::before,
-.filter-form__radio:disabled + .power-label::after,
-.filter-form__checkbox:disabled + .producers-label::before,
-.filter-form__checkbox:disabled + .producers-label::after {
+.filter-form__radio:disabled + .power-label { 
   opacity: 0.3;
 }
 
@@ -1855,7 +1872,6 @@ background-color: var(--button-hover);
 .producers-label:active {
   outline: 1px dotted var(--special-lightgrey);
 }
-
 
 .filter-form__submit-button {
   width: 220px;
