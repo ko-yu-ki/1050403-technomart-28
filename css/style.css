@@ -621,6 +621,7 @@ a {
   right: 0px;
   content: url("../img/new.png");
   z-index: 10;
+  outline: 2px solid orange;
 } 
 
 .promo__title {
@@ -789,6 +790,7 @@ a {
 
   background-color: var(--basic-red);
   z-index: 15;
+  outline: 2px solid yellow;
 }
 
 .slide__button:hover, 
@@ -807,6 +809,7 @@ background-color: var(--button-hover);
 
   margin: 0;
   padding: 0;
+  outline: 2px solid orange;
 }
 
 .arrows-control__button:first-of-type {
@@ -1177,6 +1180,7 @@ background-color: var(--button-hover);
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-grey);
+  outline: 2px solid orange;
 }
 
 .services-slider__text {
@@ -1188,6 +1192,7 @@ background-color: var(--button-hover);
   width: 320px;
 
   white-space: pre;
+  outline: 2px solid orange;
 }
 
 .credit-text {
@@ -1200,6 +1205,7 @@ background-color: var(--button-hover);
   left: 151px;
   content: url("../img/delivery.png");
   z-index: 1;
+  outline: 2px solid red;
 } 
 
 .warranty-slide::after {
@@ -1208,6 +1214,7 @@ background-color: var(--button-hover);
   left: 239px;
   content: url("../img/warranty.png");  
   z-index: 1;
+  outline: 2px solid red;
 }
 
 .credit-slide::after {
@@ -1216,6 +1223,7 @@ background-color: var(--button-hover);
   left: 165px;
   content: url("../img/credit.png");
   z-index: 1;
+  outline: 2px solid red;
 }
 
 .services-credit__button {
@@ -1715,7 +1723,7 @@ background-color: var(--button-hover);
 
 .filter-form__input:active,
 .filter-form__input:focus {
-  outline: 1px dotted var(--basic-red);
+  outline: 2px dotted var(--basic-red);
 }
 
 .filter-form__dash {
@@ -1919,6 +1927,7 @@ background-color: var(--button-hover);
   display: flex;
   flex-direction: column; 
   z-index: 20;
+  outline: 2px solid green;
 }
 
 /* для картинки в карточке */
@@ -1928,6 +1937,7 @@ background-color: var(--button-hover);
   top: 30px;
   left: 17px;
   z-index: 1;
+  outline: 2px solid red;
 }
 
 .card__item:hover .card__hover--hide,
@@ -2399,6 +2409,7 @@ background-color: var(--button-hover);
 
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
+  outline: 2px solid rgb(81, 185, 226);
 }
 
 .write-us-modal::before {
@@ -2421,6 +2432,7 @@ background-color: var(--button-hover);
   border: 0;
   background: none;
   z-index: 105;
+  outline: 2px solid violet;
 }
 
 .write-us-modal__close:hover, 
@@ -2562,6 +2574,7 @@ background-color: var(--button-hover);
 
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
+  outline: 2px solid rgb(81, 185, 226);
 }
 
 .map-modal::before {
@@ -2596,6 +2609,7 @@ background-color: var(--button-hover);
   border: 0;
   background: none;
   z-index: 105;
+  outline: 2px solid violet;
 }
 
 .map-modal__close:hover, 
@@ -2610,7 +2624,7 @@ background-color: var(--button-hover);
 
 /* попап про добавление в корзину */
 .to-cart-modal {
-  position: fixed;
+  position: relative;
   top: calc(50% - 160px);
   left: calc(50% - 320px);
   width: 620px; 
@@ -2625,9 +2639,10 @@ background-color: var(--button-hover);
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
+  outline: 2px solid rgb(81, 185, 226);
 }
 
-.to-cart-modal::after {
+.to-cart-modal::before {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2638,6 +2653,7 @@ background-color: var(--button-hover);
 
   content: "";
   z-index: 101;
+  outline: 2px solid blue;
 }
 
 .to-cart-modal__close {
@@ -2648,6 +2664,7 @@ background-color: var(--button-hover);
   border: 0;
   background: none;
   z-index: 105;
+  outline: 2px solid violet;
 }
 
  .to-cart-modal__close:hover,
@@ -2657,7 +2674,6 @@ background-color: var(--button-hover);
 } 
 
 .to-cart-modal__close:active {
-  cursor: pointer;
   outline: 1px dotted var(--speial-darkred);
 } 
 
