@@ -1775,44 +1775,47 @@ background-color: var(--button-hover);
   text-transform: uppercase;
 }
 
- .producers-label{
+ .producers-label {
   padding-top: 2px;
   padding-bottom: 2px;
 } 
 
-.filter-form__checkbox:not(:checked) ~ svg.checkbox__checked{
-  display: none;
-}
-
-.filter-form__checkbox:not(:checked) ~ .checkbox__nonchecked{
+.filter-form__checkbox:checked + .producers-label::before {
   position: absolute;
-  top: -2px;
-  left: 0px;
-  display: block;
-  fill: var(--special-lightgrey);
+  top: 0;
+  left: 0;
+
+  content: url("../img/checkbox-on.svg");
 }
 
-.filter-form__checkbox:checked ~ .checkbox__nonchecked{
-  display: none;
-}
-
-.filter-form__checkbox:checked ~ svg.checkbox__checked{
+.filter-form__checkbox:not(:checked)  + .producers-label::before {
   position: absolute;
-  top: -2px;
-  left: 0px;
-  display: block;
-  fill: var(--special-lightgrey);
+  top: 0;
+  left: 0;
+
+  content: url("../img/checkbox-off.svg");
 }
 
-.producers-label:hover ~ .checkbox__nonchecked,
-.producers-label:hover ~ svg.checkbox__checked {
-  fill: var(--filter-buttons);
+.filter-form__checkbox:checked + .producers-label:hover.producers-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: url("../img/checkbox-on-hover.svg");
 }
 
-.filter-form__checkbox:disabled ~ svg.checkbox__checked,
-.filter-form__checkbox:disabled ~ .checkbox__nonchecked, 
+.filter-form__checkbox:not(:checked) + .producers-label:hover.producers-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: url("../img/checkbox-off-hover.svg");
+}
+
+.filter-form__checkbox:disabled + .producers-label::before, 
 .filter-form__checkbox:disabled + .producers-label {
   opacity: 0.3;
+  cursor: default;
 }
 
 .power-label::before {
@@ -1860,16 +1863,13 @@ background-color: var(--button-hover);
   background-color: var(--filter-buttons);
 }
 
-.producers-label:hover.producers-label::before {
-  background-color: var(--filter-buttons);
-}
-
 .filter-form__radio:disabled + .power-label { 
   opacity: 0.3;
+  cursor: default;
 }
 
-.power-label:active,
-.producers-label:active {
+.filter-form__radio:not(:disabled) + .power-label:active,
+.filter-form__checkbox:not(:disabled) + .producers-label:active {
   outline: 1px dotted var(--special-lightgrey);
 }
 
