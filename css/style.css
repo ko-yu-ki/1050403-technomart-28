@@ -526,19 +526,11 @@ a {
   color: var(--basic-red);
 } 
 
-.user__orders-link:hover::after {
-  background-color: var(--basic-red);
-} 
-
 .user__profile-link:active,
 .user__orders-link:active,
 .user__account-link:active {
   color: var(--special-lightgrey);
 }
-
-.user__orders-link:active::after {
-  background-color: var(--special-lightgrey);
-} 
 
 /* навигация */
 
