@@ -2627,6 +2627,11 @@ background-color: var(--button-hover);
 
 .map-modal__iframe {
   display: block;
+  background-image: url("../img/big-map.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: var(--basic-white);
+  color: var(--basic-white);
 }
 
 .map-modal__close:hover, 
