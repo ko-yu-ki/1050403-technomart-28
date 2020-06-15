@@ -622,7 +622,6 @@ a {
   right: 0px;
   content: url("../img/new.png");
   z-index: 10;
-  outline: 2px solid orange;
 } 
 
 .promo__title {
@@ -791,7 +790,6 @@ a {
 
   background-color: var(--basic-red);
   z-index: 15;
-  outline: 2px solid yellow;
 }
 
 .slide__button:hover, 
@@ -810,7 +808,6 @@ background-color: var(--button-hover);
 
   margin: 0;
   padding: 0;
-  outline: 2px solid orange;
 }
 
 .arrows-control__button:first-of-type {
@@ -1181,7 +1178,6 @@ background-color: var(--button-hover);
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-grey);
-  outline: 2px solid orange;
 }
 
 .services-slider__text {
@@ -1193,7 +1189,6 @@ background-color: var(--button-hover);
   width: 320px;
 
   white-space: pre;
-  outline: 2px solid orange;
 }
 
 .credit-text {
@@ -1206,7 +1201,6 @@ background-color: var(--button-hover);
   left: 151px;
   content: url("../img/delivery.png");
   z-index: 1;
-  outline: 2px solid red;
 } 
 
 .warranty-slide::after {
@@ -1215,7 +1209,6 @@ background-color: var(--button-hover);
   left: 239px;
   content: url("../img/warranty.png");  
   z-index: 1;
-  outline: 2px solid red;
 }
 
 .credit-slide::after {
@@ -1224,7 +1217,6 @@ background-color: var(--button-hover);
   left: 165px;
   content: url("../img/credit.png");
   z-index: 1;
-  outline: 2px solid red;
 }
 
 .services-credit__button {
@@ -1944,7 +1936,6 @@ background-color: var(--button-hover);
   display: flex;
   flex-direction: column; 
   z-index: 20;
-  outline: 2px solid green;
 }
 
 /* для картинки в карточке */
@@ -1954,7 +1945,6 @@ background-color: var(--button-hover);
   top: 30px;
   left: 17px;
   z-index: 1;
-  outline: 2px solid red;
 }
 
 .card__item:hover .card__hover--hide,
@@ -2656,7 +2646,6 @@ background-color: var(--button-hover);
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px var(--card-shadow);
   z-index: 100;
-  outline: 2px solid rgb(81, 185, 226);
 }
 
 .to-cart-modal::before {
@@ -2671,7 +2660,6 @@ background-color: var(--button-hover);
   content: "";
 
   z-index: 101;
-  outline: 2px solid blue;
 }
 
 .to-cart-modal__close {
@@ -2685,7 +2673,6 @@ background-color: var(--button-hover);
   background: none;
 
   z-index: 105;
-  outline: 2px solid violet;
 }
 
 .to-cart-modal__close-img {
@@ -2699,7 +2686,7 @@ background-color: var(--button-hover);
 } 
 
 .to-cart-modal__close:active {
-  outline: 1px dotted var(--speial-darkred);
+  outline: 1px dotted var(--special-darkred);
 } 
 
 .to-cart-modal__text {
