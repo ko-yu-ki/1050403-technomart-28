@@ -1044,7 +1044,7 @@ background-color: var(--button-hover);
 
 .producer4-logo {
   margin-right: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .producer5-logo {
@@ -1057,13 +1057,8 @@ background-color: var(--button-hover);
   margin-right: 3px;
 }
 
-.producer7-logo {
-  margin-top: -3px;
-}
-
 .producer8-logo {
-  margin-top: -8px;
-  margin-left: 3px;
+  margin-top: -1px;
 } 
 
 /* секция сервисы */
