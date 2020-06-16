@@ -1839,7 +1839,7 @@ background-color: var(--special-darkred);
   content: url("../img/checkbox-off.svg");
 }
 
-.filter-form__checkbox:checked + .producers-label:hover.producers-label::before,
+.filter-form__checkbox:checked + .producers-label:hover.producers-label::before, 
 .filter-form__checkbox:checked + .producers-label:focus.producers-label::before {
   position: absolute;
   top: 0;
@@ -1848,14 +1848,18 @@ background-color: var(--special-darkred);
   content: url("../img/checkbox-on-hover.svg");
 }
 
-.filter-form__checkbox:not(:checked) + .producers-label:hover.producers-label::before,
-.filter-form__checkbox:not(:checked) + .producers-label:focus.producers-label::before  {
+.filter-form__checkbox:not(:checked) + .producers-label:hover.producers-label::before, 
+.filter-form__checkbox:not(:checked) + .producers-label:focus.producers-label::before {
   position: absolute;
   top: 0;
   left: 0;
 
   content: url("../img/checkbox-off-hover.svg");
 }
+
+.filter-form__item:focus-within {
+  outline: 1px dotted var(--filter-buttons);
+} 
 
 .filter-form__checkbox:disabled + .producers-label {
   opacity: 0.3;
@@ -1892,11 +1896,8 @@ background-color: var(--special-darkred);
 }
 
 .power-label:hover,
-.power-label:focus,
-.producers-label:hover,
-.producers-label:focus {
+.producers-label:hover {
   cursor: pointer;
-  outline: none;
 }
 
 .power-label:hover.power-label::before,
