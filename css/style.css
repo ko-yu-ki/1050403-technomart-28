@@ -168,6 +168,12 @@ a {
   cursor: pointer;
 }
 
+.header-top__logo-link:focus {
+  cursor: pointer;
+  outline: 1px dotted var(--basic-white);
+}
+
+
 .header-top__logo-link:active {
   background-color: var(--special-darkred);
 }
@@ -261,6 +267,11 @@ a {
   fill: var(--basic-white);
 }
 
+.favourites__link:focus, 
+.cart__link:focus {
+  outline: 1px dotted var(--basic-white);
+}
+
 .favourites__link:active,
 .cart__link:active {
   color: var(--special-white);
@@ -291,6 +302,10 @@ a {
 .header-top__checkout:hover,
 .header-top__checkout:focus {
   background-color: var(--special-green);
+}
+
+.header-top__checkout:focus {
+  outline: 1px dotted var(--basic-white);
 }
 
 .header-top__checkout:active {
@@ -341,6 +356,10 @@ a {
   color: var(--basic-red);
 
   border: 3px solid var(--basic-white); 
+}
+
+.header-contacts__phone:focus {
+  outline: 1px dotted var(--basic-grey);
 }
 
 .header-contacts__phone::before {
@@ -414,14 +433,19 @@ a {
 }
 
 .login-button__link:hover,
-.registration-button__link:hover,
-.login-button__link:focus,
-.registration-button__link:focus {
+.registration-button__link:hover {
   color: var(--basic-red);
 }
 
-.login-button__link:hover > .login-button__logo {
+.login-button__link:hover > .login-button__logo,
+.login-button__link:focus > .login-button__logo {
   fill: var(--icon-hover);
+}
+
+.login-button__link:focus,
+.registration-button__link:focus {
+  color: var(--basic-red);
+  outline: 1px dotted var(--basic-grey);
 }
 
 .login-button__link:active,
@@ -483,6 +507,11 @@ a {
   fill: var(--basic-grey);
 } 
 
+.user__profile-link:focus, 
+.user__logout-link:focus {
+  outline: 1px dotted var(--basic-grey);
+}
+
 .user__profile-link:active  > .user__profile-icon,
 .user__logout-link:active > .user__logout-icon {
   fill: var(--special-lightgrey);
@@ -501,7 +530,6 @@ a {
   padding-right: 3px;
 } 
 
-/* ------ средне - костыльное позиционирование от всего блока авторизации------*/
 .user__orders-link::after {
   position:absolute;
   left: 133px;
@@ -524,6 +552,7 @@ a {
 .user__orders-link:focus,
 .user__account-link:focus{
   color: var(--basic-red);
+  outline: 1px dotted var(--basic-red);
 } 
 
 .user__profile-link:active,
@@ -567,6 +596,7 @@ a {
 .header-navigation__link:hover,
 .header-navigation__link:focus {
   background-color:  var(--special-darkgrey-hover);
+  outline: 1px dotted var(--basic-transparent);
 }
 
 .header-navigation__link:active {
@@ -709,6 +739,7 @@ a {
 .promo__button:hover,
 .promo__button:focus {
   background-color: var(--promo-button-bgc-hover);
+  outline: 1px dotted var(--basic-transparent);
 }
 
 .promo__button:active {
@@ -784,10 +815,15 @@ a {
   z-index: 15;
 }
 
-.slide__button:hover, 
-.slide__button:focus {
+.slide__button:hover{
 background-color: var(--button-hover);
 }
+
+.slide__button:focus {
+  background-color: var(--button-hover);
+  outline: none;
+}
+
 
 .slide__button:active {
   background-color: var(--special-darkred);
@@ -820,15 +856,17 @@ background-color: var(--button-hover);
   fill: var(--basic-white);
 }
 
-.arrows-control__button:hover,
-.arrows-control__button:focus {
+.arrows-control__button:hover {
   cursor: pointer;
-  outline: 1px dotted var(--special-lightyellow); 
+}
+
+.arrows-control__button:focus {
+  outline: 1px dotted var(--basic-grey);     
 }
 
 .arrows-control__button:active {
   cursor: pointer;
-  outline: 1px dotted var(--basic-red); 
+  outline: 1px dotted var(--basic-transparent); 
 }
 
 .dots-control {
@@ -856,17 +894,15 @@ background-color: var(--button-hover);
 
 .dots-control__button--active {
   background: var(--basic-red);
+  outline: 1px dotted var(--basic-transparent);
 }
 
-.dots-control__button:hover,
+.dots-control__button:hover {
+  cursor: pointer;
+}
+
 .dots-control__button:focus {
-  cursor: pointer;
-  outline: 1px dotted var(--special-lightyellow); 
-}
-
-.dots-control__button:active {
-  cursor: pointer;
-  outline: 1px dotted var(--basic-red);
+  outline: 1px dotted var(--basic-grey); 
 }
 
 /* секция товары - заголовок, карточки смотри ниже, где стилизация каталога */
@@ -919,6 +955,7 @@ background-color: var(--button-hover);
   color: var(--basic-white);
 
   background-color: var(--button-hover);
+  outline: none;
 }
 
 .all-pop-products-button:active {
@@ -978,7 +1015,9 @@ background-color: var(--button-hover);
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
+
   background-color: var(--button-hover);
+  outline: none;
 }
 
 .all-pop-producers-button:active {
@@ -1016,8 +1055,10 @@ background-color: var(--button-hover);
 }
 
 .producers__card:hover,
-.producers__card:focus {
+.producers__card:focus,
+.producers__link:focus  {
   box-shadow: 0px 4px 20px var(--card-shadow);
+  outline: none;
 }
 
 .producers__card:active {
@@ -1231,7 +1272,8 @@ background-color: var(--button-hover);
 
 .services-credit__button:hover, 
 .services-credit__button:focus {
-background-color: var(--button-hover);
+  background-color: var(--button-hover);
+  outline: none;
 }
 
 .services-credit__button:active {
@@ -1331,7 +1373,8 @@ background-color: var(--special-darkred);
 
 .about__button:hover, 
 .about__button:focus {
-background-color: var(--button-hover);
+  background-color: var(--button-hover);
+  outline: none;
 }
 
 .about__button:active {
@@ -1369,6 +1412,7 @@ background-color: var(--button-hover);
   padding: 0;
 
   color: var(--basic-black);
+  outline: 1px dotted var(--basic-grey);
 }
 
 .contacts__mail-us-button {
@@ -1390,6 +1434,7 @@ background-color: var(--button-hover);
 .contacts__mail-us-button:hover,
 .contacts__mail-us-button:focus {
   background-color: var(--button-hover);
+  outline: none;
 }
 
 .contacts__mail-us-button:active {
@@ -1422,6 +1467,10 @@ background-color: var(--button-hover);
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.breadcrumbs__link:focus {
+  outline: 1px dotted var(--basic-grey);
 }
 
 .breadcrumbs__item:not(:first-of-type) > .breadcrumbs__link::before {
@@ -1519,10 +1568,15 @@ background-color: var(--button-hover);
   border-bottom: 1px dotted var(--basic-red);
 }
 
-.sorting__link:hover,
+.sorting__link:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
 .sorting__link:focus {
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
+  outline: 1px dotted var(--basic-grey);
 }
 
 .sorting__link:active {
@@ -1561,9 +1615,12 @@ background-color: var(--button-hover);
   fill: var(--special-lightgrey);
 }
 
-.sorting-direction__img:hover, 
-.sorting-direction__img:focus {
+.sorting-direction__img:hover {
   fill: var(--basic-black);
+}
+ 
+.sorting-direction__link:focus{
+  outline: 1px dotted var(--basic-grey);
 }
 
 .sorting-direction__:active {
@@ -1656,6 +1713,10 @@ background-color: var(--button-hover);
   cursor: pointer;
 }
 
+.filter-form__pin:focus {
+  outline: 1px dotted var(--basic-grey);
+}
+
 .pin-min {
   top: 30px;
   left: 18px;
@@ -1708,11 +1769,6 @@ background-color: var(--button-hover);
   border: 0;
   background-color: var(--filter-sorting-bgc);
 } 
-
-.filter-form__input:active,
-.filter-form__input:focus {
-  outline: 2px dotted var(--basic-red);
-}
 
 .filter-form__dash {
   margin: 0;
@@ -1783,7 +1839,8 @@ background-color: var(--button-hover);
   content: url("../img/checkbox-off.svg");
 }
 
-.filter-form__checkbox:checked + .producers-label:hover.producers-label::before {
+.filter-form__checkbox:checked + .producers-label:hover.producers-label::before,
+.filter-form__checkbox:checked + .producers-label:focus.producers-label::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1791,7 +1848,8 @@ background-color: var(--button-hover);
   content: url("../img/checkbox-on-hover.svg");
 }
 
-.filter-form__checkbox:not(:checked) + .producers-label:hover.producers-label::before {
+.filter-form__checkbox:not(:checked) + .producers-label:hover.producers-label::before,
+.filter-form__checkbox:not(:checked) + .producers-label:focus.producers-label::before  {
   position: absolute;
   top: 0;
   left: 0;
@@ -1838,13 +1896,16 @@ background-color: var(--button-hover);
 .producers-label:hover,
 .producers-label:focus {
   cursor: pointer;
+  outline: none;
 }
 
-.power-label:hover.power-label::before {
-  fill: var(--filter-buttons);
+.power-label:hover.power-label::before,
+.power-label:focus.power-label::before {
+  border-color: var(--filter-buttons);
 }
 
-.power-label:hover.power-label::after {
+.power-label:hover.power-label::after,
+.power-label:focus.power-label::after {
   border-color:var(--filter-buttons);
   background-color: var(--filter-buttons);
 }
@@ -1872,6 +1933,7 @@ background-color: var(--button-hover);
 .filter-form__submit-button:hover,
 .filter-form__submit-button:focus {
   border: 1px solid var(--special-lightgrey);
+  outline: 1px dotted var(--basic-grey);
 }
 
 .filter-form__submit-button:active {
@@ -1917,19 +1979,27 @@ background-color: var(--button-hover);
 }
 
 .card__item:hover,
-.card__item:focus {
+.card__link:focus {
   box-shadow: 0px 4px 20px var(--card-shadow); 
+  
+  outline: none;
 }
 
 /* для блока с купить и в закладки */
 .card__item:hover .card__hover--show,
-.card__item:focus .card__hover--show { 
+.card__link:focus + .card__hover--show { 
   position: absolute;
   top: 38px;
   left: calc(50% - 67.5px);
+
   display: flex;
   flex-direction: column; 
+
   z-index: 20;
+}
+
+.card__link:focus + .card__hover--show + .card__tocart-button{
+  outline: 1px solid blue;
 }
 
 /* для картинки в карточке */
@@ -1942,7 +2012,7 @@ background-color: var(--button-hover);
 }
 
 .card__item:hover .card__hover--hide,
-.card__item:focus .card__hover--hide {
+.card__link:focus .card__hover--hide {
   display: none;
 }
 
@@ -2081,6 +2151,7 @@ background-color: var(--button-hover);
 .paginator__item:hover,
 .paginator__item:focus {
   border: 1px solid var(--special-lightgrey);
+  outline: none;
 }
 
 .paginator__item:active {
@@ -2162,6 +2233,10 @@ background-color: var(--button-hover);
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
+.footer-content__logo-link:focus {
+  outline: 1px dotted var(--basic-white);
+}
+
 .footer-content__logo-link:active {
   background-color: var(--special-darkred);
 }
@@ -2185,9 +2260,13 @@ background-color: var(--button-hover);
   color: var(--prefooter-background);
 } 
 
-.footer-navigation__link:hover,
+.footer-navigation__link:hover {
+  border-bottom: 1px solid var(--prefooter-background);
+}
+
 .footer-navigation__link:focus {
   border-bottom: 1px solid var(--prefooter-background);
+  outline: none;
 }
 
 .footer-navigation__link:active {
@@ -2219,6 +2298,11 @@ background-color: var(--button-hover);
   color: var(--footer-contacts);
 }
 
+.footer-contacts__phone:focus {
+  outline: none;
+  color: var(--special-lightgrey);
+}
+
  .footer-products {
   list-style: none;
   
@@ -2240,6 +2324,7 @@ background-color: var(--button-hover);
 .footer-products__link:hover,
 .footer-products__link:focus {
   border-bottom: 1px solid var(--special-lightyellow);
+  outline: none;
 }
 
 .footer-products__link:active {
@@ -2347,7 +2432,7 @@ background-color: var(--button-hover);
 .socials__link:focus,
 .socials__link:active {
   background: linear-gradient(0deg, var(--basic-red), var(--basic-red));
-
+  outline: none;
 }
 
 .feedback {
@@ -2369,6 +2454,7 @@ background-color: var(--button-hover);
 .feedback__link:hover,
 .feedback__link:focus {
   border-bottom: 1px solid var(--special-lightyellow);
+  outline: none;
 }
 
 .feedback__link:active {
@@ -2395,6 +2481,7 @@ background-color: var(--button-hover);
 .designed-by__link:hover,
 .designed-by__link:focus {
   border-bottom: 1px solid var(--special-lightyellow);
+  outline: none;
 }
 
 .designed-by__link:active {

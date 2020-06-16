@@ -195,23 +195,23 @@
               <legend class="filter-form__legend producers-legend">Производители:</legend>       
               <ul class="filter-form__list">
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox visually-hidden" id="prod-bosch-id" type="checkbox" name="Bosch" checked disabled>
+                  <input class="filter-form__checkbox visually-hidden" id="prod-bosch-id" tabindex="-1" type="checkbox" name="Bosch" checked>
                   <label class="filter-form__label producers-label" for="prod-bosch-id" tabindex="0">Bosch</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox visually-hidden" id="prod-interskol-id" type="checkbox" name="Интерскол" disabled>
+                  <input class="filter-form__checkbox visually-hidden" id="prod-interskol-id" tabindex="-1" type="checkbox" name="Интерскол">
                   <label class="filter-form__label producers-label" for="prod-interskol-id" tabindex="0">Интерскол</label> 
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox visually-hidden" id="prod-makita-id" type="checkbox" name="Makita" checked>
+                  <input class="filter-form__checkbox visually-hidden" id="prod-makita-id" tabindex="-1" type="checkbox" name="Makita" checked>
                   <label class="filter-form__label producers-label" for="prod-makita-id" tabindex="0">Makita</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox visually-hidden" id="prod-dewalt-id" type="checkbox" name="DeWalt">
+                  <input class="filter-form__checkbox visually-hidden" id="prod-dewalt-id" tabindex="-1" type="checkbox" name="DeWalt">
                   <label class="filter-form__label producers-label" for="prod-dewalt-id" tabindex="0">DeWalt</label>
                 </li>
                 <li class="filter-form__item">
-                  <input class="filter-form__checkbox visually-hidden" id="prod-hitachi-id" type="checkbox" name="Hitachi">
+                  <input class="filter-form__checkbox visually-hidden" id="prod-hitachi-id" tabindex="-1" type="checkbox" name="Hitachi">
                   <label class="filter-form__label producers-label" for="prod-hitachi-id" tabindex="0">Hitachi</label>
                 </li>
               </ul>
@@ -221,11 +221,11 @@
               <legend class="filter-form__legend power-legend">Питание:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item power-item">
-                  <input class="filter-form__radio visually-hidden" id="power-battery-id" type="radio" name="poweredby" value="battery" checked>
+                  <input class="filter-form__radio visually-hidden" id="power-battery-id" tabindex="-1" type="radio" name="poweredby" value="battery" checked>
                   <label class="filter-form__label power-label" for="power-battery-id" tabindex="0">Аккумуляторные</label>
                 </li>
                 <li class="filter-form__item power-item">
-                  <input class="filter-form__radio visually-hidden" id="power-acdc-id" type="radio" name="poweredby" value="ac-dc">
+                  <input class="filter-form__radio visually-hidden" id="power-acdc-id" tabindex="-1" type="radio" name="poweredby" value="ac-dc">
                   <label class="filter-form__label power-label" for="power-acdc-id" tabindex="0">Сетевые</label>
                 </li>
               </ul>  
@@ -251,7 +251,6 @@
               <a class="card__tofavs-button button">В закладки</a>
             </div>
           </li>
-
           <li class="card__item">
             <a class="card__link" href="">
               <div class="card__hover--hide">
@@ -367,7 +366,7 @@
         </ul>
 
         <div class="paginator">
-          <a class="paginator__item paginator__current-page" tabindex="0">1</a>
+          <a class="paginator__item paginator__current-page">1</a>
           <a class="paginator__item" href="">2</a>
           <a class="paginator__item" href="">3</a>
           <a class="paginator__item paginator__next" href="">Следующая</a>
