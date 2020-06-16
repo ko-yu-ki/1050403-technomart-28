@@ -1799,7 +1799,6 @@ background-color: var(--button-hover);
   content: url("../img/checkbox-off-hover.svg");
 }
 
-.filter-form__checkbox:disabled + .producers-label::before, 
 .filter-form__checkbox:disabled + .producers-label {
   opacity: 0.3;
   cursor: default;
