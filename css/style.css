@@ -1951,8 +1951,7 @@ background-color: var(--special-darkred);
 .catalog__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
-  gap: 19px;     /* в качестве подпорки - работает лучше, чем gap 20px*/
-  /* gap: 20px; */
+  gap: 19px;     
 }
 
 .card {
@@ -1964,31 +1963,19 @@ background-color: var(--special-darkred);
 }
 
 .card__item {
-  width: 220px;
-  /* max-height: 318px; */
   position: relative;
+
+  width: 220px;
   padding-top: 178px;
 
   font-weight: bold;
 
+  background-color: var(--basic-white);
   border: 1px solid var(--card-border);
 }
 
 /* для блока с купить и в закладки */
 .card__hover--show {
-  display: none;
-}
-
-.card__item:hover,
-.card__link:focus {
-  box-shadow: 0px 4px 20px var(--card-shadow); 
-  
-  outline: none;
-}
-
-/* для блока с купить и в закладки */
-.card__item:hover .card__hover--show,
-.card__link:focus + .card__hover--show { 
   position: absolute;
   top: 38px;
   left: calc(50% - 67.5px);
@@ -1996,25 +1983,34 @@ background-color: var(--special-darkred);
   display: flex;
   flex-direction: column; 
 
+  z-index: -1;
+}
+
+.card__item:hover,
+.card__item:focus-within {
+  box-shadow: 0px 4px 20px var(--card-shadow); 
+}
+                                                
+.card__link:focus {
+  outline: none;
+}
+
+/* для блока с купить и в закладки */
+.card__item:hover .card__hover--show,
+.card__item:focus-within .card__hover--show { 
   z-index: 20;
 }
 
-.card__link:focus + .card__hover--show + .card__tocart-button{
-  outline: 1px solid blue;
-}
-
 /* для картинки в карточке */
-
 .card__hover--hide {
   position: absolute;
   top: 30px;
   left: 17px;
-  z-index: 1;
 }
 
 .card__item:hover .card__hover--hide,
-.card__link:focus .card__hover--hide {
-  display: none;
+.card__item:focus-within .card__hover--hide {
+  z-index: -1;
 }
 
 .card__title {
@@ -2058,6 +2054,8 @@ background-color: var(--special-darkred);
   background-repeat: no-repeat;
   background-position: 44px;
   background-size: 141px 38px;
+
+  cursor: pointer;
 }
 
 .card__tocart-button {
@@ -2090,8 +2088,8 @@ background-color: var(--special-darkred);
 .card__tocart-button:hover,
 .card__tocart-button:focus {
   background-color: var(--special-green);
-  cursor: pointer;
-}
+  outline: none;
+}         
 
 .card__tocart-button:active {
   background-color: var(--special-darkgreen);
@@ -2108,6 +2106,7 @@ background-color: var(--special-darkred);
   text-transform: uppercase;
   color: var(--basic-grey);
 
+  background-color: var(--basic-white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
 }
@@ -2116,7 +2115,7 @@ background-color: var(--special-darkred);
 .card__tofavs-button:focus {
   color: var(--basic-grey);
   border: 3px solid var(--basic-grey);
-  cursor: pointer;
+  outline: none;
 }
 
 .card__tofavs-button:active {
