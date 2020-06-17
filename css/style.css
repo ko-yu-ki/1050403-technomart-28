@@ -178,6 +178,12 @@ a {
   background-color: var(--special-darkred);
 }
 
+.header-top__logo-img {
+  width: 108px;
+  height: 18px;
+  object-fit: contain;
+}
+
 .search-form__input {
   width: 271px;
   height: 42px;
@@ -760,6 +766,10 @@ a {
 
 .slide__img {
   display: block;
+  width: 620px;
+  height: 266px;
+  object-fit: contain;
+  background-color: var(--filter-buttons);
 }
 
 .hide {
@@ -1065,6 +1075,12 @@ background-color: var(--button-hover);
   opacity: 0.5;
 }
 
+.producers__logo {
+  width: 220px;
+  height: 145px;
+  object-fit: contain;
+  background-color: var(--filter-buttons);
+}
 
 .producer2-logo {
   margin-top: -5px;
@@ -1413,6 +1429,13 @@ background-color: var(--special-darkred);
 
   color: var(--basic-black);
   outline: 1px dotted var(--basic-grey);
+}
+
+.contacts__img {
+  width: 300px;
+  height: 158px;
+  object-fit: contain;
+  background-color: var(--filter-buttons);
 }
 
 .contacts__mail-us-button {
@@ -1990,7 +2013,7 @@ background-color: var(--special-darkred);
 .card__item:focus-within {
   box-shadow: 0px 4px 20px var(--card-shadow); 
 }
-                                                
+
 .card__link:focus {
   outline: none;
 }
@@ -2011,6 +2034,13 @@ background-color: var(--special-darkred);
 .card__item:hover .card__hover--hide,
 .card__item:focus-within .card__hover--hide {
   z-index: -1;
+}
+
+.card__image {
+  width: 185px;
+  height: 103px;
+  object-fit: contain;
+  background-color: var(--filter-buttons);
 }
 
 .card__title {
@@ -2239,6 +2269,12 @@ background-color: var(--special-darkred);
 
 .footer-content__logo-link:active {
   background-color: var(--special-darkred);
+}
+
+.footer-content__logo-img {
+width: 138px;
+height: 23px;
+object-fit: contain;
 }
 
 .footer-navigation {
