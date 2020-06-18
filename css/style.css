@@ -1434,6 +1434,10 @@ background-color: var(--special-darkred);
   background-color: var(--filter-buttons);
 }
 
+.contacts__link:focus-within {
+  outline: 1px dotted var(--special-lightgrey);
+}
+
 .contacts__mail-us-button {
   width: 300px;
   display: block;
