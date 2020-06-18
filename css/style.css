@@ -311,7 +311,7 @@ a {
 }
 
 .header-top__checkout:focus {
-  outline: 1px dotted var(--basic-white);
+  outline: none;
 }
 
 .header-top__checkout:active {
@@ -451,7 +451,7 @@ a {
 .login-button__link:focus,
 .registration-button__link:focus {
   color: var(--basic-red);
-  outline: 1px dotted var(--basic-grey);
+  outline: none;
 }
 
 .login-button__link:active,
@@ -509,13 +509,16 @@ a {
 } 
 
 .user__profile-link:hover > .user__profile-icon, 
-.user__logout-link:hover > .user__logout-icon {
+.user__logout-link:hover > .user__logout-icon, 
+.user__profile-link:focus-within > .user__profile-icon,
+.user__logout-link:focus-within > .user__logout-icon {
   fill: var(--basic-grey);
+  outline: none;
 } 
 
 .user__profile-link:focus, 
 .user__logout-link:focus {
-  outline: 1px dotted var(--basic-grey);
+  outline: none;
 }
 
 .user__profile-link:active  > .user__profile-icon,
@@ -558,7 +561,7 @@ a {
 .user__orders-link:focus,
 .user__account-link:focus{
   color: var(--basic-red);
-  outline: 1px dotted var(--basic-red);
+  outline: none;
 } 
 
 .user__profile-link:active,
@@ -1174,6 +1177,7 @@ background-color: var(--button-hover);
 .services-slider__button:focus {
   background-color: var(--special-darkgrey-hover);
   cursor: pointer;
+  outline: none;
 }
 
 .services-slider__button:active {
@@ -1421,7 +1425,6 @@ background-color: var(--special-darkred);
   padding: 0;
 
   color: var(--basic-black);
-  outline: 1px dotted var(--basic-grey);
 }
 
 .contacts__img {
@@ -1450,6 +1453,7 @@ background-color: var(--special-darkred);
 .contacts__mail-us-button:hover,
 .contacts__mail-us-button:focus {
   background-color: var(--button-hover);
+  outline: 1px dotted var(--basic-grey);
   outline: none;
 }
 
@@ -1948,9 +1952,9 @@ background-color: var(--special-darkred);
 }
 
 .filter-form__submit-button:hover,
-.filter-form__submit-button:focus {
+.filter-form__submit-button:focus-within {
   border: 1px solid var(--special-lightgrey);
-  outline: 1px dotted var(--basic-grey);
+  outline: none;
 }
 
 .filter-form__submit-button:active {
