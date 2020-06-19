@@ -175,16 +175,16 @@
                     margin-left: 0%;
                   "></div>
                 </div>
-                <button class="filter-form__pin pin-min" tabindex="0" style="left: 8%;"></button>
-                <button class="filter-form__pin pin-max" tabindex="0" style="left: 72%;"></button>
+                <button class="filter-form__pin pin-min" name="pin-min" type="button" style="left: 8%;"></button>
+                <button class="filter-form__pin pin-max" name="pin-max" type="button" style="left: 72%;"></button>
               </div>
               <div class="filter-form__price-block">
                 <label class="min-price" aria-label="минимальная цена.">
-                  <input class="filter-form__input" type="number" placeholder="0" min="0">
+                  <input class="filter-form__input" type="number" name="min-price" value="0" min="0">
                 </label>
                 <p class="filter-form__dash">—</p>
                 <label class="max-price" aria-label="максимальная цена.">
-                  <input class="filter-form__input" type="number" placeholder="30000" min="0">
+                  <input class="filter-form__input" type="number" name="max-price" value="30000" min="0">
                 </label>
               </div>
             </fieldset>
