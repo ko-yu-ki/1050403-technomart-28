@@ -184,6 +184,7 @@ a {
 }
 
 .search-form__input {
+  display: block;
   width: 271px;
   height: 42px;
   padding-left: 42px;
@@ -852,6 +853,8 @@ background-color: var(--button-hover);
   position: absolute;
   top: 122px;
   left: 17px;
+
+  display: block;
   background: none;
   border: 0;
   fill: var(--basic-white);
@@ -861,6 +864,8 @@ background-color: var(--button-hover);
   position: absolute;
   top: 122px;
   right: 13px;
+
+  display: block;
   background: none;
   border: 0;
   fill: var(--basic-white);
@@ -889,6 +894,7 @@ background-color: var(--button-hover);
 }
 
 .dots-control__button {
+  display: block;
   padding: 0;
   width: 10px;
   height: 10px;
@@ -1154,8 +1160,9 @@ background-color: var(--button-hover);
 }
 
 .services-slider__button {
+  display: block;
   min-width: 240px;
-  padding: 14px 22px 18px 22px;
+  padding: 15px 22px 17px 22px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
@@ -1720,10 +1727,12 @@ background-color: var(--special-darkred);
 
 .filter-form__pin {
   position: absolute;
-  padding: 0;
 
+  display: block;
+  
   width: 20px;
   height: 20px;
+  padding: 0;
 
   background-color: var(--pin-hole);
   border: 8px solid var(--basic-white);
@@ -1765,6 +1774,9 @@ background-color: var(--special-darkred);
 
 .filter-form__input {
   -moz-appearance: textfield;
+  appearance: textfield;
+
+  display: block;
 }
 
 .filter-form__input::placeholder { 
@@ -1942,6 +1954,7 @@ background-color: var(--special-darkred);
 }
 
 .filter-form__submit-button {
+  display: block;
   width: 220px;
   padding: 9px 79px 9px 79px;
   line-height: 18px;
@@ -2552,11 +2565,12 @@ object-fit: contain;
   content: "";
 }
 
-.write-us-modal__close {  
+.write-us-modal__close { 
   position: absolute;
   top: 21px;
   left: calc(100% - 32px);
 
+  display: block; 
   padding: 0;
 
   border: 0;
@@ -2612,6 +2626,7 @@ object-fit: contain;
 }
 
 .write-us-modal__input {
+  display: block;
   width: 220px;
   height: 38px;
 
@@ -2639,6 +2654,7 @@ object-fit: contain;
 }
 
 .write-us-modal__textarea {
+  display: block;
   width: 460px;
   padding: 5px 12px 9px 12px;
   margin-bottom: 24px;
@@ -2676,6 +2692,7 @@ object-fit: contain;
 }
 
 .write-us-modal__button {
+  display: block; 
   padding: 11px 199px 9px 199px;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -2728,6 +2745,7 @@ object-fit: contain;
   top: 17px;
   left: calc(100% - 31px);
 
+  display: block; 
   padding: 0;
 
   border: 0;
@@ -2803,6 +2821,7 @@ object-fit: contain;
   top: 18px;
   right: 10px;
 
+  display: block; 
   padding: 0;
 
   border: 0;
