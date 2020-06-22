@@ -2565,6 +2565,7 @@ object-fit: contain;
 
 .write-us-modal__close-img {
   display: block;
+  fill: var(--basic-red);
 }
 
 .write-us-modal__close:hover, 
@@ -2735,6 +2736,7 @@ object-fit: contain;
 
 .map-modal__close-img {
   display: block;
+  fill: var(--basic-red);
 }
 
 .map-modal__iframe {
@@ -2810,6 +2812,7 @@ object-fit: contain;
 
 .to-cart-modal__close-img {
   display: block;
+  fill: var(--basic-red);
 }
 
  .to-cart-modal__close:hover,
