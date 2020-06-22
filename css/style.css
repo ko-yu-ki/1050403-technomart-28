@@ -408,7 +408,8 @@ a {
 
 .login-button__link,
 .registration-button__link {
-  display: inline-block;
+  display: block;
+
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -471,9 +472,9 @@ a {
 
 .user__bcg-white {
   position: relative;
-  margin-bottom: 3px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 3px;
 
   background-color: var(--basic-white);
 }
@@ -493,11 +494,6 @@ a {
   left: 15px;
   fill: var(--special-lightgrey);
 } 
-
-.user__logout-link {
-  display: flex;
-  flex-grow: 1;
-}
 
 .user__logout-icon {
   position: absolute;
@@ -527,6 +523,8 @@ a {
 .user__orders-link,
 .user__account-link {
   display: inline-block;
+
+  vertical-align: center;
   font-size: 16px;
   line-height: 18px;
 
