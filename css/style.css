@@ -1055,6 +1055,7 @@ background-color: var(--button-hover);
   /* иначе карточки сжимаются до высоты самой большой картинки */
   min-height: 145px;
   
+  background-color: var(--basic-white);
   border: 1px solid var(--card-border);
 }
 
@@ -2027,6 +2028,7 @@ background-color: var(--special-darkred);
   position: absolute;
   top: 30px;
   left: 17px;
+  object-fit: contain;
 }
 
 .card__item:hover .card__hover--hide,
