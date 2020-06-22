@@ -2742,6 +2742,11 @@ object-fit: contain;
 
 .map-modal__iframe {
   display: block;
+  width: 943;
+  height: 449; 
+  /* frameborder="0"; */
+  border: 0;
+
   background-image: url("../img/big-map.png");
   background-position: 0 0;
   background-repeat: no-repeat;
