@@ -2006,6 +2006,7 @@ background-color: var(--special-darkred);
   position: relative;
 
   width: 220px;
+  min-height: 318px;
   padding-top: 178px;
 
   font-weight: bold;
@@ -2063,21 +2064,20 @@ background-color: var(--special-darkred);
 
 .card__title {
   margin: 0;
-  margin-bottom: 40px;
 
   font-size: 18px;
   line-height: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   color: var(--basic-black);
 }
 
 .card__old-price {
-  position: absolute;
-  top: 226px;
-  left: 77px;
-
+  min-height: 40px;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 
   font-size: 17px;
   line-height: 18px;
@@ -2100,7 +2100,7 @@ background-color: var(--special-darkred);
 
   background-image: url("../img/red-price.png");
   background-repeat: no-repeat;
-  background-position: 44px;
+  background-position: 45px 0;
   background-size: 141px 38px;
 
   cursor: pointer;
