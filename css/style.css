@@ -797,6 +797,10 @@ a {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .slide__text {
@@ -808,6 +812,10 @@ a {
   padding-bottom: 16px;
 
   font-size: 18px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .slide__button {
