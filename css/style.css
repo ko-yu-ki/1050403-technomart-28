@@ -2173,6 +2173,11 @@ background-color: var(--special-darkred);
   z-index: 20;
 }
 
+.card__hovered {
+  box-shadow: 0px 4px 20px var(--card-shadow); 
+}
+
+
 /* пагинация */
 .paginator {
   grid-area: paginator;
