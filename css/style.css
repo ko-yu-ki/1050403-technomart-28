@@ -2164,6 +2164,15 @@ background-color: var(--special-darkred);
   border: 3px solid var(--basic-grey-opacity);
 }
 
+/* карта с показанными кнопками в каталоге */
+.card__hovered--hide {
+  z-index: -1;
+}
+
+.card__hovered--show {
+  z-index: 20;
+}
+
 /* пагинация */
 .paginator {
   grid-area: paginator;
