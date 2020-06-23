@@ -1963,7 +1963,9 @@ background-color: var(--special-darkred);
 .filter-form__submit-button {
   display: block;
   width: 220px;
-  padding: 9px 79px 9px 79px;
+  padding: 9px 20px 9px 20px;
+
+  text-align: center;
   line-height: 18px;
   text-transform: uppercase;
 
@@ -2089,6 +2091,7 @@ background-color: var(--special-darkred);
 
 .card__price {
   margin: 0;
+  margin-left: -1px;
   margin-bottom: 20px;
   padding: 10px 32px 10px 37px;
 
@@ -2441,7 +2444,7 @@ object-fit: contain;
 .socials {
   list-style: none;
 
-  width: 134px;
+  width: 135px;
   margin: 0;
   margin-top: -1px;
   margin-right: 118px;
@@ -2449,7 +2452,7 @@ object-fit: contain;
 
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
+  flex-wrap: wrap;
 }
 
 /* здесь будут иконки соц-сетей и их стилизация */
