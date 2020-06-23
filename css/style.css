@@ -657,11 +657,11 @@ a {
   margin: 0;
   margin-bottom: 14px;
 
+  width: 140px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 
-  /* не работает? */
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -727,8 +727,7 @@ a {
   display: block;
   width: 135px;
   margin-bottom: 21px;
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding: 9px 22px 11px 22px;
 
   font-size: 14px;
   line-height: 18px;
@@ -1217,6 +1216,7 @@ background-color: var(--button-hover);
   position: relative;
   z-index: 10;
 
+  width: 320px;
   margin: 0;
   margin-top: -2px;
   margin-bottom: 24px;
