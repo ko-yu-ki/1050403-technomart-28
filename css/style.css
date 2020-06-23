@@ -940,8 +940,10 @@ background-color: var(--button-hover);
 }
 
 .products__title {
+  width: 706px;
   margin: 0;
   padding-top: 1px;
+  padding-right: 28px;
 
   font-weight: normal;
   font-size: 30px;
@@ -1002,8 +1004,10 @@ background-color: var(--button-hover);
 }
 
 .producers__title {
+  width: 706px;
   margin: 0;
   padding-top: 1px;
+  padding-right: 28px;
 
   font-weight: normal;
   font-size: 30px;
