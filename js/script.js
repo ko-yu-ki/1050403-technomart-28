@@ -66,7 +66,7 @@ try {
   toCartModalOpen.forEach((item) => {
 
     item.addEventListener('click', (evt) => {
-      
+
       evt.preventDefault();
 
       toCartModal.classList.add('modal-appear');
@@ -109,3 +109,4 @@ try {
   });
 }
 catch(err) {};
+
