@@ -98,38 +98,30 @@ try {
 catch(err) {};
 
 const escPressed = function(evt, popup, name, email, message) {
-  // console.log(evt);
-  // console.log(popup);
-  // console.log(!popup.classList.contains('hide'));
+
     if (evt.keyCode === 27) {
-      console.log('тут');
+
       if (!popup.classList.contains('hide')) {
         evt.preventDefault();
         
-        let isStorageSupport = true;
         try {
-          localStorage.getItem('name');
-        } catch {
-          isStorageSupport = false;
-        }
-  
-        if (isStorageSupport) {
           localStorage.setItem('name', name.value);
-          localStorage.setItem('email',email.value);
+          localStorage.setItem('email', email.value);
           localStorage.setItem('message', message.value);
-        }
+
+          if (name.classList.contains('modal-error')) {
+            name.classList.remove('modal-error');
+          } 
+          if (email.classList.contains('modal-error')) {
+            email.classList.remove('modal-error');
+          } 
+          if (message.classList.contains('modal-error')) {
+            message.classList.remove('modal-error');
+          }
+        } catch {}
   
         popup.classList.toggle('hide');
         popup.classList.remove('modal-appear');
-        if (name.classList.contains('modal-error')) {
-          name.classList.remove('modal-error');
-        } 
-        if (email.classList.contains('modal-error')) {
-          email.classList.remove('modal-error');
-        } 
-        if (message.classList.contains('modal-error')) {
-          message.classList.remove('modal-error');
-        }
       }
     }
   };
@@ -156,6 +148,7 @@ try {
     });
 
     window.addEventListener('keydown', (evt) => {
+      console.log('поймали нажатие');
       escPressed(evt, mapModal);
     });
 
@@ -171,7 +164,7 @@ try {
   const backToCatalog = toCartModal.querySelector('.to-cart-modal__back-to-catalog');
   const cart = document.querySelector('.cart');
   const textInCart = document.querySelector('.cart__text');
-  const checkoutButton = toCartModal.querySelector('to-cart-modal__footer-checkout');
+  const checkoutButton = toCartModal.querySelector('.to-cart-modal__footer-checkout');
 
   toCartModalOpen.forEach((item) => {
 
@@ -180,7 +173,8 @@ try {
       evt.preventDefault();
 
       toCartModal.classList.add('modal-appear');
-      console.log(checkoutButton);
+      checkoutButton.focus({preventScroll:true});
+      toCartClose.focus({preventScroll:true});
 
       if (!cart.classList.contains('not-empty')) {
         cart.classList.add('not-empty');

@@ -2962,6 +2962,9 @@ object-fit: contain;
   outline: 1px dotted var(--special-darkred);  
 }
 
+
+/* анимации */
+
 .modal-error {
   animation: it-is-an-error 1s;
 }
