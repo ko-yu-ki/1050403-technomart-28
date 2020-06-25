@@ -171,6 +171,7 @@ try {
   const backToCatalog = toCartModal.querySelector('.to-cart-modal__back-to-catalog');
   const cart = document.querySelector('.cart');
   const textInCart = document.querySelector('.cart__text');
+  const checkoutButton = toCartModal.querySelector('to-cart-modal__footer-checkout');
 
   toCartModalOpen.forEach((item) => {
 
@@ -179,6 +180,7 @@ try {
       evt.preventDefault();
 
       toCartModal.classList.add('modal-appear');
+      console.log(checkoutButton);
 
       if (!cart.classList.contains('not-empty')) {
         cart.classList.add('not-empty');

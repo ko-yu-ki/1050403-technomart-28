@@ -2938,8 +2938,7 @@ object-fit: contain;
   background-color: var(--special-darkred);
 }
 
-
-.to-cart-modal__close-button {
+.to-cart-modal__back-to-catalog {
   width: 192px;
   padding: 11px 31px 9px 32px;
 
@@ -2953,13 +2952,13 @@ object-fit: contain;
   background-color: var(--basic-white);
 }
 
-.to-cart-modal__close-button:hover,
-.to-cart-modal__close-button:focus {
+.to-cart-modal__back-to-catalog:hover,
+.to-cart-modal__back-to-catalog:focus {
   cursor: pointer;
   outline: 1px dotted var(--basic-grey);  
 }
 
-.to-cart-modal__close-button:active {
+.to-cart-modal__back-to-catalog:active {
   outline: 1px dotted var(--special-darkred);  
 }
 
