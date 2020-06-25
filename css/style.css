@@ -2970,19 +2970,15 @@ object-fit: contain;
 @keyframes it-is-an-error {
   25% {
     box-shadow: 0 0 15px 5px var(--basic-red);
-    /* transform: translateX(0); */
   }
   50% {
     box-shadow: none;
-    /* transform: translateX(-10px); */
   }
   75% {
     box-shadow: 0 0 15px 5px var(--basic-red);
-    /* transform: translateX(10px); */
   }
   100% {
     box-shadow: none;
-    /* transform: translateX(0); */
   }
 }
 
