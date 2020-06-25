@@ -238,32 +238,27 @@ try {
     } catch {
       isStorageSupport = false;
     }
-    console.log(isStorageSupport);
+
 
     if (isStorageSupport) {
-      console.log('0');
-      console.log('localStorage.getItem(name): ', localStorage.getItem('name'));
-      console.log('localStorage.getItem(email): ', localStorage.getItem('email'));
-      console.log('localStorage.getItem(name) || localStorage.getItem(email): ', (localStorage.getItem('name') || localStorage.getItem('email') || false));
-
-      if (localStorage.getItem('name') || localStorage.getItem('email') || false) {
+        if (localStorage.getItem('name') || localStorage.getItem('email') || false) {
         
         userInfo[0].value = localStorage.getItem('name');
         userInfo[1].value = localStorage.getItem('email');
-        console.log('1');
+
         if (localStorage.getItem('message') || false) {
           userMessage.value = localStorage.getItem('message');
           userMessage.focus();
-          console.log('2');
+
         }  
       } 
       else {
         userInfo[0].focus();
-        console.log('3');
+
       }
     } else {
       userInfo[0].focus();
-      console.log('4');
+
     }
 
     writeUsClose.addEventListener('click', (evt) => {
@@ -309,7 +304,6 @@ try {
 
       } else {
         
-        console.log('отправляем', userInfo[0].value, userInfo[1].value, userMessage.value); 
 
         if (isStorageSupport) {
           // запоминаем имя и почту
