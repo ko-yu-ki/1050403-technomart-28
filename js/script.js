@@ -72,6 +72,35 @@ try {
 }
 catch(err) {};
 
+//services-slider
+try {
+  const servicesButton = document.querySelectorAll('.services-slider__button');
+  const servicesSlides = document.querySelectorAll('.services-slider__slide');
+  let indexOfCurrentSlide = -1;
+
+  servicesButton.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const currentActiveButton = document.querySelector('.services-slider__active');
+
+      for (let i = 0; i < servicesButton.length; i++) {
+        if (servicesButton[i].classList.contains('services-slider__active')) {
+          indexOfCurrentSlide = i;
+        }
+      }
+
+      if (!button.classList.contains('services-slider__active')) {
+        button.classList.add('services-slider__active');
+        currentActiveButton.classList.remove('services-slider__active');
+
+        servicesSlides[indexOfCurrentSlide].classList.toggle('hide');
+        servicesSlides[index].classList.toggle('hide');
+      }
+    });
+  });
+
+}
+catch(err) {};
+
 const escPressed = function(evt, popup, name, email, message ){
 
   if (evt.keyCode === 27) {
