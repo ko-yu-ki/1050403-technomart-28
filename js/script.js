@@ -1,5 +1,77 @@
 'use strict';
 
+//promo-slider 
+try {
+  const promoSlides = document.querySelectorAll('.slide');
+  const arrowsControlButton = document.querySelectorAll('.arrows-control__button');   
+  const dotsControlButton = document.querySelectorAll('.dots-control__button');
+  
+  console.log('promoSlides: ', promoSlides);
+  console.log('arrowsControlButton: ', arrowsControlButton);
+  console.log('dotsControlButton: ', dotsControlButton);
+
+  arrowsControlButton.forEach((arrow, arrowIndex) => {
+
+    arrow.addEventListener('click', () => {
+      
+      let indexOfActiveSlide = 0;
+      let activeSlide = promoSlides[0];
+      const activeDot = document.querySelector('.dots-control__button--active');
+
+      for (let i = 0; i < promoSlides.length; i++) {
+        if (!promoSlides[i].classList.contains('hide')) {
+          activeSlide = promoSlides[i];
+          indexOfActiveSlide = i;
+        }
+      }
+
+      if (arrowIndex === 0) {
+        activeDot.classList.toggle('dots-control__button--active');
+        activeSlide.classList.toggle('hide');
+        indexOfActiveSlide--;
+        if (indexOfActiveSlide < 0) {indexOfActiveSlide = promoSlides.length-1;}
+        promoSlides[indexOfActiveSlide].classList.toggle('hide');
+        dotsControlButton[indexOfActiveSlide].classList.toggle('dots-control__button--active');
+      }
+      else if (arrowIndex === 1) {
+        activeDot.classList.toggle('dots-control__button--active');
+        activeSlide.classList.toggle('hide');
+        indexOfActiveSlide++;
+        if (indexOfActiveSlide > promoSlides.length-1) {indexOfActiveSlide = 0;}
+        promoSlides[indexOfActiveSlide].classList.toggle('hide');
+        dotsControlButton[indexOfActiveSlide].classList.toggle('dots-control__button--active');
+      }
+    });
+  });
+
+  dotsControlButton.forEach((dot, dotIndex) => {
+
+    dot.addEventListener('click', () => {
+
+      let indexOfActiveSlide = 0;
+      let activeSlide = promoSlides[0];
+      const activeDot = document.querySelector('.dots-control__button--active');
+
+      for (let i = 0; i < promoSlides.length; i++) {
+        if (!promoSlides[i].classList.contains('hide')) {
+          activeSlide = promoSlides[i];
+          indexOfActiveSlide = i;
+        }
+      }
+
+      if (indexOfActiveSlide !== dotIndex) {
+        activeDot.classList.toggle('dots-control__button--active');
+        activeSlide.classList.toggle('hide');
+
+        promoSlides[dotIndex].classList.toggle('hide');
+        dotsControlButton[dotIndex].classList.toggle('dots-control__button--active');
+      }
+    });
+  });
+
+}
+catch(err) {};
+
 const escPressed = function(evt, popup, name, email, message ){
 
   if (evt.keyCode === 27) {
