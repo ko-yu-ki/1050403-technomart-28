@@ -101,30 +101,42 @@ try {
 }
 catch(err) {};
 
-const escPressed = function(evt, popup, name, email, message ){
-
-  if (evt.keyCode === 27) {
-    console.log('тут');
-    if (!popup.classList.contains('hide')) {
-      evt.preventDefault();
-      
-      let isStorageSupport = true;
-      try {
-        localStorage.getItem('name');
-      } catch {
-        isStorageSupport = false;
+const escPressed = function(evt, popup, name, email, message) {
+  // console.log(evt);
+  // console.log(popup);
+  // console.log(!popup.classList.contains('hide'));
+    if (evt.keyCode === 27) {
+      console.log('тут');
+      if (!popup.classList.contains('hide')) {
+        evt.preventDefault();
+        
+        let isStorageSupport = true;
+        try {
+          localStorage.getItem('name');
+        } catch {
+          isStorageSupport = false;
+        }
+  
+        if (isStorageSupport) {
+          localStorage.setItem('name', name.value);
+          localStorage.setItem('email',email.value);
+          localStorage.setItem('message', message.value);
+        }
+  
+        popup.classList.toggle('hide');
+        popup.classList.remove('modal-appear');
+        if (name.classList.contains('modal-error')) {
+          name.classList.remove('modal-error');
+        } 
+        if (email.classList.contains('modal-error')) {
+          email.classList.remove('modal-error');
+        } 
+        if (message.classList.contains('modal-error')) {
+          message.classList.remove('modal-error');
+        }
       }
-      if (isStorageSupport) {
-        localStorage.setItem('name', name);
-        localStorage.setItem('email',email);
-        localStorage.setItem('message', message);
-      }
-
-      popup.classList.toggle('hide');
-      popup.classList.remove('modal-appear');
     }
-  }
-};
+  };
 
 //mapModal
 try {
@@ -211,3 +223,122 @@ try {
 }
 catch(err) {};
 
+//writeUsModal
+try {
+  const writeUsModalOpen = document.querySelector('.contacts__mail-us-button');
+  const writeUsModal = document.querySelector('.write-us-modal');
+  const writeUsClose = writeUsModal.querySelector('.write-us-modal__close');
+  const userInfo = writeUsModal.querySelectorAll('.write-us-modal__input');
+  const writeUsform = writeUsModal.querySelector('.write-us-modal__form');
+  const userMessage = writeUsModal.querySelector('.write-us-modal__textarea');
+
+  let isStorageSupport = true;
+
+  writeUsModalOpen.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    
+    writeUsModal.classList.add('modal-appear');
+
+    if (writeUsModal.classList.contains('hide')) {
+      writeUsModal.classList.toggle('hide');
+    };
+
+
+    try {
+      localStorage.getItem('name');
+    } catch {
+      isStorageSupport = false;
+    }
+
+    writeUsClose.addEventListener('click', (evt) => {
+      evt.preventDefault();
+
+      if (!writeUsModal.classList.contains('hide')) {
+        if (isStorageSupport) {
+          localStorage.setItem('name', userInfo[0].value);
+          localStorage.setItem('email', userInfo[1].value);
+          localStorage.setItem('message', userMessage.value);
+        }
+        writeUsModal.classList.remove('modal-appear');
+        if (userInfo[0].classList.contains('modal-error')) {
+          userInfo[0].classList.remove('modal-error');
+        } 
+        if (userInfo[1].classList.contains('modal-error')) {
+          userInfo[1].classList.remove('modal-error');
+        }
+        if (userMessage.classList.contains('modal-error')) {
+          userMessage.classList.remove('modal-error');
+        }
+        writeUsModal.classList.toggle('hide');
+      }
+    });
+
+    if (isStorageSupport) {
+      if (localStorage.getItem('name') || localStorage.getItem('email')) {
+        userInfo[0].value = localStorage.getItem('name');
+        userInfo[1].value = localStorage.getItem('email');
+
+        if (localStorage.getItem('message')) {
+          userMessage.value = localStorage.getItem('message');
+          userMessage.focus();
+        }  
+      } 
+    } else {
+      userInfo[0].focus();
+    }
+ 
+    writeUsform.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      writeUsModal.classList.remove('modal-appear');
+
+      if (!userInfo[0].value || !userInfo[1].value || !userMessage.value) {
+        if (!userInfo[0].value) {
+          document.documentElement.clientWidth;
+          userInfo[0].classList.add('modal-error');
+        }
+        if (!userInfo[1].value) {
+          document.documentElement.clientWidth;
+          userInfo[1].classList.add('modal-error');
+        }
+        if (!userMessage.value) {
+          document.documentElement.clientWidth;
+          userMessage.classList.add('modal-error');
+        }
+
+      } else {
+        
+        console.log('отправляем', userInfo[0].value, userInfo[1].value, userMessage.value); 
+
+        if (isStorageSupport) {
+          // запоминаем имя и почту
+          localStorage.setItem('name', userInfo[0].value);
+          localStorage.setItem('email', userInfo[1].value);
+        }
+        
+        //по идее тут еще должна быть какая-то отправка сообщения, вместо дефолтной
+        // очищаем поля после отправки
+        userMessage.value = '';
+        userInfo[0].value = '';
+        userInfo[1].value = '';
+
+        // закрываем окно и удаляем класс ошибки после отправки сообщения
+        writeUsModal.classList.toggle('hide');
+        if (userInfo[0].classList.contains('modal-error')) {
+          userInfo[0].classList.remove('modal-error');
+        } 
+        if (userInfo[1].classList.contains('modal-error')) {
+          userInfo[1].classList.remove('modal-error');
+        }
+        if (userMessage.classList.contains('modal-error')) {
+          userMessage.classList.remove('modal-error');
+        }
+      }
+    });
+
+    window.addEventListener('keydown', (evt) => {
+      escPressed(evt, writeUsModal, userInfo[0], userInfo[1], userMessage);
+    });
+
+  });
+}
+catch(err) {};

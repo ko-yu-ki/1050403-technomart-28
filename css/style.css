@@ -2962,3 +2962,38 @@ object-fit: contain;
 .to-cart-modal__close-button:active {
   outline: 1px dotted var(--special-darkred);  
 }
+
+.modal-error {
+  animation: it-is-an-error 1s;
+}
+
+@keyframes it-is-an-error {
+  25% {
+    box-shadow: 0 0 15px 5px var(--basic-red);
+    /* transform: translateX(0); */
+  }
+  50% {
+    box-shadow: none;
+    /* transform: translateX(-10px); */
+  }
+  75% {
+    box-shadow: 0 0 15px 5px var(--basic-red);
+    /* transform: translateX(10px); */
+  }
+  100% {
+    box-shadow: none;
+    /* transform: translateX(0); */
+  }
+}
+
+.modal-appear {
+  animation: here-it-is 0.5s;
+}
+
+@keyframes here-it-is {
+  from {
+    opacity: 0.4;
+  to {
+    opacity: 1;
+  }
+}
