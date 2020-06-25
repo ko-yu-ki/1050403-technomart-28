@@ -2706,7 +2706,7 @@ object-fit: contain;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: var(--special-lightgrey);
+  color: var(--special-black);
 
   border: 2px solid var(--special-lightgrey);
   border-radius: 2px;
