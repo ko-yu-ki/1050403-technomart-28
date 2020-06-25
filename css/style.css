@@ -2989,6 +2989,7 @@ object-fit: contain;
 @keyframes here-it-is {
   from {
     opacity: 0.4;
+  }
   to {
     opacity: 1;
   }
