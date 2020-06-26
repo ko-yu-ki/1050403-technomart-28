@@ -258,7 +258,6 @@ try {
       }
     } else {
       userInfo[0].focus();
-
     }
 
     writeUsClose.addEventListener('click', (evt) => {
@@ -288,20 +287,21 @@ try {
       evt.preventDefault();
       writeUsModal.classList.remove('modal-appear');
 
+      userInfo[0].classList.remove('modal-error');
+      userInfo[1].classList.remove('modal-error');
+      userMessage.classList.remove('modal-error');
+      writeUsModal.clientWidth;
       if (!userInfo[0].value || !userInfo[1].value || !userMessage.value) {
         if (!userInfo[0].value) {
-          document.documentElement.clientWidth;
           userInfo[0].classList.add('modal-error');
         }
         if (!userInfo[1].value) {
-          document.documentElement.clientWidth;
           userInfo[1].classList.add('modal-error');
         }
         if (!userMessage.value) {
-          document.documentElement.clientWidth;
           userMessage.classList.add('modal-error');
         }
-
+        
       } else {
         
 
