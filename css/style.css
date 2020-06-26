@@ -533,7 +533,7 @@ a {
 .user__account-link {
   display: inline-block;
 
-  vertical-align: center;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
 
@@ -2625,10 +2625,14 @@ object-fit: contain;
   fill: var(--basic-red);
 }
 
-.write-us-modal__close:hover, 
+.write-us-modal__close:hover {
+  cursor: pointer;
+}
+ 
 .write-us-modal__close:focus {
   cursor: pointer;
   outline: 0;
+  box-shadow: 0 0 5px 3px var(--basic-red);
 }
 
 .write-us-modal__close:active {
@@ -2802,8 +2806,8 @@ object-fit: contain;
 
 .map-modal__iframe {
   display: block;
-  width: 943;
-  height: 449; 
+  width: 943px;
+  height: 449px; 
   border: 0;
 
   background-image: url("../img/big-map.png");
@@ -2816,7 +2820,8 @@ object-fit: contain;
 .map-modal__close:hover, 
 .map-modal__close:focus {
   cursor: pointer;
-  outline: 0;
+  outline: 1px dashed var(--basic-grey);
+  box-shadow: 0 0 3px 5px var(--basic-white);
 }
 
 .map-modal__close:active {
@@ -2877,10 +2882,12 @@ object-fit: contain;
   fill: var(--basic-red);
 }
 
- .to-cart-modal__close:hover,
- .to-cart-modal__close:focus {
+ .to-cart-modal__close:hover{
    cursor: pointer;
-   outline: 0;
+} 
+
+.to-cart-modal__close:focus {
+    box-shadow: 0 0 5px 3px var(--basic-red);
 } 
 
 .to-cart-modal__close:active {

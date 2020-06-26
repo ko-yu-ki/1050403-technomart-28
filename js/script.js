@@ -148,7 +148,6 @@ try {
     });
 
     window.addEventListener('keydown', (evt) => {
-      console.log('поймали нажатие');
       escPressed(evt, mapModal);
     });
 
@@ -162,6 +161,7 @@ try {
   const toCartModal = document.querySelector('.to-cart-modal');
   const toCartClose = toCartModal.querySelector('.to-cart-modal__close');
   const backToCatalog = toCartModal.querySelector('.to-cart-modal__back-to-catalog');
+  const checkoutButton = toCartModal.querySelector('.to-cart-modal__footer-checkout');
   const cart = document.querySelector('.cart');
   const textInCart = document.querySelector('.cart__text');
 
@@ -170,7 +170,6 @@ try {
     item.addEventListener('click', (evt) => {
 
       evt.preventDefault();
-
       toCartModal.classList.add('modal-appear');
 
       if (!cart.classList.contains('not-empty')) {
@@ -197,6 +196,13 @@ try {
       });
 
       backToCatalog.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        if (!toCartModal.classList.contains('hide')) {
+          toCartModal.classList.toggle('hide');
+        }
+      });
+
+      checkoutButton.addEventListener('click', (evt) => {
         evt.preventDefault();
         if (!toCartModal.classList.contains('hide')) {
           toCartModal.classList.toggle('hide');
@@ -291,6 +297,7 @@ try {
       userInfo[1].classList.remove('modal-error');
       userMessage.classList.remove('modal-error');
       writeUsModal.clientWidth;
+
       if (!userInfo[0].value || !userInfo[1].value || !userMessage.value) {
         if (!userInfo[0].value) {
           userInfo[0].classList.add('modal-error');
@@ -301,7 +308,7 @@ try {
         if (!userMessage.value) {
           userMessage.classList.add('modal-error');
         }
-        
+
       } else {
         
 
