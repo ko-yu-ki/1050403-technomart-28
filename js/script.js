@@ -140,6 +140,8 @@ try {
       mapModal.classList.toggle('hide');
     };
 
+    mapModal.focus();
+
     mapClose.addEventListener('click', (evt) => {
       evt.preventDefault();
       if (!mapModal.classList.contains('hide')) {
