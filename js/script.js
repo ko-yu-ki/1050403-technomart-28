@@ -171,7 +171,6 @@ try {
 
       evt.preventDefault();
       toCartModal.classList.add('modal-appear');
-      toCartClose.focus();
 
       if (!cart.classList.contains('not-empty')) {
         cart.classList.add('not-empty');
@@ -188,6 +187,8 @@ try {
       if (toCartModal.classList.contains('hide')) {
         toCartModal.classList.toggle('hide');
       };
+
+      toCartModal.focus();
     
       toCartClose.addEventListener('click', (evt) => {
         evt.preventDefault();
