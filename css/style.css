@@ -2883,7 +2883,10 @@ height: 23px;
   color: var(--basic-white);
 }
 
-.map-modal__close:hover, 
+.map-modal__close:hover {
+  cursor: pointer;
+}
+
 .map-modal__close:focus {
   cursor: pointer;
   outline: 1px dashed var(--basic-grey);
