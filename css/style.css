@@ -57,7 +57,6 @@
   box-sizing: border-box; 
 }
 
-
 .wrapper {
   width: 940px;
   margin: 0 auto;
@@ -85,7 +84,7 @@ img {
 }
 
 a { 
- text-decoration: none; 
+  text-decoration: none; 
 }
 
 .visually-hidden {
@@ -100,7 +99,6 @@ a {
 }
 
  /*---------------------- Grid ------------------------*/
-
 .page {
   height: 100%;
 }
@@ -112,12 +110,9 @@ a {
   grid-template-rows: min-content 1fr min-content;   /* хедер-мейн-футер */
   align-content: start;
 }
-
 /* ---------------------конец гридам----------------------  */
 
-
 /* начало хедера */
-
 .header {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
@@ -174,7 +169,6 @@ a {
   cursor: pointer;
   outline: 1px dotted var(--basic-white);
 }
-
 
 .header-top__logo-link:active {
   background-color: var(--special-darkred);
@@ -333,6 +327,7 @@ a {
 .header-top__checkout:active {
   color: var(--special-white);
 }
+
 /* ----------------------------хедер-контент------------------------- */
 .header-content {
   display: flex;
@@ -632,7 +627,6 @@ a {
   background-color: var(--special-darkestgrey);
   box-shadow: inset 0px -5px 0px var(--special-darkgrey-hover);
 }
-
 
 /* -------------------------------------начало мейна-------------------------- */
 /* индекс */
@@ -1036,7 +1030,6 @@ background-color: var(--button-hover);
 }
 
 /* производители */
-
 .producers {
   margin-bottom: 70px;
 }
@@ -1166,7 +1159,6 @@ background-color: var(--button-hover);
 } 
 
 /* секция сервисы */
-
 .services {
   padding-top: 64px;
   background-color: var(--prefooter-background);
@@ -1357,7 +1349,6 @@ background-color: var(--special-darkred);
 }
 
 /* секция блок about */
-
 .about-block {
   display: flex;
   flex-direction: row;
@@ -1718,14 +1709,12 @@ background-color: var(--special-darkred);
   fill: var(--basic-red);
 }
 
-/* для выбранного по макету напарвления сортировки */
+/* для выбранного по макету направления сортировки */
 .direction__active {
   fill: var(--basic-red);
 }
 
-
 /* ------------------------фильтр-------------------------- */
-
 .catalog__filter {
   -ms-grid-row: 3;
   -ms-grid-row-span: 7;
@@ -2256,20 +2245,6 @@ background-color: var(--special-darkred);
   border: 3px solid var(--basic-grey-opacity);
 }
 
-/* карта с показанными кнопками в каталоге */
-.card__hovered--hide {
-  z-index: -1;
-}
-
-.card__hovered--show {
-  z-index: 20;
-}
-
-.card__hovered {
-  box-shadow: 0px 4px 20px var(--card-shadow); 
-}
-
-
 /* пагинация */
 .paginator {
   -ms-grid-row: 9;
@@ -2318,7 +2293,6 @@ background-color: var(--special-darkred);
 }
 
 /* о перфораторах */
-
 .product-about {
   display: flex;
   padding-top: 64px;
@@ -2346,12 +2320,9 @@ background-color: var(--special-darkred);
 .product-about__text:last-of-type {
   margin-bottom: 70px;
 }
-
 /*  конец мейна */
 
-
 /* футер --------------  футер -------------  футер  */
-
 .footer {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
@@ -2646,7 +2617,6 @@ height: 23px;
 }
 
 /* -------------------модальные окна------------------ */
-
 .write-us-modal {
   position: fixed; 
   top: calc(50vh - 215px);
@@ -2827,7 +2797,6 @@ height: 23px;
 .write-us-modal__button:active {
   background-color: var(--special-darkred);
 }
-
 
 /* ----------------карта----------------- */
 .map-modal {
@@ -3038,9 +3007,7 @@ height: 23px;
   outline: 1px dotted var(--special-darkred);  
 }
 
-
 /* анимации */
-
 .modal-error {
   -webkit-animation: it-is-an-error 1s;
           animation: it-is-an-error 1s;
