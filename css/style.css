@@ -1287,8 +1287,13 @@ a {
   padding-top: 7px;
 }
 
+.delivery-text:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
 .warranty-text {
   padding-top: 1px;
+  padding-bottom: 20px;
 }
 
 .credit-text:first-of-type {
@@ -1296,6 +1301,7 @@ a {
 }
 
 .credit-text:nth-of-type(2) {
+  padding-top: 1px;
   margin-bottom: 34px;
 }
 
@@ -1324,8 +1330,9 @@ a {
 }
 
 .services-credit__button {
+  position: relative;
   width: 195px;
-  padding: 11px 45px 10px 44px;
+  padding: 11px 45px 10px 44px; 
 
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
@@ -1336,6 +1343,7 @@ a {
 
   background-color: var(--credit-button-bgc);
   border-radius: 3px;
+  z-index: 10;
 }
 
 .services-credit__button:hover, 
@@ -1643,6 +1651,11 @@ background-color: var(--special-darkred);
   margin: 0;
   margin-right: 45px;
   padding: 0;
+  padding-top: 10px;
+}
+
+.sorting__item {
+  padding-bottom: 10px;
 }
 
 .sorting__link {
@@ -1682,6 +1695,8 @@ background-color: var(--special-darkred);
   width: 60px;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sorting-direction__item {
