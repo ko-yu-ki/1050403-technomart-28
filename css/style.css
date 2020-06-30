@@ -343,8 +343,9 @@ a {
   padding-right: 73px;
 
   font-style: italic;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   color: var(--basic-red);
 }
 
