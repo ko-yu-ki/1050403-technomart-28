@@ -2264,7 +2264,7 @@ background-color: var(--special-darkred);
   -ms-grid-column: 3;
   grid-area: paginator;
 
-  padding-top: 14px;
+  padding-top: 15px;
 }
 
 .paginator__item {
