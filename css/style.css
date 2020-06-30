@@ -976,6 +976,8 @@ a {
   align-items: center;
 
   margin-bottom: 12px;
+  padding-top: 25px;
+  padding-bottom: 26px;
   padding-left: 28px;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -998,9 +1000,7 @@ a {
 
 .all-pop-products-button {
   width: 192px;
-  margin-top: 25px;
   margin-right: 14px;
-  margin-bottom: 26px;
   padding: 11px 24px 9px 24px;
 
   font-size: 14px;
@@ -1040,6 +1040,8 @@ a {
   align-items: center;
 
   margin-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 26px;
   padding-left: 28px;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -1062,9 +1064,7 @@ a {
 
 .all-pop-producers-button {
   width: 192px;
-  margin-top: 25px;
   margin-right: 19px;
-  margin-bottom: 26px;
   padding: 11px 38px 9px 38px;
 
   font-size: 14px;
