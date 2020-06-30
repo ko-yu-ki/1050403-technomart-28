@@ -1625,8 +1625,9 @@ background-color: var(--special-darkred);
 }
 
 .sorting__title {
+  width: 220px;
   margin: 0;
-  margin-right: 140px;
+  margin-right: 20px;
   padding: 0;
   padding-top: 10px;
   padding-left: 18px;
