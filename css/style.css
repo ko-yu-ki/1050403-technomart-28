@@ -865,7 +865,7 @@ a {
 }
 
 .slide__button:hover {
-background-color: var(--button-hover);
+  background-color: var(--button-hover);
 }
 
 .slide__button:focus {
@@ -2205,6 +2205,7 @@ background-color: var(--special-darkred);
   top: 10px;
   left: 29px;
   content: url("../img/icon-cart.svg");
+  opacity: 0.3;
 }
 
 .card__tocart-button:hover,
