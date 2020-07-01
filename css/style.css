@@ -1586,6 +1586,7 @@ background-color: var(--special-darkred);
 
 .breadcrumbs__item:last-of-type > .breadcrumbs__link {
   padding-left: 3px;
+  cursor: default;
 }
 
 /* каталог и его содержимое */
@@ -1696,9 +1697,14 @@ background-color: var(--special-darkred);
 }
 
 /* это уже выбранная на макете сортировка По цене */
-.sorting__active {  
+.sorting__active,
+.sorting__active:hover,
+.sorting__active:focus,
+.sorting__active:active {  
   color: var(--basic-red);
   border: none;
+  outline: none;
+  cursor: default;
 } 
 
 .sorting__direction-list {
@@ -1741,8 +1747,13 @@ background-color: var(--special-darkred);
 }
 
 /* для выбранного по макету направления сортировки */
-.direction__active {
+.direction__active,
+.direction__active:hover,
+.direction__active:focus,
+.direction__active:active {
   fill: var(--basic-red);
+  outline: none;
+  cursor: default;
 }
 
 /* ------------------------фильтр-------------------------- */
