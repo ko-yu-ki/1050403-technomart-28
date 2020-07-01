@@ -1301,12 +1301,15 @@ a {
   padding-top: 7px;
 }
 
-.delivery-text:nth-of-type(2) {
+.delivery-text:last-of-type {
   padding-bottom: 20px;
 }
 
 .warranty-text {
   padding-top: 1px;
+}
+
+.warranty-text:last-of-type {
   padding-bottom: 20px;
 }
 
@@ -1314,9 +1317,9 @@ a {
   padding-top: 5px;
 }
 
-.credit-text:nth-of-type(2) {
+.credit-text:last-of-type {
   padding-top: 1px;
-  margin-bottom: 34px;
+  padding-bottom: 180px;
 }
 
 .delivery-slide::after {
@@ -1344,9 +1347,11 @@ a {
 }
 
 .services-credit__button {
-  position: relative;
+  position: absolute;
+  bottom: 116px;
+  left: 0px;
   width: 195px;
-  padding: 11px 45px 10px 44px; 
+  padding: 9px 45px 11px 44px; 
 
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
