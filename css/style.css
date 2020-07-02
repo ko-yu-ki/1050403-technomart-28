@@ -196,6 +196,7 @@ a {
 .header-top__logo-img {
   width: 108px;
   height: 18px;
+
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -249,6 +250,7 @@ a {
 
 .favourites__link {
   position: relative;
+
   display: block;
   width: 164px;
   padding: 9px 24px 9px 43px;
@@ -271,6 +273,7 @@ a {
 
 .cart__link {
   position: relative;
+
   display: block;
   width: 136px;
   padding: 9px 21px 9px 35px;
@@ -345,6 +348,7 @@ a {
 .header-content {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 39px;
 }
 
@@ -495,6 +499,7 @@ a {
 
 .user-authorized {
   position:relative;
+
   width: 299px;
   padding-top: 4px;
 
@@ -503,6 +508,7 @@ a {
 
 .user__bcg-white {
   position: relative;
+
   display: flex;
   flex-direction: row;
   margin-bottom: 3px;
@@ -523,6 +529,7 @@ a {
   position: absolute;
   top: 13px;
   left: 15px;
+
   fill: var(--special-lightgrey);
 } 
 
@@ -530,6 +537,7 @@ a {
   position: absolute;
   top: 14px;
   left: 261px;
+
   fill: var(--special-lightgrey);
 } 
 
@@ -665,6 +673,7 @@ a {
 
 .promo__item {
   position: relative;
+
   padding-top: 20px;
   padding-left: 22px;
 
@@ -706,7 +715,6 @@ a {
   background-repeat: no-repeat; 
   background-color: var(--special-promo-materials);
 }
-
 
 .tools {
   -ms-grid-row: 1;
@@ -810,6 +818,7 @@ a {
   display: block;
   width: 620px;
   height: 266px;
+
   -o-object-fit: contain;
      object-fit: contain;
   background-color: var(--filter-buttons);
@@ -886,7 +895,6 @@ a {
   background-color: var(--button-hover);
   outline: none;
 }
-
 
 .slide__button:active {
   background-color: var(--special-darkred);
@@ -1127,7 +1135,6 @@ a {
 
 .producers__link {
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-grow: 1;
@@ -1503,6 +1510,7 @@ background-color: var(--special-darkred);
 .contacts__img {
   width: 300px;
   height: 158px;
+
   -o-object-fit: contain;
      object-fit: contain;
   background-color: var(--filter-buttons);
@@ -1545,7 +1553,6 @@ background-color: var(--special-darkred);
 
   max-width: 940px;
   margin: 0 auto;
-
   margin-bottom: 20px;
   padding: 0;
 
@@ -2164,6 +2171,7 @@ background-color: var(--special-darkred);
   position: absolute;
   top: 30px;
   left: 17px;
+
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2176,6 +2184,7 @@ background-color: var(--special-darkred);
 .card__image {
   width: 185px;
   height: 103px;
+
   -o-object-fit: contain;
      object-fit: contain;
   background-color: var(--filter-buttons);
@@ -2251,6 +2260,7 @@ background-color: var(--special-darkred);
   position: absolute;
   top: 10px;
   left: 29px;
+
   content: url("../img/icon-cart.svg");
   opacity: 0.3;
 }
@@ -2268,6 +2278,7 @@ background-color: var(--special-darkred);
 .card__tofavs-button {
   width: 135px;
   padding: 8px 30px 6px 30px;
+
   font-family: "Cuprum" , Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2424,6 +2435,7 @@ background-color: var(--special-darkred);
 .footer-content__logo-img {
 width: 138px;
 height: 23px;
+
 -o-object-fit: contain;
    object-fit: contain;
 }
@@ -2572,11 +2584,13 @@ height: 23px;
 
  .socials__link {
   position: relative;
+
   display: block;
   width: 42px;
   height: 42px;
   padding: 11px;
   margin-right: 3px;
+
   border-radius: 50%;
   background: linear-gradient(0deg, var(--socials-bgc), var(--socials-bgc));
 }
@@ -2585,6 +2599,7 @@ height: 23px;
   position: absolute;
   top: 14px;
   left: 8px;
+  
   width: 44px;
   height: 44px;
   background-image: url("../img/icon-vk.svg");
@@ -2596,6 +2611,7 @@ height: 23px;
   position: absolute;
   top: 11px;
   left: 16px;
+
   width: 44px;
   height: 44px;
   background-image: url("../img/icon-fb.svg");
@@ -2607,6 +2623,7 @@ height: 23px;
   position: absolute;
   top: 11px;
   left: 11px;
+  
   width: 44px;
   height: 44px;
   background-image: url("../img/icon-insta.svg");
