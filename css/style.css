@@ -1764,7 +1764,8 @@ a {
 }
 
 .direction__active > .sorting-direction__img,
-.direction__active:hover > .sorting-direction__img {
+.direction__active:hover > .sorting-direction__img,
+.direction__active:focus > .sorting-direction__img {
   fill: var(--basic-red);
 }
 
