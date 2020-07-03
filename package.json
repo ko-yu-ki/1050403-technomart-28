@@ -1,0 +1,25 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "* Студент: [Maria](https://up.htmlacademy.ru/htmlcss/28/user/1050403). * Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ko-yu-ki/1050403-technomart-28.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ko-yu-ki/1050403-technomart-28/issues"
+  },
+  "homepage": "https://github.com/ko-yu-ki/1050403-technomart-28#readme"
+}
