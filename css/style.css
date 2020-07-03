@@ -97,7 +97,7 @@ a {
   overflow: hidden;
 }
 
- /*---------------------- Grid ------------------------*/
+/*---------------------- Grid ------------------------*/
 .page {
   height: 100%;
 }
@@ -1369,7 +1369,7 @@ a {
 }
 
 .services-credit__button:active {
-background-color: var(--special-darkred);
+  background-color: var(--special-darkred);
 }
 
 /* секция блок about */
@@ -1837,7 +1837,6 @@ background-color: var(--special-darkred);
   position: absolute;
 
   display: block;
-  
   width: 20px;
   height: 20px;
   padding: 0;
@@ -1976,7 +1975,7 @@ background-color: var(--special-darkred);
   text-transform: uppercase;
 }
 
- .producers-label {
+.producers-label {
   padding-top: 2px;
   padding-bottom: 2px;
 } 
@@ -2276,7 +2275,7 @@ background-color: var(--special-darkred);
   width: 135px;
   padding: 8px 30px 6px 30px;
 
-  font-family: "Cuprum" , Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2430,11 +2429,11 @@ background-color: var(--special-darkred);
 }
 
 .footer-content__logo-img {
-width: 138px;
-height: 23px;
+  width: 138px;
+  height: 23px;
 
--o-object-fit: contain;
-   object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-navigation {
@@ -2499,7 +2498,7 @@ height: 23px;
   color: var(--special-lightgrey);
 }
 
- .footer-products {
+.footer-products {
   list-style: none;
   
   width: 540px;
@@ -2579,7 +2578,7 @@ height: 23px;
   flex-wrap: wrap;
 }
 
- .socials__link {
+.socials__link {
   position: relative;
 
   display: block;
@@ -2971,12 +2970,12 @@ height: 23px;
   fill: var(--basic-red);
 }
 
- .to-cart-modal__close:hover{
-   cursor: pointer;
+.to-cart-modal__close:hover{
+  cursor: pointer;
 } 
 
 .to-cart-modal__close:focus {
-    box-shadow: 0 0 5px 3px var(--basic-red);
+  box-shadow: 0 0 5px 3px var(--basic-red);
 } 
 
 .to-cart-modal__close:active {
