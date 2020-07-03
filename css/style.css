@@ -77,7 +77,6 @@ body {
   background-color: var(--basic-white);
 }
 
-
 img {
   max-width: 100%; 
   height: auto;
@@ -191,7 +190,6 @@ a {
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
-
 
 .header-top__logo-img {
   width: 108px;
@@ -1873,7 +1871,6 @@ background-color: var(--special-darkred);
   margin-bottom: 25px;
 }
 
-
 .filter-form__input::-webkit-inner-spin-button,
 .filter-form__input::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -2623,7 +2620,7 @@ height: 23px;
   position: absolute;
   top: 11px;
   left: 11px;
-  
+
   width: 44px;
   height: 44px;
   background-image: url("../img/icon-insta.svg");
