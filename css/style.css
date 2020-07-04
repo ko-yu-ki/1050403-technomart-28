@@ -93,8 +93,8 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -380,11 +380,11 @@ a {
 
   display: block;
   width: 270px;
+  margin-bottom: 2px;
   padding-top: 4px;
   padding-bottom: 5px;
   padding-left: 71px;
   padding-right: 42px;
-  margin-bottom: 2px;
 
   font-weight: bold;
   font-size: 21px;
@@ -414,8 +414,8 @@ a {
 .header-contacts__address {
   width: 270px;
   margin: 0;
-  padding: 0;
   margin-bottom: 2px;
+  padding: 0;
 
   font-size: 14px;
   text-align: center;
@@ -587,8 +587,8 @@ a {
 }
 
 .user__orders-link {
-  padding-left: 2px;
   margin-right: 28px;
+  padding-left: 2px;
 }
 
 .user__orders-link:hover,
@@ -653,8 +653,8 @@ a {
 /* -------------------------------------начало мейна-------------------------- */
 /* индекс */
 .promo {
-  padding-top: 41px;
   margin-bottom: 59px;
+  padding-top: 41px;
 }
 
 .promo__list {
@@ -1319,8 +1319,8 @@ a {
 
 .credit-text:last-of-type {
   position: relative;
-  padding-top: 1px;
   margin-bottom: 33px;
+  padding-top: 1px;
 }
 
 .delivery-slide::after {
@@ -2355,9 +2355,9 @@ a {
 }
 
 .product-about__title {
-  padding: 0;
   margin: 0;
   margin-bottom: 24px;
+  padding: 0;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
@@ -2553,10 +2553,10 @@ a {
 
 .copyright__text {
   margin: 0;
+  margin-bottom: 1px;
   padding: 0;
   padding-top: 1px;
   padding-left: 1px;
-  margin-bottom: 1px;
 }
 
 .copyright__text:nth-of-type(2) {
@@ -2584,8 +2584,8 @@ a {
   display: block;
   width: 42px;
   height: 42px;
-  padding: 11px;
   margin-right: 3px;
+  padding: 11px;
 
   border-radius: 50%;
   background: linear-gradient(0deg, var(--socials-bgc), var(--socials-bgc));
@@ -2788,8 +2788,8 @@ a {
 .write-us-modal__textarea {
   display: block;
   width: 460px;
-  padding: 5px 12px 9px 12px;
   margin-bottom: 24px;
+  padding: 5px 12px 9px 12px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2986,8 +2986,8 @@ a {
   position: relative;
 
   margin: 0;
-  padding-top: 73px;
   margin-bottom: 67px;
+  padding-top: 73px;
   z-index: 101;
 }
 
@@ -3010,9 +3010,9 @@ a {
 
 .to-cart-modal__footer-checkout {
   width: 192px;
-  padding: 10px 46px 9px 47px;
   margin-right: 10px;
   margin-left: 1px;
+  padding: 10px 46px 9px 47px;
 
   font-style: normal;
   font-weight: normal;
